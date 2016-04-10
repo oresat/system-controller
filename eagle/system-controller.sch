@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9771,7 +9771,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P+2" library="oresat-eagle" deviceset="VSOL" device=""/>
 <part name="P+3" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="P+4" library="oresat-eagle" deviceset="VSOL" device=""/>
-<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="10k"/>
+<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="10k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-3485-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F103CS"/>
+</part>
 <part name="TP1" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="GND13" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND17" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9781,8 +9786,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MFN" value="TPS25944LRVCR"/>
 <attribute name="MPN" value="Texas Instruments"/>
 </part>
-<part name="RUVLO" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND2" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9833,8 +9836,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND5" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="TP4" library="testpad" deviceset="TPS" device="PAD1-13"/>
 <part name="SW2" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R16" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND19" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9867,8 +9868,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND26" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V-11" library="supply-3v" deviceset="3V" device=""/>
 <part name="SW3" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R26" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND27" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9880,8 +9879,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND29" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND30" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW4" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND31" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9893,8 +9890,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND33" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND34" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW5" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND36" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9906,8 +9901,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND38" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND39" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW6" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND40" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9919,8 +9912,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND42" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND43" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW7" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND44" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9932,8 +9923,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND46" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND47" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW8" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RUVLO7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
-<part name="R52" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="Value"/>
 <part name="RILIM7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
 <part name="GND48" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -10570,13 +10559,149 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MFN" value="Broadcom Limited"/>
 <attribute name="MPN" value="ACPL-M61L-000E"/>
 </part>
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="Q19" library="ic-transistor-mosfet-n-p" deviceset="MOSFET-P-N-PAIR" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="DMG6601LVT-7DICT-ND"/>
+<attribute name="MFN" value="Diodes Incorporated"/>
+<attribute name="MPN" value="DMG6601LVT-7"/>
+</part>
+<part name="R16" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="R25" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="R26" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4808-1-ND"/>
+<attribute name="MFN" value="Samaung"/>
+<attribute name="MPN" value="RC1608F473CS"/>
+</part>
+<part name="RUVLO3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="RUVLO8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="93.1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4837-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F9312CS"/>
+</part>
+<part name="R52" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-3502-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F472CS"/>
+</part>
+<part name="R64" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-3502-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F472CS"/>
+</part>
+<part name="R65" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-3502-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F472CS"/>
+</part>
+<part name="D3" library="SMD-DIODE-SCHOTTKY-40V-5A_DO-214AB_ SSC53L" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="SSC53L-E3/57TGICT-ND"/>
+<attribute name="MFN" value="SSC53L-E3/57T"/>
+<attribute name="MPN" value="Vishay"/>
+</part>
+<part name="C31" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="399-1092-1-ND"/>
+<attribute name="MFN" value="Kemet"/>
+<attribute name="MPN" value="C0603C103J5RACTU"/>
+</part>
+<part name="R66" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="R67" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k"/>
+<part name="GND53" library="psas_c3_team05" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="455.93" y="30.48" size="2.54" layer="97">William Harrington, James Heath, Shan Quinney</text>
-<text x="208.28" y="328.93" size="1.778" layer="99">To Do List:
--Fix OI grounds</text>
+<text x="187.96" y="356.87" size="1.778" layer="99">To Do List:
+-Determine resistor values for voltage divider
+-Determine RC values for time constant</text>
 <wire x1="96.52" y1="368.3" x2="172.72" y2="368.3" width="0.1524" layer="97" style="longdash"/>
 <wire x1="172.72" y1="368.3" x2="172.72" y2="322.58" width="0.1524" layer="97" style="longdash"/>
 <wire x1="172.72" y1="322.58" x2="96.52" y2="322.58" width="0.1524" layer="97" style="longdash"/>
@@ -10599,16 +10724,16 @@ Why are we using this LDO?</text>
 5. ACS-MAG
 6. IMU
 7. SDR-GPS</text>
-<text x="207.01" y="336.55" size="1.778" layer="99">Todo:
+<text x="308.61" y="356.87" size="1.778" layer="99">Todo:
 Determine ILIM for each switch</text>
-<text x="207.01" y="369.57" size="1.778" layer="97">dV/dt defaults to 12V/ms with no
+<text x="308.61" y="387.35" size="1.778" layer="97">dV/dt defaults to 12V/ms with no
 external capacitor. Otherwise  use:
 C = 12uA/desired output slew rate (dV/dt)</text>
-<text x="207.01" y="356.87" size="1.778" layer="97">RIMONmax = minimum (Vin - 2.2V, 6V)
+<text x="308.61" y="374.65" size="1.778" layer="97">RIMONmax = minimum (Vin - 2.2V, 6V)
 divided by (1.6 x ILIM x 52uA/A)</text>
-<text x="207.01" y="364.49" size="1.778" layer="97">ILIM = 89/RILIM</text>
-<text x="207.01" y="351.79" size="1.778" layer="97">!FLT! will be low when a fault is detected</text>
-<text x="207.01" y="346.71" size="1.778" layer="97">Set UVLO to 3.0V</text>
+<text x="308.61" y="382.27" size="1.778" layer="97">ILIM = 89/RILIM</text>
+<text x="308.61" y="369.57" size="1.778" layer="97">!FLT! will be low when a fault is detected</text>
+<text x="308.61" y="364.49" size="1.778" layer="97">Set UVLO to 3.0V</text>
 <text x="219.71" y="48.26" size="1.778" layer="99">CHECK POLARITY</text>
 <text x="266.7" y="107.95" size="1.778" layer="97">UART1 TX</text>
 <text x="238.76" y="72.39" size="1.778" layer="97">UART1 RX</text>
@@ -10623,6 +10748,21 @@ divided by (1.6 x ILIM x 52uA/A)</text>
 <text x="266.7" y="147.32" size="1.778" layer="97">Hard enabled when INH is tied to ground
 Connect GRD to analog ground plane</text>
 <text x="246.38" y="187.96" size="1.778" layer="97">Select Pins OK?</text>
+<wire x1="185.42" y1="368.3" x2="289.56" y2="368.3" width="0.1524" layer="97" style="longdash"/>
+<wire x1="289.56" y1="368.3" x2="289.56" y2="322.58" width="0.1524" layer="97" style="longdash"/>
+<wire x1="289.56" y1="322.58" x2="185.42" y2="322.58" width="0.1524" layer="97" style="longdash"/>
+<wire x1="185.42" y1="322.58" x2="185.42" y2="368.3" width="0.1524" layer="97" style="longdash"/>
+<text x="190.5" y="365.76" size="1.778" layer="97">Hardware WatchDog</text>
+<text x="238.76" y="322.58" size="1.778" layer="97">Voltage Divider:
+Requires NUCLEAROPTION2 +
+NUCLEAROPTION1 +
+NUCLEAROPTION0 across this 
+resistor (minus the diode turn-on
+voltage) to turn on the MOSFET
+</text>
+<text x="218.44" y="350.52" size="1.778" layer="97">Schottky Diode:
+Forward V-drop 0.45V</text>
+<text x="190.5" y="327.66" size="1.778" layer="97">RC time constant</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10725,7 +10865,12 @@ Connect GRD to analog ground plane</text>
 <instance part="P+2" gate="1" x="48.26" y="238.76"/>
 <instance part="P+3" gate="1" x="30.48" y="363.22"/>
 <instance part="P+4" gate="1" x="30.48" y="342.9"/>
-<instance part="R12" gate="R" x="114.3" y="345.44" rot="R270"/>
+<instance part="R12" gate="R" x="114.3" y="345.44" rot="R270">
+<attribute name="DIST" x="114.3" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="114.3" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="114.3" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="114.3" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="TP1" gate="G$1" x="121.92" y="337.82"/>
 <instance part="GND13" gate="1" x="124.46" y="233.68"/>
 <instance part="GND17" gate="1" x="125.73" y="259.08"/>
@@ -10735,11 +10880,6 @@ Connect GRD to analog ground plane</text>
 <attribute name="MFN" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="RUVLO" gate="R" x="398.78" y="401.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="405.13" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="405.13" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R6" gate="R" x="398.78" y="391.16" rot="R270"/>
 <instance part="RILIM" gate="R" x="449.58" y="396.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="400.05" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="400.05" size="1.778" layer="96" rot="R270"/>
@@ -10815,11 +10955,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND5" gate="1" x="530.86" y="149.86"/>
 <instance part="TP4" gate="G$1" x="139.7" y="208.28"/>
 <instance part="SW2" gate="G$1" x="434.34" y="363.22"/>
-<instance part="RUVLO1" gate="R" x="398.78" y="355.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="359.41" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="359.41" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R16" gate="R" x="398.78" y="345.44" rot="R270"/>
 <instance part="RILIM1" gate="R" x="449.58" y="350.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="354.33" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="354.33" size="1.778" layer="96" rot="R270"/>
@@ -10871,11 +11006,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND26" gate="1" x="251.46" y="104.14"/>
 <instance part="3V-11" gate="G$1" x="251.46" y="137.16" rot="MR0"/>
 <instance part="SW3" gate="G$1" x="434.34" y="317.5"/>
-<instance part="RUVLO2" gate="R" x="398.78" y="309.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="313.69" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="313.69" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R26" gate="R" x="398.78" y="299.72" rot="R270"/>
 <instance part="RILIM2" gate="R" x="449.58" y="304.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="308.61" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="308.61" size="1.778" layer="96" rot="R270"/>
@@ -10902,11 +11032,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND29" gate="1" x="398.78" y="292.1"/>
 <instance part="GND30" gate="1" x="477.52" y="292.1"/>
 <instance part="SW4" gate="G$1" x="434.34" y="88.9"/>
-<instance part="RUVLO3" gate="R" x="398.78" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="85.09" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="85.09" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R31" gate="R" x="398.78" y="71.12" rot="R270"/>
 <instance part="RILIM3" gate="R" x="449.58" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="80.01" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="80.01" size="1.778" layer="96" rot="R270"/>
@@ -10933,11 +11058,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND33" gate="1" x="398.78" y="63.5"/>
 <instance part="GND34" gate="1" x="477.52" y="63.5"/>
 <instance part="SW5" gate="G$1" x="434.34" y="180.34"/>
-<instance part="RUVLO4" gate="R" x="398.78" y="172.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="176.53" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="176.53" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R36" gate="R" x="398.78" y="162.56" rot="R270"/>
 <instance part="RILIM4" gate="R" x="449.58" y="167.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="171.45" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="171.45" size="1.778" layer="96" rot="R270"/>
@@ -10964,11 +11084,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND38" gate="1" x="398.78" y="154.94"/>
 <instance part="GND39" gate="1" x="477.52" y="154.94"/>
 <instance part="SW6" gate="G$1" x="434.34" y="226.06"/>
-<instance part="RUVLO5" gate="R" x="398.78" y="218.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="222.25" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="222.25" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R41" gate="R" x="398.78" y="208.28" rot="R270"/>
 <instance part="RILIM5" gate="R" x="449.58" y="213.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="217.17" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="217.17" size="1.778" layer="96" rot="R270"/>
@@ -10995,11 +11110,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND42" gate="1" x="398.78" y="200.66"/>
 <instance part="GND43" gate="1" x="477.52" y="200.66"/>
 <instance part="SW7" gate="G$1" x="434.34" y="271.78"/>
-<instance part="RUVLO6" gate="R" x="398.78" y="264.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="267.97" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="267.97" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R46" gate="R" x="398.78" y="254" rot="R270"/>
 <instance part="RILIM6" gate="R" x="449.58" y="259.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="262.89" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="262.89" size="1.778" layer="96" rot="R270"/>
@@ -11026,11 +11136,6 @@ Connect GRD to analog ground plane</text>
 <instance part="GND46" gate="1" x="398.78" y="246.38"/>
 <instance part="GND47" gate="1" x="477.52" y="246.38"/>
 <instance part="SW8" gate="G$1" x="434.34" y="137.16"/>
-<instance part="RUVLO7" gate="R" x="398.78" y="129.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="400.2786" y="133.35" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="395.478" y="133.35" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R52" gate="R" x="398.78" y="119.38" rot="R270"/>
 <instance part="RILIM7" gate="R" x="449.58" y="124.46" smashed="yes" rot="R270">
 <attribute name="NAME" x="451.0786" y="128.27" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="446.278" y="128.27" size="1.778" layer="96" rot="R270"/>
@@ -11730,6 +11835,159 @@ Connect GRD to analog ground plane</text>
 <attribute name="MFN" x="175.26" y="25.4" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="175.26" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="R6" gate="R" x="398.78" y="391.16" rot="R270">
+<attribute name="DIST" x="398.78" y="391.16" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="391.16" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="391.16" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="391.16" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="Q19" gate="B" x="396.24" y="91.44" smashed="yes">
+<attribute name="NAME" x="401.32" y="90.17" size="1.778" layer="95" rot="R270"/>
+<attribute name="DIST" x="396.24" y="91.44" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="396.24" y="91.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="396.24" y="91.44" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="396.24" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R16" gate="R" x="398.78" y="71.12" rot="R270">
+<attribute name="DIST" x="398.78" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R25" gate="R" x="398.78" y="119.38" rot="R270">
+<attribute name="DIST" x="398.78" y="119.38" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="119.38" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="119.38" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="119.38" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R26" gate="R" x="398.78" y="162.56" rot="R270">
+<attribute name="DIST" x="398.78" y="162.56" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="162.56" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="162.56" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="162.56" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R31" gate="R" x="398.78" y="208.28" rot="R270">
+<attribute name="DIST" x="398.78" y="208.28" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="208.28" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="208.28" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="208.28" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R36" gate="R" x="398.78" y="254" rot="R270">
+<attribute name="DIST" x="398.78" y="254" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="254" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="254" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="254" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R41" gate="R" x="398.78" y="299.72" rot="R270">
+<attribute name="DIST" x="398.78" y="299.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="299.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="299.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="299.72" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R46" gate="R" x="398.78" y="345.44" rot="R270">
+<attribute name="DIST" x="398.78" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO3" gate="R" x="398.78" y="401.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="405.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="405.13" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="401.32" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="401.32" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="401.32" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="401.32" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO1" gate="R" x="398.78" y="355.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="359.41" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="359.41" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="355.6" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="355.6" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="355.6" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="355.6" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO2" gate="R" x="398.78" y="309.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="313.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="313.69" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO4" gate="R" x="398.78" y="264.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="267.97" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="267.97" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="264.16" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="264.16" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="264.16" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="264.16" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO5" gate="R" x="398.78" y="218.44" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="222.25" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="222.25" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="218.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="218.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="218.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="218.44" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO6" gate="R" x="398.78" y="172.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="176.53" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="176.53" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="172.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="172.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="172.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="172.72" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO7" gate="R" x="398.78" y="129.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="133.35" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="133.35" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="129.54" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="129.54" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="129.54" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="129.54" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RUVLO8" gate="R" x="398.78" y="81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="400.2786" y="85.09" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="395.478" y="85.09" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="398.78" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="398.78" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="398.78" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="398.78" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R52" gate="R" x="254" y="360.68">
+<attribute name="DIST" x="254" y="360.68" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="254" y="360.68" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="254" y="360.68" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="254" y="360.68" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R64" gate="R" x="254" y="353.06">
+<attribute name="DIST" x="254" y="353.06" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="254" y="353.06" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="254" y="353.06" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="254" y="353.06" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R65" gate="R" x="254" y="345.44">
+<attribute name="DIST" x="254" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="254" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="254" y="345.44" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="254" y="345.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D3" gate="G$1" x="224.79" y="345.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="228.6" y="342.9" size="1.27" layer="95" ratio="10" rot="R180"/>
+<attribute name="DIST" x="224.79" y="345.44" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="224.79" y="345.44" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="224.79" y="345.44" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="224.79" y="345.44" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C31" gate="CE" x="213.36" y="340.36">
+<attribute name="DIST" x="213.36" y="340.36" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="213.36" y="340.36" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="213.36" y="340.36" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="213.36" y="340.36" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R66" gate="R" x="205.74" y="337.82" rot="R270"/>
+<instance part="R67" gate="R" x="233.68" y="337.82" rot="R270"/>
+<instance part="GND53" gate="1" x="213.36" y="327.66"/>
 </instances>
 <busses>
 <bus name="LGR_UART_VCC,LGR_UART_RX,LGR_UART_TX">
@@ -11916,7 +12174,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C10" gate="CE" pin="2"/>
 <wire x1="408.94" y1="393.7" x2="408.94" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="393.7" x2="391.16" y2="386.08" width="0.1524" layer="91"/>
-<pinref part="R6" gate="R" pin="2"/>
 <junction x="408.94" y="386.08"/>
 <wire x1="419.1" y1="411.48" x2="416.56" y2="411.48" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="411.48" x2="416.56" y2="408.94" width="0.1524" layer="91"/>
@@ -11934,6 +12191,7 @@ Connect GRD to analog ground plane</text>
 <junction x="398.78" y="386.08"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="R54" gate="R" pin="2"/>
+<pinref part="R6" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM" gate="R" pin="2"/>
@@ -11996,7 +12254,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C12" gate="CE" pin="2"/>
 <wire x1="408.94" y1="347.98" x2="408.94" y2="340.36" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="347.98" x2="391.16" y2="340.36" width="0.1524" layer="91"/>
-<pinref part="R16" gate="R" pin="2"/>
 <junction x="408.94" y="340.36"/>
 <wire x1="419.1" y1="365.76" x2="416.56" y2="365.76" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="365.76" x2="416.56" y2="363.22" width="0.1524" layer="91"/>
@@ -12014,6 +12271,7 @@ Connect GRD to analog ground plane</text>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="R48" gate="R" pin="2"/>
 <pinref part="Q1" gate="A" pin="S"/>
+<pinref part="R46" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM1" gate="R" pin="2"/>
@@ -12042,7 +12300,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C14" gate="CE" pin="2"/>
 <wire x1="408.94" y1="302.26" x2="408.94" y2="294.64" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="302.26" x2="391.16" y2="294.64" width="0.1524" layer="91"/>
-<pinref part="R26" gate="R" pin="2"/>
 <junction x="408.94" y="294.64"/>
 <wire x1="419.1" y1="320.04" x2="416.56" y2="320.04" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="320.04" x2="416.56" y2="317.5" width="0.1524" layer="91"/>
@@ -12060,6 +12317,7 @@ Connect GRD to analog ground plane</text>
 <pinref part="GND29" gate="1" pin="GND"/>
 <pinref part="R43" gate="R" pin="2"/>
 <pinref part="Q7" gate="A" pin="S"/>
+<pinref part="R41" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM2" gate="R" pin="2"/>
@@ -12084,7 +12342,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C16" gate="CE" pin="2"/>
 <wire x1="408.94" y1="73.66" x2="408.94" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="73.66" x2="391.16" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R31" gate="R" pin="2"/>
 <junction x="408.94" y="66.04"/>
 <wire x1="419.1" y1="91.44" x2="416.56" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="91.44" x2="416.56" y2="88.9" width="0.1524" layer="91"/>
@@ -12101,6 +12358,7 @@ Connect GRD to analog ground plane</text>
 <junction x="398.78" y="66.04"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <pinref part="Q12" gate="A" pin="S"/>
+<pinref part="R16" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM3" gate="R" pin="2"/>
@@ -12125,7 +12383,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C18" gate="CE" pin="2"/>
 <wire x1="408.94" y1="165.1" x2="408.94" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="165.1" x2="391.16" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="R36" gate="R" pin="2"/>
 <junction x="408.94" y="157.48"/>
 <wire x1="419.1" y1="182.88" x2="416.56" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="182.88" x2="416.56" y2="180.34" width="0.1524" layer="91"/>
@@ -12143,6 +12400,7 @@ Connect GRD to analog ground plane</text>
 <pinref part="GND38" gate="1" pin="GND"/>
 <pinref part="R28" gate="R" pin="2"/>
 <pinref part="Q10" gate="A" pin="S"/>
+<pinref part="R26" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM4" gate="R" pin="2"/>
@@ -12167,7 +12425,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C20" gate="CE" pin="2"/>
 <wire x1="408.94" y1="210.82" x2="408.94" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="210.82" x2="391.16" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="R41" gate="R" pin="2"/>
 <junction x="408.94" y="203.2"/>
 <wire x1="419.1" y1="228.6" x2="416.56" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="228.6" x2="416.56" y2="226.06" width="0.1524" layer="91"/>
@@ -12185,6 +12442,7 @@ Connect GRD to analog ground plane</text>
 <pinref part="GND42" gate="1" pin="GND"/>
 <pinref part="R33" gate="R" pin="2"/>
 <pinref part="Q9" gate="A" pin="S"/>
+<pinref part="R31" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM5" gate="R" pin="2"/>
@@ -12209,7 +12467,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C22" gate="CE" pin="2"/>
 <wire x1="408.94" y1="256.54" x2="408.94" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="256.54" x2="391.16" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="R46" gate="R" pin="2"/>
 <junction x="408.94" y="248.92"/>
 <wire x1="419.1" y1="274.32" x2="416.56" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="274.32" x2="416.56" y2="271.78" width="0.1524" layer="91"/>
@@ -12227,6 +12484,7 @@ Connect GRD to analog ground plane</text>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="R38" gate="R" pin="2"/>
 <pinref part="Q8" gate="A" pin="S"/>
+<pinref part="R36" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM6" gate="R" pin="2"/>
@@ -12251,7 +12509,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="C24" gate="CE" pin="2"/>
 <wire x1="408.94" y1="121.92" x2="408.94" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="121.92" x2="391.16" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R52" gate="R" pin="2"/>
 <junction x="408.94" y="114.3"/>
 <wire x1="419.1" y1="139.7" x2="416.56" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="139.7" x2="416.56" y2="137.16" width="0.1524" layer="91"/>
@@ -12269,6 +12526,7 @@ Connect GRD to analog ground plane</text>
 <pinref part="GND50" gate="1" pin="GND"/>
 <pinref part="R19" gate="R" pin="2"/>
 <pinref part="Q11" gate="A" pin="S"/>
+<pinref part="R25" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="RILIM7" gate="R" pin="2"/>
@@ -12370,6 +12628,18 @@ Connect GRD to analog ground plane</text>
 <segment>
 <pinref part="GND25" gate="1" pin="GND"/>
 <pinref part="LED13" gate="LED" pin="K"/>
+</segment>
+<segment>
+<pinref part="C31" gate="CE" pin="2"/>
+<wire x1="213.36" y1="335.28" x2="213.36" y2="330.2" width="0.1524" layer="91"/>
+<pinref part="GND53" gate="1" pin="GND"/>
+<pinref part="R67" gate="R" pin="2"/>
+<wire x1="233.68" y1="332.74" x2="233.68" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="330.2" x2="213.36" y2="330.2" width="0.1524" layer="91"/>
+<pinref part="R66" gate="R" pin="2"/>
+<wire x1="213.36" y1="330.2" x2="205.74" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="330.2" x2="205.74" y2="332.74" width="0.1524" layer="91"/>
+<junction x="213.36" y="330.2"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -12930,9 +13200,12 @@ Connect GRD to analog ground plane</text>
 <wire x1="370.84" y1="99.06" x2="370.84" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="381" y1="88.9" x2="381" y2="96.52" width="0.1524" layer="91"/>
 <junction x="381" y="96.52"/>
-<wire x1="381" y1="96.52" x2="419.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="381" y1="96.52" x2="398.78" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C21" gate="CE" pin="2"/>
 <pinref part="R55" gate="R" pin="1"/>
+<pinref part="Q19" gate="B" pin="S"/>
+<wire x1="398.78" y1="96.52" x2="419.1" y2="96.52" width="0.1524" layer="91"/>
+<junction x="398.78" y="96.52"/>
 </segment>
 <segment>
 <pinref part="SW5" gate="G$1" pin="IN"/>
@@ -13052,12 +13325,6 @@ Connect GRD to analog ground plane</text>
 <wire x1="43.18" y1="238.76" x2="43.18" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="236.22" x2="43.18" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="233.68" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="CF1" gate="G$1" pin="15"/>
-<wire x1="43.18" y1="228.6" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="226.06" x2="43.18" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="CF1" gate="G$1" pin="16"/>
-<wire x1="38.1" y1="226.06" x2="43.18" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="231.14" x2="43.18" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="CF1" gate="G$1" pin="12"/>
 <wire x1="38.1" y1="236.22" x2="43.18" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="CF1" gate="G$1" pin="11"/>
@@ -13068,12 +13335,10 @@ Connect GRD to analog ground plane</text>
 <junction x="43.18" y="238.76"/>
 <junction x="43.18" y="236.22"/>
 <junction x="43.18" y="233.68"/>
-<junction x="43.18" y="231.14"/>
-<junction x="43.18" y="228.6"/>
-<junction x="43.18" y="226.06"/>
 <wire x1="43.18" y1="233.68" x2="48.26" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="VSOL"/>
 <wire x1="48.26" y1="233.68" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
+<junction x="43.18" y="231.14"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -13166,9 +13431,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW1" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="414.02" x2="405.13" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="405.13" y1="414.02" x2="405.13" y2="396.24" width="0.1524" layer="91"/>
-<pinref part="RUVLO" gate="R" pin="2"/>
-<pinref part="R6" gate="R" pin="1"/>
 <wire x1="405.13" y1="396.24" x2="398.78" y2="396.24" width="0.1524" layer="91"/>
+<pinref part="R6" gate="R" pin="1"/>
+<pinref part="RUVLO3" gate="R" pin="2"/>
 <junction x="398.78" y="396.24"/>
 </segment>
 </net>
@@ -13242,12 +13507,6 @@ Connect GRD to analog ground plane</text>
 <pinref part="R54" gate="R" pin="1"/>
 <wire x1="383.54" y1="396.24" x2="386.08" y2="396.24" width="0.1524" layer="91"/>
 <junction x="383.54" y="396.24"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="RUVLO" gate="R" pin="1"/>
-<pinref part="Q2" gate="B" pin="D"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -13476,12 +13735,22 @@ Connect GRD to analog ground plane</text>
 <wire x1="139.7" y1="222.25" x2="134.62" y2="222.25" width="0.1524" layer="91"/>
 <label x="134.62" y="222.25" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R52" gate="R" pin="2"/>
+<wire x1="259.08" y1="360.68" x2="261.62" y2="360.68" width="0.1524" layer="91"/>
+<label x="261.62" y="360.68" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="NUCLEAROPTION1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PG1(RD)"/>
 <wire x1="149.86" y1="218.44" x2="134.62" y2="218.44" width="0.1524" layer="91"/>
 <label x="134.62" y="218.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R64" gate="R" pin="2"/>
+<wire x1="259.08" y1="353.06" x2="261.62" y2="353.06" width="0.1524" layer="91"/>
+<label x="261.62" y="353.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="NUCLEAROPTION0" class="0">
@@ -13491,6 +13760,11 @@ Connect GRD to analog ground plane</text>
 <wire x1="139.7" y1="215.9" x2="139.7" y2="214.63" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="214.63" x2="134.62" y2="214.63" width="0.1524" layer="91"/>
 <label x="134.62" y="214.63" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R65" gate="R" pin="2"/>
+<wire x1="259.08" y1="345.44" x2="261.62" y2="345.44" width="0.1524" layer="91"/>
+<label x="261.62" y="345.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -13589,9 +13863,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW2" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="368.3" x2="405.13" y2="368.3" width="0.1524" layer="91"/>
 <wire x1="405.13" y1="368.3" x2="405.13" y2="350.52" width="0.1524" layer="91"/>
-<pinref part="RUVLO1" gate="R" pin="2"/>
-<pinref part="R16" gate="R" pin="1"/>
 <wire x1="405.13" y1="350.52" x2="398.78" y2="350.52" width="0.1524" layer="91"/>
+<pinref part="R46" gate="R" pin="1"/>
+<pinref part="RUVLO1" gate="R" pin="2"/>
 <junction x="398.78" y="350.52"/>
 </segment>
 </net>
@@ -13699,9 +13973,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW3" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="322.58" x2="405.13" y2="322.58" width="0.1524" layer="91"/>
 <wire x1="405.13" y1="322.58" x2="405.13" y2="304.8" width="0.1524" layer="91"/>
-<pinref part="RUVLO2" gate="R" pin="2"/>
-<pinref part="R26" gate="R" pin="1"/>
 <wire x1="405.13" y1="304.8" x2="398.78" y2="304.8" width="0.1524" layer="91"/>
+<pinref part="R41" gate="R" pin="1"/>
+<pinref part="RUVLO2" gate="R" pin="2"/>
 <junction x="398.78" y="304.8"/>
 </segment>
 </net>
@@ -13754,9 +14028,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW4" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="93.98" x2="405.384" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="405.384" y1="93.98" x2="405.384" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="RUVLO3" gate="R" pin="2"/>
-<pinref part="R31" gate="R" pin="1"/>
 <wire x1="405.384" y1="76.2" x2="398.78" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R16" gate="R" pin="1"/>
+<pinref part="RUVLO8" gate="R" pin="2"/>
 <junction x="398.78" y="76.2"/>
 </segment>
 </net>
@@ -13801,6 +14075,7 @@ Connect GRD to analog ground plane</text>
 <wire x1="391.16" y1="88.9" x2="391.16" y2="93.98" width="0.1524" layer="91"/>
 <junction x="391.16" y="88.9"/>
 <pinref part="Q12" gate="A" pin="D"/>
+<pinref part="Q19" gate="B" pin="G"/>
 </segment>
 </net>
 <net name="N$75" class="0">
@@ -13808,9 +14083,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW5" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="185.42" x2="405.13" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="405.13" y1="185.42" x2="405.13" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="RUVLO4" gate="R" pin="2"/>
-<pinref part="R36" gate="R" pin="1"/>
 <wire x1="405.13" y1="167.64" x2="398.78" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="R26" gate="R" pin="1"/>
+<pinref part="RUVLO6" gate="R" pin="2"/>
 <junction x="398.78" y="167.64"/>
 </segment>
 </net>
@@ -13863,9 +14138,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW6" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="231.14" x2="405.384" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="405.384" y1="231.14" x2="405.384" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="RUVLO5" gate="R" pin="2"/>
-<pinref part="R41" gate="R" pin="1"/>
 <wire x1="405.384" y1="213.36" x2="398.78" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="R31" gate="R" pin="1"/>
+<pinref part="RUVLO5" gate="R" pin="2"/>
 <junction x="398.78" y="213.36"/>
 </segment>
 </net>
@@ -13918,9 +14193,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW7" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="276.86" x2="405.13" y2="276.86" width="0.1524" layer="91"/>
 <wire x1="405.13" y1="276.86" x2="405.13" y2="259.08" width="0.1524" layer="91"/>
-<pinref part="RUVLO6" gate="R" pin="2"/>
-<pinref part="R46" gate="R" pin="1"/>
 <wire x1="405.13" y1="259.08" x2="398.78" y2="259.08" width="0.1524" layer="91"/>
+<pinref part="R36" gate="R" pin="1"/>
+<pinref part="RUVLO4" gate="R" pin="2"/>
 <junction x="398.78" y="259.08"/>
 </segment>
 </net>
@@ -13973,9 +14248,9 @@ Connect GRD to analog ground plane</text>
 <pinref part="SW8" gate="G$1" pin="EN/UVLO"/>
 <wire x1="419.1" y1="142.24" x2="405.13" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="405.13" y1="142.24" x2="405.13" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="RUVLO7" gate="R" pin="2"/>
-<pinref part="R52" gate="R" pin="1"/>
 <wire x1="405.13" y1="124.46" x2="398.78" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R25" gate="R" pin="1"/>
+<pinref part="RUVLO7" gate="R" pin="2"/>
 <junction x="398.78" y="124.46"/>
 </segment>
 </net>
@@ -14461,6 +14736,7 @@ Connect GRD to analog ground plane</text>
 <label x="205.74" y="185.42" size="1.778" layer="95"/>
 <wire x1="43.18" y1="218.44" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
 <junction x="43.18" y="218.44"/>
+<label x="45.72" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -14478,42 +14754,100 @@ Connect GRD to analog ground plane</text>
 <label x="205.74" y="182.88" size="1.778" layer="95"/>
 <wire x1="43.18" y1="223.52" x2="88.9" y2="223.52" width="0.1524" layer="91"/>
 <junction x="43.18" y="223.52"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="RUVLO1" gate="R" pin="1"/>
-<pinref part="Q13" gate="B" pin="D"/>
+<label x="45.72" y="223.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="RUVLO2" gate="R" pin="1"/>
+<pinref part="Q2" gate="B" pin="D"/>
+<pinref part="RUVLO3" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="Q13" gate="B" pin="D"/>
+<pinref part="RUVLO1" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
 <pinref part="Q14" gate="B" pin="D"/>
+<pinref part="RUVLO2" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
-<pinref part="RUVLO6" gate="R" pin="1"/>
 <pinref part="Q15" gate="B" pin="D"/>
+<pinref part="RUVLO4" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$80" class="0">
 <segment>
-<pinref part="RUVLO5" gate="R" pin="1"/>
 <pinref part="Q16" gate="B" pin="D"/>
+<pinref part="RUVLO5" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$88" class="0">
 <segment>
-<pinref part="RUVLO4" gate="R" pin="1"/>
 <pinref part="Q17" gate="B" pin="D"/>
+<pinref part="RUVLO6" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$96" class="0">
 <segment>
-<pinref part="RUVLO7" gate="R" pin="1"/>
 <pinref part="Q18" gate="B" pin="D"/>
+<pinref part="RUVLO7" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$108" class="0">
+<segment>
+<pinref part="Q19" gate="B" pin="D"/>
+<pinref part="RUVLO8" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$109" class="0">
+<segment>
+<pinref part="R52" gate="R" pin="1"/>
+<wire x1="248.92" y1="360.68" x2="243.84" y2="360.68" width="0.1524" layer="91" style="longdash"/>
+<wire x1="243.84" y1="360.68" x2="243.84" y2="353.06" width="0.1524" layer="91"/>
+<pinref part="R65" gate="R" pin="1"/>
+<wire x1="243.84" y1="353.06" x2="243.84" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="345.44" x2="248.92" y2="345.44" width="0.1524" layer="91"/>
+<pinref part="R64" gate="R" pin="1"/>
+<wire x1="248.92" y1="353.06" x2="243.84" y2="353.06" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="345.44" x2="233.68" y2="345.44" width="0.1524" layer="91"/>
+<junction x="243.84" y="353.06"/>
+<junction x="243.84" y="345.44"/>
+<pinref part="D3" gate="G$1" pin="+"/>
+<pinref part="R67" gate="R" pin="1"/>
+<wire x1="233.68" y1="345.44" x2="228.6" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="342.9" x2="233.68" y2="345.44" width="0.1524" layer="91"/>
+<junction x="233.68" y="345.44"/>
+</segment>
+</net>
+<net name="NUKEPIN" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="-"/>
+<pinref part="R66" gate="R" pin="1"/>
+<wire x1="220.98" y1="345.44" x2="213.36" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="345.44" x2="205.74" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="345.44" x2="205.74" y2="342.9" width="0.1524" layer="91"/>
+<pinref part="C31" gate="CE" pin="1"/>
+<wire x1="213.36" y1="342.9" x2="213.36" y2="345.44" width="0.1524" layer="91"/>
+<junction x="213.36" y="345.44"/>
+<wire x1="205.74" y1="345.44" x2="200.66" y2="345.44" width="0.1524" layer="91"/>
+<junction x="205.74" y="345.44"/>
+<label x="200.66" y="345.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CF1" gate="G$1" pin="16"/>
+<wire x1="38.1" y1="226.06" x2="43.18" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="CF1" gate="G$1" pin="15"/>
+<wire x1="43.18" y1="228.6" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="226.06" x2="43.18" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="228.6" x2="48.26" y2="228.6" width="0.1524" layer="91"/>
+<junction x="43.18" y="228.6"/>
+<label x="48.26" y="228.6" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
