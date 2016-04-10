@@ -1944,6 +1944,25 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 </package>
 </packages>
 </library>
+<library name="adafruit">
+<packages>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3142,6 +3161,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="R66" library="rcl_custom" package=".0603-B-NOSILK" value="TBD" x="-7.1" y="-100"/>
 <element name="R67" library="rcl_custom" package=".0603-B-NOSILK" value="1k" x="-7.1" y="-104"/>
+<element name="Q20" library="adafruit" package="SOT23" value="" x="-6.4" y="-109.8"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3831,6 +3851,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="Q17" pad="2"/>
 <contactref element="Q18" pad="2"/>
 <contactref element="Q19" pad="2"/>
+<contactref element="Q20" pad="3"/>
 <wire x1="95.8" y1="61.7" x2="95.8" y2="65.7" width="0" layer="19" extent="1-1"/>
 <wire x1="95.8" y1="57.7" x2="95.8" y2="61.7" width="0" layer="19" extent="1-1"/>
 <wire x1="84.7" y1="56.1" x2="95.8" y2="57.7" width="0" layer="19" extent="1-1"/>
@@ -3902,6 +3923,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="23.348" y1="4.6055" x2="23.848" y2="4.6055" width="0" layer="19" extent="1-1"/>
 <wire x1="22.848" y1="4.6055" x2="23.348" y2="4.6055" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.8" y1="-0.9" x2="22.848" y2="4.6055" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.4" y1="-108.7" x2="-6.8" y2="-0.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSOL">
 <contactref element="D2" pad="1"/>
@@ -4802,15 +4824,20 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="-7.9" y1="-75" x2="-7.9" y2="-79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NUKEPIN">
-<contactref element="D3" pad="2"/>
-<contactref element="R66" pad="1"/>
-<contactref element="C31" pad="1"/>
 <contactref element="CF1" pad="P$16"/>
 <contactref element="CF1" pad="P$15"/>
+<contactref element="Q20" pad="2"/>
 <wire x1="33.24" y1="92.92" x2="33.24" y2="98" width="0" layer="19" extent="1-1"/>
-<wire x1="-0.217" y1="-89.5" x2="33.24" y2="92.92" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.9" y1="-96" x2="-0.217" y2="-89.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.9" y1="-100" x2="-7.9" y2="-96" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.45" y1="-110.9" x2="33.24" y2="92.92" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$106">
+<contactref element="C31" pad="1"/>
+<contactref element="Q20" pad="1"/>
+<contactref element="D3" pad="2"/>
+<contactref element="R66" pad="1"/>
+<wire x1="-7.9" y1="-100" x2="-7.35" y2="-110.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.9" y1="-96" x2="-7.9" y2="-100" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.217" y1="-89.5" x2="-7.9" y2="-96" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
