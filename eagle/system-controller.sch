@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10653,6 +10653,18 @@ Source: avr.lbr</description>
 <attribute name="MFN" value="SSC53L-E3/57T"/>
 <attribute name="MPN" value="Vishay"/>
 </part>
+<part name="TP27" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP46" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP47" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP48" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP49" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP50" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP51" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP52" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP53" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP54" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP55" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP56" library="Tova" deviceset="TEST-POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11984,6 +11996,42 @@ Forward V-drop 0.45V</text>
 <attribute name="DPN" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFN" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="TP27" gate="G$1" x="149.86" y="220.98" smashed="yes">
+<attribute name="NAME" x="152.4" y="220.98" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP46" gate="G$1" x="149.86" y="218.44" smashed="yes">
+<attribute name="NAME" x="152.4" y="218.44" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP47" gate="G$1" x="144.78" y="167.64" smashed="yes">
+<attribute name="NAME" x="147.32" y="167.64" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP48" gate="G$1" x="144.78" y="162.56" smashed="yes">
+<attribute name="NAME" x="147.32" y="162.56" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP49" gate="G$1" x="144.78" y="165.1" smashed="yes">
+<attribute name="NAME" x="147.32" y="165.1" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP50" gate="G$1" x="210.82" y="177.8" smashed="yes">
+<attribute name="NAME" x="213.36" y="177.8" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP51" gate="G$1" x="210.82" y="175.26" smashed="yes">
+<attribute name="NAME" x="213.36" y="175.26" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP52" gate="G$1" x="210.82" y="172.72" smashed="yes">
+<attribute name="NAME" x="213.36" y="172.72" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP53" gate="G$1" x="210.82" y="170.18" smashed="yes">
+<attribute name="NAME" x="213.36" y="170.18" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP54" gate="G$1" x="210.82" y="167.64" smashed="yes">
+<attribute name="NAME" x="213.36" y="167.64" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP55" gate="G$1" x="210.82" y="165.1" smashed="yes">
+<attribute name="NAME" x="213.36" y="165.1" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP56" gate="G$1" x="210.82" y="200.66" smashed="yes">
+<attribute name="NAME" x="213.36" y="200.66" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -13692,12 +13740,14 @@ Forward V-drop 0.45V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PG3(TOSC2)"/>
 <wire x1="154.94" y1="218.44" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="TP46" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PG4(TOSC1)"/>
 <wire x1="154.94" y1="220.98" x2="149.86" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="TP27" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="NUCLEAROPTION2" class="0">
@@ -13747,54 +13797,63 @@ Forward V-drop 0.45V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PF3(ADC3)"/>
 <wire x1="154.94" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="TP47" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PF2(ADC2)"/>
 <wire x1="144.78" y1="165.1" x2="154.94" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="TP49" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PF1(ADC1)"/>
 <wire x1="154.94" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="TP48" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(XCK0/AIN0)PE2"/>
 <wire x1="203.2" y1="165.1" x2="210.82" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="TP55" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(OC3A/AIN1)PE3"/>
 <wire x1="203.2" y1="167.64" x2="210.82" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="TP54" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(OC3B/INT4)PE4"/>
 <wire x1="203.2" y1="170.18" x2="210.82" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="TP53" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(OC3C/INT5)PE5"/>
 <wire x1="203.2" y1="172.72" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="TP52" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(T3/INT6)PE6"/>
 <wire x1="203.2" y1="175.26" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="TP51" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(IC3/INT7)PE7"/>
 <wire x1="203.2" y1="177.8" x2="210.82" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="TP50" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -14823,6 +14882,7 @@ Forward V-drop 0.45V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="(T2)PD7"/>
 <wire x1="203.2" y1="200.66" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="TP56" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

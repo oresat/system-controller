@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3081,6 +3081,18 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="MPN" value="Vishay" x="102.4" y="-12" size="1.778" layer="27" display="off"/>
 <attribute name="DPN" value="SSC53L-E3/57TGICT-ND" x="102.4" y="-12" size="1.778" layer="27" display="off"/>
 </element>
+<element name="TP27" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-19.3"/>
+<element name="TP46" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-23"/>
+<element name="TP47" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-26.7"/>
+<element name="TP48" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-30.4"/>
+<element name="TP49" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-34.1"/>
+<element name="TP50" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-37.8"/>
+<element name="TP51" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-41.5"/>
+<element name="TP52" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-45.2"/>
+<element name="TP53" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-48.9"/>
+<element name="TP54" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-52.6"/>
+<element name="TP55" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-56.3"/>
+<element name="TP56" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="-6.7" y="-60"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -4079,9 +4091,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="N$27">
 <contactref element="U1" pad="18"/>
+<contactref element="TP46" pad="1"/>
+<wire x1="-6.7" y1="-23" x2="47.21" y2="43.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28">
 <contactref element="U1" pad="19"/>
+<contactref element="TP27" pad="1"/>
+<wire x1="-6.7" y1="-19.3" x2="48.01" y2="43.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NUCLEAROPTION2">
 <contactref element="U1" pad="43"/>
@@ -4105,30 +4121,48 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="N$34">
 <contactref element="U1" pad="58"/>
+<contactref element="TP47" pad="1"/>
+<wire x1="-6.7" y1="-26.7" x2="51.21" y2="59.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="U1" pad="59"/>
+<contactref element="TP49" pad="1"/>
+<wire x1="-6.7" y1="-34.1" x2="50.41" y2="59.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$37">
 <contactref element="U1" pad="60"/>
+<contactref element="TP48" pad="1"/>
+<wire x1="-6.7" y1="-30.4" x2="49.61" y2="59.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="U1" pad="4"/>
+<contactref element="TP55" pad="1"/>
+<wire x1="-6.7" y1="-56.3" x2="44.61" y2="55.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40">
 <contactref element="U1" pad="5"/>
+<contactref element="TP54" pad="1"/>
+<wire x1="-6.7" y1="-52.6" x2="44.61" y2="54.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$41">
 <contactref element="U1" pad="6"/>
+<contactref element="TP53" pad="1"/>
+<wire x1="-6.7" y1="-48.9" x2="44.61" y2="53.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$42">
 <contactref element="U1" pad="7"/>
+<contactref element="TP52" pad="1"/>
+<wire x1="-6.7" y1="-45.2" x2="44.61" y2="52.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$43">
 <contactref element="U1" pad="8"/>
+<contactref element="TP51" pad="1"/>
+<wire x1="-6.7" y1="-41.5" x2="44.61" y2="52.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$44">
 <contactref element="U1" pad="9"/>
+<contactref element="TP50" pad="1"/>
+<wire x1="-6.7" y1="-37.8" x2="44.61" y2="51.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$46">
 <contactref element="IC1" pad="7"/>
@@ -4778,6 +4812,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="N$104">
 <contactref element="U1" pad="32"/>
+<contactref element="TP56" pad="1"/>
+<wire x1="-6.7" y1="-60" x2="58.41" y2="43.99" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
