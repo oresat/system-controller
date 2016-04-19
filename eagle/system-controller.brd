@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -53,9 +53,9 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1955,12 +1955,12 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="sunstone-4Lyr_v1.0.0.3">
-<description language="en">&lt;b&gt;EAGLE Design Rules for *4* Layer Designs (MLB)&lt;/b&gt;
-&lt;p&gt;
-This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requirements for our 4 layer MLB products. For questions, comments, suggestions, please contact Sunstone Customer Support:&lt;p&gt;&lt;b&gt;Email:&lt;/b&gt; mailto:support@sunstone.com&lt;b&gt;&lt;br&gt;Phone:&lt;/b&gt; 800-228-8198&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance C/D.Restring%.Supply G
-&lt;p&gt;v1.2Mod12/06/07~Distance C/D to 20mils.&lt;p&gt;v1.3Mod12/12/07~Supply/Annulus Value to 12.5mils&lt;p&gt;1/15/08 SSC-EAGLE-4Lyr_v1.0.0.3~For Release&lt;p&gt;10/03/08 Description Edit&lt;p&gt;
-&lt;i&gt;Attention: Upon running the design check and making modifications, please remember to save any changes before closing the application and sending in your board file to Sunstone Circuits for conversion.&lt;i&gt;</description>
+<designrules name="psas-4Lyr_v1.0.0.3">
+<description language="en">
+&lt;b&gt;PSAS EAGLE Design Rules for 4 Layer Designs&lt;/b&gt;
+
+These rules will work for both Sunstone Circuits and OSH Park. They have Sunstone's larger 6 mil trace/space and OSH Park's larger 10 mil drills.
+</description>
 <param name="layerSetup" value="(1+2*15+16)"/>
 <param name="mtCopper" value="0.0178mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0178mm"/>
 <param name="mtIsolate" value="12mil 28mil 12mil 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 12mil"/>
@@ -1979,7 +1979,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <param name="mdDrill" value="16mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="8mil"/>
+<param name="msDrill" value="10mil"/>
 <param name="msMicroVia" value="9.9898mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -2014,7 +2014,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="11mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -2802,11 +2802,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="MPN" value="150060GS75000" x="49" y="5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DPN" value="732-4971-1-ND" x="49" y="5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="LED4" library="psas_c3_team05" package="LED-0603" value="GRN" x="53" y="5" rot="R90">
-<attribute name="DIST" value="digikey" x="53" y="5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFN" value="Wurth Electronics INC." x="53" y="5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="150060GS75000" x="53" y="5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DPN" value="732-4971-1-ND" x="53" y="5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="LED4" library="psas_c3_team05" package="LED-0603" value="GRN" x="53" y="2.2" rot="R90">
+<attribute name="DIST" value="digikey" x="53" y="2.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFN" value="Wurth Electronics INC." x="53" y="2.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="150060GS75000" x="53" y="2.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DPN" value="732-4971-1-ND" x="53" y="2.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LED5" library="psas_c3_team05" package="LED-0603" value="GRN" x="57" y="5" rot="R90">
 <attribute name="DIST" value="digikey" x="57" y="5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3201,12 +3201,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="50.33" y1="76.07" x2="50.4" y2="77" width="0.8128" layer="1"/>
 <wire x1="50.4" y1="77" x2="50.4" y2="71.7" width="1" layer="1"/>
 <wire x1="50.4" y1="71.7" x2="51.4" y2="70.7" width="0.8128" layer="1"/>
-<polygon width="0.4064" layer="15">
-<vertex x="41" y="88.1"/>
-<vertex x="54.1" y="88.1"/>
-<vertex x="54" y="74.5"/>
-<vertex x="41" y="74.5"/>
-</polygon>
 </signal>
 <signal name="N$11">
 <contactref element="U1" pad="57"/>
@@ -3814,17 +3808,17 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="40.86" y1="92.92" x2="42.13" y2="92.92" width="1" layer="1"/>
 <wire x1="50.33" y1="92.893" x2="42.157" y2="92.893" width="1" layer="1"/>
 <wire x1="42.157" y1="92.893" x2="42.13" y2="92.92" width="0.8128" layer="1"/>
-<polygon width="0.2" layer="15">
-<vertex x="37.8" y="88.5"/>
-<vertex x="75" y="88.5"/>
+<polygon width="0.2" layer="15" isolate="0.2" thermals="no">
+<vertex x="37.8" y="83.4"/>
+<vertex x="75" y="83.4"/>
 <vertex x="75" y="12.9"/>
 <vertex x="78" y="12.9"/>
 <vertex x="78" y="7"/>
 <vertex x="95" y="7"/>
 <vertex x="95" y="91"/>
-<vertex x="56" y="91"/>
-<vertex x="56" y="99"/>
-<vertex x="37.8" y="99"/>
+<vertex x="45" y="91"/>
+<vertex x="45" y="100"/>
+<vertex x="37.8" y="100"/>
 </polygon>
 <via x="79.1" y="81.5" extent="1-16" drill="0.254"/>
 <wire x1="77.7945" y1="83.848" x2="77.7945" y2="83.348" width="0.25" layer="1"/>
@@ -3943,18 +3937,12 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="35.78" y1="85.22" x2="36" y2="85" width="0.8128" layer="1"/>
 <wire x1="36" y1="85" x2="36" y2="97.78" width="1" layer="1"/>
 <wire x1="36" y1="97.78" x2="35.78" y2="98" width="1" layer="1"/>
-<polygon width="0.2" layer="15">
-<vertex x="37.5" y="99"/>
-<vertex x="34" y="99"/>
-<vertex x="34" y="91.5"/>
-<vertex x="34.2" y="91.5"/>
-<vertex x="34.2" y="83"/>
-<vertex x="37.3" y="83"/>
-<vertex x="37.3" y="91.4"/>
-<vertex x="37.5" y="91.4"/>
-</polygon>
-<wire x1="35.78" y1="92.92" x2="35.8" y2="93.2" width="0" layer="19" extent="1-1"/>
+<wire x1="36" y1="97.78" x2="37.05" y2="98" width="0" layer="19" extent="1-1"/>
+<wire x1="35.8" y1="93.2" x2="35.78" y2="92.92" width="0" layer="19" extent="1-1"/>
 <wire x1="35.817" y1="85.6" x2="35.78" y2="85.22" width="0" layer="19" extent="1-1"/>
+<wire x1="37.05" y1="92.92" x2="36" y2="93.4" width="0" layer="19" extent="1-1"/>
+<wire x1="34.51" y1="98" x2="35.78" y2="98" width="0" layer="19" extent="1-1"/>
+<wire x1="34.51" y1="92.92" x2="35.78" y2="92.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="RLDO1" pad="2"/>
@@ -4181,12 +4169,12 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="7.3" y1="67.04" x2="7.26" y2="67" width="0.4064" layer="1"/>
 <wire x1="7.255" y1="45.425" x2="7.255" y2="43.525" width="0.4064" layer="1"/>
 <wire x1="7.255" y1="43.525" x2="7.28" y2="43.5" width="0.4064" layer="1"/>
-<polygon width="0.2" layer="15">
+<polygon width="0.2" layer="15" isolate="0.2">
 <vertex x="3" y="91"/>
 <vertex x="3" y="10"/>
 <vertex x="18" y="10"/>
-<vertex x="18" y="1"/>
-<vertex x="31" y="1"/>
+<vertex x="18" y="2"/>
+<vertex x="31.7" y="2"/>
 <vertex x="53" y="40"/>
 <vertex x="53" y="74.1"/>
 <vertex x="19" y="74"/>
@@ -4285,9 +4273,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="77.7945" y1="75.348" x2="77.252" y2="75.348" width="0.4064" layer="1"/>
 <wire x1="77.252" y1="75.348" x2="76.3" y2="76.3" width="0.4064" layer="1"/>
 <wire x1="76.3" y1="76.3" x2="76.3" y2="77.9" width="0.4064" layer="1"/>
-<wire x1="76.3" y1="77.9" x2="77" y2="78.7" width="0.4064" layer="1"/>
-<wire x1="77" y1="78.7" x2="78.4" y2="78.7" width="0.4064" layer="1"/>
-<wire x1="78.4" y1="78.7" x2="78.7" y2="78.9" width="0.4064" layer="1"/>
+<wire x1="76.3" y1="77.9" x2="77" y2="78.9" width="0.4064" layer="1"/>
+<wire x1="77" y1="78.9" x2="78.7" y2="78.9" width="0.4064" layer="1"/>
 <wire x1="79.025" y1="93.06" x2="79.025" y2="90.925" width="0.4064" layer="1"/>
 <wire x1="79.025" y1="90.925" x2="76" y2="87.9" width="0.4064" layer="1"/>
 <wire x1="76" y1="87.9" x2="76" y2="83" width="0.4064" layer="1"/>
@@ -5567,9 +5554,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="52" y1="65.9" x2="54.1" y2="68" width="0.4064" layer="1"/>
 <wire x1="54.1" y1="68" x2="54.1" y2="77.3" width="0.25" layer="1"/>
 <via x="54.1" y="77.3" extent="1-16" drill="0.254"/>
-<wire x1="54.1" y1="77.3" x2="77.3" y2="77.3" width="0.25" layer="16"/>
-<via x="77.3" y="77.3" extent="1-16" drill="0.254"/>
-<wire x1="78.7" y1="77.3" x2="77.3" y2="77.3" width="0.4064" layer="1"/>
+<wire x1="54.1" y1="77.3" x2="77.7" y2="77.3" width="0.25" layer="16"/>
+<via x="77.7" y="77.3" extent="1-16" drill="0.254"/>
+<wire x1="78.7" y1="77.3" x2="77.7" y2="77.3" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$52">
 <contactref element="R18" pad="2"/>
@@ -5601,7 +5588,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <signal name="N$74">
 <contactref element="R31" pad="2"/>
 <contactref element="LED4" pad="A"/>
-<wire x1="53" y1="5.75" x2="53" y2="44.9" width="0.4064" layer="1"/>
+<wire x1="53" y1="2.95" x2="53" y2="44.9" width="0.4064" layer="1"/>
 <wire x1="53" y1="44.9" x2="56.3" y2="48.3" width="0.4064" layer="1"/>
 <via x="56.3" y="48.3" extent="1-16" drill="0.254"/>
 <wire x1="56.3" y1="48.3" x2="77.1" y2="48.3" width="0.4064" layer="16"/>
@@ -5646,7 +5633,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="73.1" y1="24.1" x2="73.1" y2="40.1" width="0.4064" layer="1"/>
 <wire x1="73.1" y1="40.1" x2="70.1" y2="43.1" width="0.4064" layer="1"/>
 <wire x1="70.1" y1="43.1" x2="70.1" y2="47.1" width="0.4064" layer="1"/>
-<wire x1="70.1" y1="47.1" x2="70.2" y2="47.3" width="0.4064" layer="1"/>
 <via x="70.1" y="47.1" extent="1-16" drill="0.254"/>
 <wire x1="70.1" y1="47.1" x2="21" y2="47.2" width="0.4064" layer="16"/>
 <via x="21" y="47.2" extent="1-16" drill="0.254"/>
@@ -6055,9 +6041,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="N$205">
 </signal>
-<signal name="N$206">
-<via x="70.1" y="47.3" extent="1-16" drill="0.254"/>
-</signal>
 <signal name="N$209">
 </signal>
 <signal name="N$212">
@@ -6270,7 +6253,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="C14" pad="1"/>
 <contactref element="C16" pad="1"/>
 <contactref element="CFUSE7A" pad="1"/>
-<polygon width="0.2" layer="1" isolate="0.2">
+<polygon width="0.2" layer="1" isolate="0.2" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="0" y="100"/>
 <vertex x="87.3" y="100"/>
@@ -6279,21 +6262,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <vertex x="99" y="0"/>
 </polygon>
 <contactref element="Q13" pad="2"/>
-<polygon width="0.2" layer="16" isolate="0.2">
+<polygon width="0.2" layer="16" isolate="0.2" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="0" y="100"/>
 <vertex x="99" y="100"/>
 <vertex x="99" y="0"/>
 </polygon>
-<polygon width="0.2" layer="2" isolate="0.2">
-<vertex x="0" y="0"/>
-<vertex x="0" y="100"/>
-<vertex x="87.3" y="100"/>
-<vertex x="99" y="100"/>
-<vertex x="99" y="10.6"/>
-<vertex x="99" y="0"/>
-</polygon>
-<polygon width="0.2" layer="15" isolate="0.2">
+<polygon width="0.2" layer="2" isolate="0.2" thermals="no" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="0" y="100"/>
 <vertex x="87.3" y="100"/>
@@ -6301,41 +6276,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <vertex x="99" y="10.6"/>
 <vertex x="99" y="0"/>
 </polygon>
-<polygon width="0.254" layer="15">
-<vertex x="55" y="88"/>
-<vertex x="55" y="81"/>
-<vertex x="55" y="74"/>
-<vertex x="54" y="74"/>
-<vertex x="54" y="73"/>
-<vertex x="54" y="40"/>
-<vertex x="33" y="2"/>
-<vertex x="88" y="2"/>
-<vertex x="90" y="4"/>
-<vertex x="94" y="4"/>
-<vertex x="94" y="6"/>
-<vertex x="77" y="6"/>
-<vertex x="77" y="12"/>
-<vertex x="74" y="12"/>
-<vertex x="74" y="57.9"/>
-<vertex x="74" y="88"/>
-</polygon>
-<polygon width="0.254" layer="15">
-<vertex x="83" y="98"/>
-<vertex x="83" y="92"/>
-<vertex x="94.9" y="92"/>
-<vertex x="94.9" y="96.1"/>
-<vertex x="90" y="96.1"/>
-<vertex x="88" y="98"/>
-</polygon>
-<polygon width="0.254" layer="15">
-<vertex x="20" y="90"/>
-<vertex x="32.9" y="90"/>
-<vertex x="33" y="82"/>
-<vertex x="38" y="82"/>
-<vertex x="38" y="88"/>
-<vertex x="40" y="88"/>
-<vertex x="40" y="75"/>
-<vertex x="20" y="75"/>
+<polygon width="0.2" layer="15" isolate="0.2" thermals="no" rank="6">
+<vertex x="0" y="0"/>
+<vertex x="0" y="100"/>
+<vertex x="87.3" y="100"/>
+<vertex x="99" y="100"/>
+<vertex x="99" y="10.6"/>
+<vertex x="99" y="0"/>
 </polygon>
 <via x="38" y="54" extent="1-16" drill="0.254"/>
 <via x="41.2" y="51.7" extent="1-16" drill="0.254"/>
