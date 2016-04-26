@@ -10058,6 +10058,7 @@ Forward V-drop 0.45V</text>
 <text x="60.96" y="345.44" size="1.778" layer="97">N-Channel MOSFET DON3053L
 V_TH min = 0.6V
 V_TH max = 1.4V</text>
+<text x="233.68" y="132.08" size="1.778" layer="97">P-Channel MOSFET</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
