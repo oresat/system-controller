@@ -2193,7 +2193,7 @@ These rules will work for both Sunstone Circuits and OSH Park. They have Sunston
 <attribute name="MFN" value="TPS25944LRVCR" x="82.1" y="84.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="Texas Instruments" x="82.1" y="84.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="RIMON0" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="43" y="61" rot="R90"/>
+<element name="RIMON0" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="43" y="61" rot="R90"/>
 <element name="C3" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.5" y="85" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.2" y="79.3" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="89.1" y="83.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
@@ -2230,7 +2230,7 @@ These rules will work for both Sunstone Circuits and OSH Park. They have Sunston
 <attribute name="NAME" x="45.02" y="5.5" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="SW1" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="74.6" rot="R180"/>
-<element name="RIMON1" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="40" y="61" rot="R90"/>
+<element name="RIMON1" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="40" y="61" rot="R90"/>
 <element name="C5" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.5" y="75.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.7" y="76.3" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="89.1" y="74.3" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
@@ -2249,7 +2249,7 @@ These rules will work for both Sunstone Circuits and OSH Park. They have Sunston
 <attribute name="MPN" value="LA L296-Q2R2-1-Z" x="69" y="2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="SW2" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="65.1" rot="R180"/>
-<element name="RIMON2" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="37.1" y="61" smashed="yes" rot="R90">
+<element name="RIMON2" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="37.1" y="61" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.3" y="59.8" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="38.7" y="59.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="37.1" y="61" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
@@ -2260,27 +2260,27 @@ These rules will work for both Sunstone Circuits and OSH Park. They have Sunston
 <attribute name="NAME" x="87.5" y="66" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="SW7" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="14.6" rot="R180"/>
-<element name="RIMON7" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="40.5" y="51" rot="R270"/>
+<element name="RIMON7" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="40.5" y="51" rot="R270"/>
 <element name="C19" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.6" y="15.5" rot="R90"/>
 <element name="SW5" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="35.1" rot="R180"/>
-<element name="RIMON5" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="42.17" y="50.99" rot="R270"/>
+<element name="RIMON5" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="42.17" y="50.99" rot="R270"/>
 <element name="C15" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.5" y="35.9" rot="R90"/>
 <element name="SW4" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="45.1" rot="R180"/>
-<element name="RIMON4" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="36" y="55" rot="R180"/>
+<element name="RIMON4" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="36" y="55" rot="R180"/>
 <element name="C13" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.5" y="46" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.7" y="32.3" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="89.1" y="44.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="87.5" y="46" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="SW3" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="55.1" rot="R180"/>
-<element name="RIMON3" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="46" y="61" rot="R90"/>
+<element name="RIMON3" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="46" y="61" rot="R90"/>
 <element name="C11" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.5" y="56" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.2" y="52.3" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="89.1" y="54.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="87.5" y="56" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="SW6" library="WQFN-20-3x4" package="QFN-20-L" value="TPS25944LRVCRWQFN-20-3X4" x="82.1" y="24.6" rot="R180"/>
-<element name="RIMON6" library="rcl_custom" package=".0603-B-NOSILK" value="4.7k" x="36" y="53" rot="R180"/>
+<element name="RIMON6" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="36" y="53" rot="R180"/>
 <element name="C17" library="rcl_custom" package=".0603-B-NOSILK" value="2.2nF" x="87.51" y="25.5" rot="R89.8"/>
 <element name="RA5" library="rcl_custom" package=".0603-B-NOSILK" value="47k" x="8.3" y="35.5">
 <attribute name="DIST" value="digikey" x="8.3" y="35.5" size="1.778" layer="27" display="off"/>

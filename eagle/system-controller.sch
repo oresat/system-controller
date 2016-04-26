@@ -9022,7 +9022,7 @@ Source: avr.lbr</description>
 <attribute name="MFN" value="TPS25944LRVCR"/>
 <attribute name="MPN" value="Texas Instruments"/>
 </part>
-<part name="RIMON0" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON0" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
@@ -9060,7 +9060,7 @@ Source: avr.lbr</description>
 </part>
 <part name="GND5" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW1" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND19" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND20" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9089,7 +9089,7 @@ Source: avr.lbr</description>
 <part name="GND26" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V-11" library="supply-3v" deviceset="3V" device=""/>
 <part name="SW2" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND27" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C9" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND28" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9097,7 +9097,7 @@ Source: avr.lbr</description>
 <part name="GND29" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND30" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW7" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND31" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C19" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND32" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9105,7 +9105,7 @@ Source: avr.lbr</description>
 <part name="GND33" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND34" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW5" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND36" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND37" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9113,7 +9113,7 @@ Source: avr.lbr</description>
 <part name="GND38" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND39" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW4" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND40" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND41" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9121,7 +9121,7 @@ Source: avr.lbr</description>
 <part name="GND42" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND43" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW3" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND44" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND45" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9129,7 +9129,7 @@ Source: avr.lbr</description>
 <part name="GND46" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND47" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW6" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
+<part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
 <part name="GND48" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND49" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -10057,7 +10057,8 @@ Forward V-drop 0.45V</text>
 V_TH min = 0.6V
 V_TH max = 1.4V</text>
 <text x="233.68" y="132.08" size="1.778" layer="97">P-Channel MOSFET</text>
-<text x="307.34" y="345.44" size="1.778" layer="99">To Do: Look at RIMON equations</text>
+<text x="265.176" y="309.88" size="1.778" layer="99">To Do: Look at RIMON equations
+Polarity chech (phoroisolator)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
