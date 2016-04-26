@@ -9022,9 +9022,9 @@ Source: avr.lbr</description>
 <attribute name="MFN" value="TPS25944LRVCR"/>
 <attribute name="MPN" value="Texas Instruments"/>
 </part>
-<part name="RIMON0" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON0" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="A103093CT-ND"/>
@@ -9060,9 +9060,9 @@ Source: avr.lbr</description>
 </part>
 <part name="GND5" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW1" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND19" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND20" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP2" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND21" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9089,49 +9089,49 @@ Source: avr.lbr</description>
 <part name="GND26" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V-11" library="supply-3v" deviceset="3V" device=""/>
 <part name="SW2" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND27" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C9" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C9" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND28" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP3" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND29" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND30" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW7" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND31" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C19" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C19" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND32" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP4" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND33" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND34" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW5" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND36" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C15" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND37" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP5" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND38" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND39" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW4" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND40" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND41" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP6" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND42" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND43" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW3" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND44" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND45" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP7" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND46" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND47" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="SW6" library="WQFN-20-3x4" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="TBD"/>
+<part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="4.7k"/>
 <part name="GND48" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C17" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
 <part name="GND49" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP8" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND50" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9985,9 +9985,6 @@ Source: avr.lbr</description>
 <sheet>
 <plain>
 <text x="455.93" y="30.48" size="2.54" layer="97">William Harrington, James Heath, Shan Quinney</text>
-<text x="60.96" y="328.93" size="1.778" layer="99">To Do List:
--Determine resistor values for voltage divider
--Determine RC values for time constant</text>
 <wire x1="129.54" y1="406.4" x2="205.74" y2="406.4" width="0.1524" layer="97" style="longdash"/>
 <wire x1="205.74" y1="406.4" x2="205.74" y2="360.68" width="0.1524" layer="97" style="longdash"/>
 <wire x1="205.74" y1="360.68" x2="129.54" y2="360.68" width="0.1524" layer="97" style="longdash"/>
@@ -10010,16 +10007,17 @@ Why are we using this LDO?</text>
 5. ACS-MAG
 6. IMU
 7. SDR-GPS</text>
-<text x="308.61" y="351.79" size="1.778" layer="99">Todo:
-Determine ILIM for each switch
+<text x="308.61" y="356.87" size="1.778" layer="97">
+
 Set RILIM resistors to 47k which
 gives about 1.9A limit</text>
 <text x="308.61" y="387.35" size="1.778" layer="97">dV/dt defaults to 12V/ms with no
 external capacitor. Otherwise  use:
 C = 12uA/desired output slew rate (dV/dt)</text>
 <text x="308.61" y="374.65" size="1.778" layer="97">RIMONmax = minimum (Vin - 2.2V, 6V)
-divided by (1.6 x ILIM x 52uA/A)</text>
-<text x="308.61" y="382.27" size="1.778" layer="97">ILIM = 89/RILIM (kOhms)</text>
+divided by (1.6 x ILIM x 52uA/A)
+with Vin(max) = 5V and ILIM = 1.9A, RIMON = 5k</text>
+<text x="308.61" y="351.79" size="1.778" layer="97">ILIM = 89/RILIM (kOhms)</text>
 <text x="308.61" y="369.57" size="1.778" layer="97">!FLT! will be low when a fault is detected</text>
 <text x="308.61" y="364.49" size="1.778" layer="97">Set UVLO to 3.0V</text>
 <text x="219.71" y="48.26" size="1.778" layer="99">CHECK POLARITY</text>
@@ -10059,6 +10057,7 @@ Forward V-drop 0.45V</text>
 V_TH min = 0.6V
 V_TH max = 1.4V</text>
 <text x="233.68" y="132.08" size="1.778" layer="97">P-Channel MOSFET</text>
+<text x="307.34" y="345.44" size="1.778" layer="99">To Do: Look at RIMON equations</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
