@@ -9763,7 +9763,7 @@ Source: avr.lbr</description>
 <attribute name="MPN" value="C0603C103J5RACTU"/>
 </part>
 <part name="RNR" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="470k"/>
-<part name="RN4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="10k"/>
+<part name="RN4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390"/>
 <part name="GND53" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="Q13" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="DON3035L"/>
 <part name="GND54" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -10057,7 +10057,9 @@ V_TH min = 0.6V
 V_TH max = 1.4V</text>
 <text x="233.68" y="132.08" size="1.778" layer="97">P-Channel MOSFET</text>
 <text x="265.176" y="309.88" size="1.778" layer="99">To Do: 
-Polarity chech (phoroisolator)</text>
+Change Photoresistor to ACPL-M21L </text>
+<text x="60.96" y="332.74" size="1.778" layer="95">DMN62D0U  (Vishay)
+V(TH) min = 0.5V, V(TH) max = 1.0V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
