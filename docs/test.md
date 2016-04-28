@@ -4,7 +4,14 @@
 * [Voltage Regulation]  
 * [Digital Components]  
 
-### System Controller
+Format note  
+
+EAGLE REF, MANF, MANF PART  
+Vend  
+Vend Part No  
+Datasheet  
+Reasons:  
+Rad-hard:  
 
 #### Microcontroller:  
 Part No.: ATmega128  
