@@ -1,5 +1,5 @@
-PRG            = example
-OBJ            = example.o
+PRG            = sys_control
+OBJ            = sys_control.o uart.o
 MCU_TARGET     = atmega128
 OPTIMIZE       = -O2
 
