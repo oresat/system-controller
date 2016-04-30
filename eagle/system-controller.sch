@@ -9025,13 +9025,13 @@ by exp-lbrs.ulp</description>
 <part name="3V-1" library="supply-3v" deviceset="3V" device=""/>
 <part name="3V-2" library="supply-3v" deviceset="3V" device=""/>
 <part name="3V-6" library="supply-3v" deviceset="3V" device=""/>
-<part name="LED0" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED0" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
@@ -9442,43 +9442,43 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F472CS"/>
 </part>
-<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="R26" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R26" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1k">
+<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="1276-3484-1-ND"/>
 <attribute name="MFN" value="Samsung"/>
@@ -9514,43 +9514,43 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Samsung"/>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
-<part name="LED1" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED1" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="LED2" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED2" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="LED3" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED3" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="LED4" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED4" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="LED5" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED5" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="LED6" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED6" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
 <attribute name="MPN" value="150060GS75000"/>
 </part>
-<part name="LED7" library="psas_c3_team05" deviceset="LED" device="-0603" value="GRN">
+<part name="LED7" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="732-4971-1-ND"/>
 <attribute name="MFN" value="Wurth Electronics INC."/>
@@ -10013,7 +10013,7 @@ V(TH) min = 0.5V, V(TH) max = 1.0V</text>
 When all three pins are high the voltage at TP43 is 2.25V
 When two pins are high the voltage at TP43 is 1.5V
 When all three pins are high the voltage at TP43 is 0.75V</text>
-<text x="309.88" y="345.44" size="1.778" layer="97">Look for TPs connected to GND!!!!!!</text>
+<text x="307.34" y="345.44" size="1.778" layer="97">Look for TPs connected to GND!!!!!!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -13424,7 +13424,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="D3" gate="G$1" pin="-"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="AREF" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AREF"/>
 <wire x1="154.94" y1="238.76" x2="147.32" y2="238.76" width="0.1524" layer="91"/>
