@@ -13,16 +13,13 @@ Datasheet
 Reasons:  
 Rad-hard:  
 
-#### Microcontroller:  
-Part No.: ATmega128  
-Rad-Hard Part No.: ATmegaS128  
-Manufacturer: Atmel  
+#### U1 Atmel ATMega128:  
 Vendor:   
 Vendor Part No.:  
-Eagle Part Reference: U1  
 [Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)  
-[Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036S.pdf)  
 Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.  
+Rad-Hard Part No.: ATmegaS128  
+[Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)   
   
 #### Possible radhard MOSFET:
 <http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00295117.pdf>
@@ -39,11 +36,16 @@ non-hardened part: http://www.digikey.com/product-detail/en/microsemi-hi-rel-mil
 
 Dual:http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00277085.pdf
 
-#### Optoisolator:
-<http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP2160(TP,F)/TLP2160(TPF)CT-ND/5189796>
--Too complex
-<http://www.avagotech.com/docs/AV02-2150EN>
--Much less complex, has both a dual and single option
+#### I Broadcom Limited ACPL-M61L-000E:
+Vendor: Digi-Key  
+Vendor Part#: 516-2169-5-ND  
+[Datasheet](www.avagotech.com/docs/AV02-2150EN)  
+Reasoning: Much less complex, has both a dual and single option 
+**_Alternatives_**
+Part No: TLP2160  
+[Datasheet](http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP2160(TP,F)/TLP2160(TPF)CT-ND/5189796)  
+Reasoning: Too complex  
+
 
 #### Super Cap:
 <http://www.elna.co.jp/en/capacitor/double_layer/catalog/pdf/ds_e.pdf>
