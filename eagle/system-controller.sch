@@ -8948,7 +8948,6 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="GND6" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND14" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="GND15" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND16" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C7" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="9pF">
 <attribute name="DIST" value="digikey"/>
@@ -8956,11 +8955,8 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Kemet"/>
 <attribute name="MPN" value="CBR02C909B5GAC"/>
 </part>
-<part name="GND8" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="GND7" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND9" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND10" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="GND11" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="U$8" library="psas_c3_team05" deviceset="AAT3215" device="">
 <attribute name="DIST" value="Skyworks"/>
 <attribute name="MFN" value="Skyworks"/>
@@ -9058,8 +9054,6 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="GND23" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V-8" library="supply-3v" deviceset="3V" device=""/>
-<part name="3V-9" library="supply-3v" deviceset="3V" device=""/>
-<part name="GND24" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND25" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V-10" library="supply-3v" deviceset="3V" device=""/>
 <part name="LED8" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/AMB">
@@ -9068,8 +9062,6 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="OSRAM Opto Semi,"/>
 <attribute name="MPN" value="LA L296-Q2R2-1-Z"/>
 </part>
-<part name="GND26" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="3V-11" library="supply-3v" deviceset="3V" device=""/>
 <part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
 <part name="GND27" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="C9" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
@@ -9174,12 +9166,6 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="TE "/>
 <attribute name="MPN" value="4-1676481-5"/>
 </part>
-<part name="R52" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="A103093CT-ND"/>
-<attribute name="MFN" value="TE "/>
-<attribute name="MPN" value="4-1676481-5"/>
-</part>
 <part name="R54" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="A103093CT-ND"/>
@@ -9204,19 +9190,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Murata"/>
 <attribute name="MPN" value="GRM155R71C104JA88D"/>
 </part>
-<part name="Q11" library="Tova" deviceset="NTR4101P" device="" value="DNP/NTR4101P">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="NTR4101PT1HOSCT-ND"/>
-<attribute name="MFN" value="ON Semiconductor"/>
-<attribute name="MPN" value="NTR4101PT1H"/>
-</part>
 <part name="Q10" library="Tova" deviceset="NTR4101P" device="" value="DNP/NTR4101P">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="NTR4101PT1HOSCT-ND"/>
-<attribute name="MFN" value="ON Semiconductor"/>
-<attribute name="MPN" value="NTR4101PT1H"/>
-</part>
-<part name="Q9" library="Tova" deviceset="NTR4101P" device="" value="DNP/NTR4101P">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="NTR4101PT1HOSCT-ND"/>
 <attribute name="MFN" value="ON Semiconductor"/>
@@ -9950,6 +9924,18 @@ by exp-lbrs.ulp</description>
 <part name="D1" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device=""/>
 <part name="D2" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device=""/>
 <part name="D3" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device=""/>
+<part name="3V-19" library="supply-3v" deviceset="3V" device=""/>
+<part name="3V-21" library="supply-3v" deviceset="3V" device=""/>
+<part name="3V-22" library="supply-3v" deviceset="3V" device=""/>
+<part name="3V-23" library="supply-3v" deviceset="3V" device=""/>
+<part name="R11" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="A103093CT-ND"/>
+<attribute name="MFN" value="TE "/>
+<attribute name="MPN" value="4-1676481-5"/>
+</part>
+<part name="3V-20" library="supply-3v" deviceset="3V" device=""/>
+<part name="3V-9" library="supply-3v" deviceset="3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9989,11 +9975,10 @@ with Vin(max) = 53V and ILIM = 1.9A, RIMON = 30k</text>
 <text x="308.61" y="351.79" size="1.778" layer="97">ILIM = 89/RILIM (kOhms)</text>
 <text x="308.61" y="369.57" size="1.778" layer="97">!FLT! will be low when a fault is detected</text>
 <text x="308.61" y="364.49" size="1.778" layer="97">Set UVLO to 3.0V</text>
-<text x="219.71" y="48.26" size="1.778" layer="99">CHECK POLARITY</text>
-<text x="261.62" y="97.79" size="1.778" layer="97">UART1 TX</text>
-<text x="236.22" y="77.47" size="1.778" layer="97">UART1 RX</text>
-<text x="226.06" y="8.89" size="1.778" layer="97">UART0 RX</text>
-<text x="248.92" y="31.75" size="1.778" layer="97">UART0 TX</text>
+<text x="256.54" y="49.53" size="1.778" layer="97">UART1 TX</text>
+<text x="276.86" y="62.23" size="1.778" layer="97">UART1 RX</text>
+<text x="279.4" y="11.43" size="1.778" layer="97">UART0 RX</text>
+<text x="256.54" y="143.51" size="1.778" layer="97">UART0 TX</text>
 <text x="518.16" y="233.68" size="1.778" layer="97">VBC2</text>
 <text x="518.16" y="220.98" size="1.778" layer="97">VBC3</text>
 <text x="518.16" y="208.28" size="1.778" layer="97">VBC4</text>
@@ -10021,7 +10006,6 @@ Forward V-drop 0.45V</text>
 <text x="143.51" y="257.81" size="1.27" layer="97">8 MHz</text>
 <text x="73.66" y="318.77" size="1.27" layer="99">RH</text>
 <text x="105.41" y="320.04" size="1.27" layer="99">RH</text>
-<text x="232.41" y="115.57" size="1.778" layer="99">CHECK POLARITY</text>
 <text x="233.68" y="132.08" size="1.778" layer="97">P-Channel MOSFET</text>
 <text x="60.96" y="332.74" size="1.778" layer="95">DMN62D0U  (Vishay)
 V(TH) min = 0.5V, V(TH) max = 1.0V</text>
@@ -10047,9 +10031,8 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MPN" x="106.68" y="378.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="106.68" y="368.3"/>
-<instance part="GND14" gate="1" x="149.86" y="109.22" rot="MR0"/>
-<instance part="GND15" gate="1" x="190.5" y="43.18" rot="MR0"/>
-<instance part="GND16" gate="1" x="149.86" y="45.72" rot="MR0"/>
+<instance part="GND14" gate="1" x="139.7" y="104.14" rot="MR0"/>
+<instance part="GND16" gate="1" x="139.7" y="45.72" rot="MR0"/>
 <instance part="C7" gate="CE" x="139.7" y="264.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.524" y="263.271" size="1.778" layer="95"/>
 <attribute name="VALUE" x="132.334" y="263.271" size="1.778" layer="96"/>
@@ -10058,11 +10041,8 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="139.7" y="264.16" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="139.7" y="264.16" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="GND8" gate="1" x="190.5" y="109.22" rot="MR0"/>
-<instance part="GND7" gate="1" x="160.02" y="83.82"/>
-<instance part="GND9" gate="1" x="195.58" y="83.82" rot="MR0"/>
-<instance part="GND10" gate="1" x="195.58" y="17.78" rot="MR0"/>
-<instance part="GND11" gate="1" x="160.02" y="17.78"/>
+<instance part="GND9" gate="1" x="198.12" y="71.12" rot="MR0"/>
+<instance part="GND10" gate="1" x="195.58" y="7.62" rot="MR0"/>
 <instance part="U$8" gate="G$1" x="157.48" y="393.7">
 <attribute name="MFN" x="157.48" y="393.7" size="1.778" layer="96" display="off"/>
 <attribute name="MFN-PN" x="157.48" y="393.7" size="1.778" layer="96" display="off"/>
@@ -10139,7 +10119,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="3V-3" gate="G$1" x="111.76" y="190.5"/>
 <instance part="3V-4" gate="G$1" x="144.78" y="281.94"/>
 <instance part="3V-5" gate="G$1" x="195.58" y="393.7"/>
-<instance part="3V-1" gate="G$1" x="195.58" y="101.6" rot="MR0"/>
+<instance part="3V-1" gate="G$1" x="198.12" y="88.9" rot="MR0"/>
 <instance part="3V-2" gate="G$1" x="195.58" y="35.56" rot="MR0"/>
 <instance part="3V-6" gate="G$1" x="254" y="241.3" smashed="yes">
 <attribute name="VALUE" x="253.365" y="241.935" size="1.27" layer="96"/>
@@ -10175,30 +10155,26 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="GND21" gate="1" x="398.78" y="337.82"/>
 <instance part="3V-7" gate="G$1" x="264.16" y="241.3"/>
 <instance part="GND22" gate="1" x="477.52" y="335.28"/>
-<instance part="Q12" gate="G$1" x="220.98" y="35.56" smashed="yes">
-<attribute name="VALUE" x="223.52" y="35.56" size="1.778" layer="96"/>
-<attribute name="NAME" x="223.52" y="33.02" size="1.778" layer="95"/>
-<attribute name="DIST" x="220.98" y="35.56" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="220.98" y="35.56" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="220.98" y="35.56" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="220.98" y="35.56" size="1.778" layer="96" display="off"/>
+<instance part="Q12" gate="G$1" x="274.32" y="38.1" smashed="yes">
+<attribute name="VALUE" x="276.86" y="38.1" size="1.778" layer="96"/>
+<attribute name="NAME" x="276.86" y="35.56" size="1.778" layer="95"/>
+<attribute name="DIST" x="274.32" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="274.32" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="274.32" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="274.32" y="38.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND23" gate="1" x="220.98" y="7.62"/>
-<instance part="3V-8" gate="G$1" x="220.98" y="43.18" rot="MR0"/>
-<instance part="3V-9" gate="G$1" x="246.38" y="63.5" rot="MR0"/>
-<instance part="GND24" gate="1" x="246.38" y="27.94"/>
-<instance part="GND25" gate="1" x="233.68" y="73.66"/>
-<instance part="3V-10" gate="G$1" x="233.68" y="109.22" rot="MR0"/>
-<instance part="LED8" gate="LED" x="259.08" y="101.6" smashed="yes">
-<attribute name="NAME" x="261.62" y="102.87" size="1.778" layer="95"/>
-<attribute name="VALUE" x="261.62" y="100.33" size="1.778" layer="96"/>
-<attribute name="DIST" x="259.08" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="259.08" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="259.08" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="259.08" y="101.6" size="1.778" layer="96" display="off"/>
+<instance part="GND23" gate="1" x="274.32" y="10.16"/>
+<instance part="3V-8" gate="G$1" x="274.32" y="45.72" rot="MR0"/>
+<instance part="GND25" gate="1" x="274.32" y="58.42"/>
+<instance part="3V-10" gate="G$1" x="274.32" y="93.98" rot="MR0"/>
+<instance part="LED8" gate="LED" x="254" y="53.34" smashed="yes">
+<attribute name="NAME" x="256.54" y="54.61" size="1.778" layer="95"/>
+<attribute name="VALUE" x="256.54" y="52.07" size="1.778" layer="96"/>
+<attribute name="DIST" x="254" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="254" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="254" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="254" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND26" gate="1" x="259.08" y="93.98"/>
-<instance part="3V-11" gate="G$1" x="259.08" y="129.54" rot="MR0"/>
 <instance part="RIMON2" gate="R" x="457.2" y="304.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="308.61" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="308.61" size="1.778" layer="96" rot="R270"/>
@@ -10309,63 +10285,55 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="139.7" y="254" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="139.7" y="254" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C32" gate="CE" x="195.58" y="91.44" smashed="yes" rot="R180">
-<attribute name="DIST" x="195.58" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="DPN" x="195.58" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFN" x="195.58" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MPN" x="195.58" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="198.12" y="90.17" size="1.778" layer="95"/>
-<attribute name="VALUE" x="198.12" y="93.98" size="1.778" layer="96"/>
+<instance part="C32" gate="CE" x="198.12" y="78.74" smashed="yes" rot="R180">
+<attribute name="DIST" x="198.12" y="78.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="198.12" y="78.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="198.12" y="78.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="198.12" y="78.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="200.66" y="77.47" size="1.778" layer="95"/>
+<attribute name="VALUE" x="200.66" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="R50" gate="R" x="200.66" y="104.14" rot="R180">
-<attribute name="DIST" x="200.66" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="DPN" x="200.66" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFN" x="200.66" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MPN" x="200.66" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="R50" gate="R" x="205.74" y="91.44" rot="R180">
+<attribute name="DIST" x="205.74" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="205.74" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="205.74" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="205.74" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R49" gate="R" x="195.58" y="124.46">
-<attribute name="DIST" x="195.58" y="124.46" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="195.58" y="124.46" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="195.58" y="124.46" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="195.58" y="124.46" size="1.778" layer="96" display="off"/>
+<instance part="R49" gate="R" x="210.82" y="127" rot="R90">
+<attribute name="DIST" x="210.82" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DPN" x="210.82" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFN" x="210.82" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="210.82" y="127" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R47" gate="R" x="149.86" y="99.06" smashed="yes">
-<attribute name="DIST" x="149.86" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="149.86" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="149.86" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="149.86" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="153.67" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.05" y="100.838" size="1.778" layer="96"/>
+<instance part="R47" gate="R" x="142.24" y="86.36" smashed="yes">
+<attribute name="DIST" x="142.24" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="142.24" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="142.24" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="142.24" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="146.05" y="87.8586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.43" y="88.138" size="1.778" layer="96"/>
 </instance>
-<instance part="R48" gate="R" x="149.86" y="96.52" smashed="yes">
-<attribute name="DIST" x="149.86" y="96.52" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="149.86" y="96.52" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="149.86" y="96.52" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="149.86" y="96.52" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="153.67" y="92.9386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.05" y="93.218" size="1.778" layer="96"/>
+<instance part="R48" gate="R" x="160.02" y="88.9" smashed="yes" rot="R90">
+<attribute name="DIST" x="160.02" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DPN" x="160.02" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFN" x="160.02" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="160.02" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="163.6014" y="92.71" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="163.322" y="85.09" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R51" gate="R" x="149.86" y="33.02" smashed="yes">
-<attribute name="DIST" x="149.86" y="33.02" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="149.86" y="33.02" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="149.86" y="33.02" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="149.86" y="33.02" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="153.67" y="34.5186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.05" y="34.798" size="1.778" layer="96"/>
+<instance part="R51" gate="R" x="142.24" y="33.02" smashed="yes">
+<attribute name="DIST" x="142.24" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="142.24" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="142.24" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="142.24" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="146.05" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.43" y="34.798" size="1.778" layer="96"/>
 </instance>
-<instance part="R52" gate="R" x="149.86" y="30.48" smashed="yes">
-<attribute name="DIST" x="149.86" y="30.48" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="149.86" y="30.48" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="149.86" y="30.48" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="149.86" y="30.48" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="153.67" y="26.8986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.05" y="27.178" size="1.778" layer="96"/>
-</instance>
-<instance part="R54" gate="R" x="195.58" y="58.42">
-<attribute name="DIST" x="195.58" y="58.42" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="195.58" y="58.42" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="195.58" y="58.42" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="195.58" y="58.42" size="1.778" layer="96" display="off"/>
+<instance part="R54" gate="R" x="210.82" y="63.5" rot="R90">
+<attribute name="DIST" x="210.82" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DPN" x="210.82" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFN" x="210.82" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="210.82" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R53" gate="R" x="200.66" y="38.1">
 <attribute name="DIST" x="200.66" y="38.1" size="1.778" layer="96" display="off"/>
@@ -10373,49 +10341,33 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="200.66" y="38.1" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="200.66" y="38.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C33" gate="CE" x="149.86" y="53.34" rot="R180">
-<attribute name="DIST" x="149.86" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="DPN" x="149.86" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFN" x="149.86" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MPN" x="149.86" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="C33" gate="CE" x="139.7" y="53.34" rot="R180">
+<attribute name="DIST" x="139.7" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="139.7" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="139.7" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="139.7" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="C34" gate="CE" x="195.58" y="25.4" smashed="yes" rot="R180">
-<attribute name="DIST" x="195.58" y="25.4" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="DPN" x="195.58" y="25.4" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFN" x="195.58" y="25.4" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MPN" x="195.58" y="25.4" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="198.12" y="24.13" size="1.778" layer="95"/>
-<attribute name="VALUE" x="198.12" y="26.67" size="1.778" layer="96"/>
+<instance part="C34" gate="CE" x="195.58" y="15.24" smashed="yes" rot="R180">
+<attribute name="DIST" x="195.58" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="195.58" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="195.58" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="195.58" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="198.12" y="13.97" size="1.778" layer="95"/>
+<attribute name="VALUE" x="198.12" y="16.51" size="1.778" layer="96"/>
 </instance>
-<instance part="Q11" gate="G$1" x="246.38" y="55.88" smashed="yes">
-<attribute name="VALUE" x="248.92" y="55.88" size="1.778" layer="96"/>
-<attribute name="NAME" x="248.92" y="53.34" size="1.778" layer="95"/>
-<attribute name="DIST" x="246.38" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="246.38" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="246.38" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="246.38" y="55.88" size="1.778" layer="96" display="off"/>
+<instance part="Q10" gate="G$1" x="274.32" y="86.36" smashed="yes">
+<attribute name="VALUE" x="276.86" y="86.36" size="1.778" layer="96"/>
+<attribute name="NAME" x="276.86" y="83.82" size="1.778" layer="95"/>
+<attribute name="DIST" x="274.32" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="274.32" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="274.32" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="274.32" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="Q10" gate="G$1" x="233.68" y="101.6" smashed="yes">
-<attribute name="VALUE" x="236.22" y="101.6" size="1.778" layer="96"/>
-<attribute name="NAME" x="236.22" y="99.06" size="1.778" layer="95"/>
-<attribute name="DIST" x="233.68" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="233.68" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="233.68" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="233.68" y="101.6" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="Q9" gate="G$1" x="259.08" y="121.92" smashed="yes">
-<attribute name="VALUE" x="261.62" y="121.92" size="1.778" layer="96"/>
-<attribute name="NAME" x="261.62" y="119.38" size="1.778" layer="95"/>
-<attribute name="DIST" x="259.08" y="121.92" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="259.08" y="121.92" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="259.08" y="121.92" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="259.08" y="121.92" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C31" gate="CE" x="149.86" y="119.38" rot="R180">
-<attribute name="DIST" x="149.86" y="119.38" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="DPN" x="149.86" y="119.38" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MFN" x="149.86" y="119.38" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MPN" x="149.86" y="119.38" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="C31" gate="CE" x="139.7" y="116.84" rot="R180">
+<attribute name="DIST" x="139.7" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="139.7" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="139.7" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="139.7" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="C26" gate="CE" x="198.12" y="281.94" rot="R180">
 <attribute name="DIST" x="198.12" y="281.94" size="1.778" layer="96" rot="R180" display="off"/>
@@ -10737,37 +10689,37 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="139.7" y="375.92" size="1.778" layer="96" rot="MR180" display="off"/>
 <attribute name="MPN" x="139.7" y="375.92" size="1.778" layer="96" rot="MR180" display="off"/>
 </instance>
-<instance part="R61" gate="R" x="259.08" y="111.76" smashed="yes" rot="R270">
-<attribute name="NAME" x="261.62" y="111.76" size="1.778" layer="95"/>
-<attribute name="VALUE" x="261.62" y="109.22" size="1.778" layer="96"/>
-<attribute name="DIST" x="259.08" y="111.76" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="DPN" x="259.08" y="111.76" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MFN" x="259.08" y="111.76" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="259.08" y="111.76" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="R61" gate="R" x="254" y="63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="256.54" y="63.5" size="1.778" layer="95"/>
+<attribute name="VALUE" x="256.54" y="60.96" size="1.778" layer="96"/>
+<attribute name="DIST" x="254" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="254" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="254" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="254" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R24" gate="R" x="233.68" y="91.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="236.22" y="91.44" size="1.778" layer="95"/>
-<attribute name="VALUE" x="236.22" y="88.9" size="1.778" layer="96"/>
-<attribute name="DIST" x="233.68" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="DPN" x="233.68" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MFN" x="233.68" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="233.68" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="R24" gate="R" x="274.32" y="76.2" smashed="yes" rot="R270">
+<attribute name="NAME" x="276.86" y="76.2" size="1.778" layer="95"/>
+<attribute name="VALUE" x="276.86" y="73.66" size="1.778" layer="96"/>
+<attribute name="DIST" x="274.32" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="274.32" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="274.32" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="274.32" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R22" gate="R" x="246.38" y="45.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="248.92" y="45.72" size="1.778" layer="95"/>
-<attribute name="VALUE" x="248.92" y="43.18" size="1.778" layer="96"/>
-<attribute name="DIST" x="246.38" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="DPN" x="246.38" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MFN" x="246.38" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="246.38" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="R22" gate="R" x="254" y="127" smashed="yes" rot="R270">
+<attribute name="NAME" x="256.54" y="127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="256.54" y="124.46" size="1.778" layer="96"/>
+<attribute name="DIST" x="254" y="127" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="254" y="127" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="254" y="127" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="254" y="127" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R23" gate="R" x="220.98" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="223.52" y="25.4" size="1.778" layer="95"/>
-<attribute name="VALUE" x="223.52" y="22.86" size="1.778" layer="96"/>
-<attribute name="DIST" x="220.98" y="25.4" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="DPN" x="220.98" y="25.4" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MFN" x="220.98" y="25.4" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="220.98" y="25.4" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="R23" gate="R" x="274.32" y="27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="276.86" y="27.94" size="1.778" layer="95"/>
+<attribute name="VALUE" x="276.86" y="25.4" size="1.778" layer="96"/>
+<attribute name="DIST" x="274.32" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="274.32" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="274.32" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="274.32" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="LED1" gate="LED" x="477.52" y="342.9" smashed="yes">
 <attribute name="NAME" x="480.06" y="344.17" size="1.778" layer="95"/>
@@ -10825,29 +10777,29 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MPN" x="477.52" y="68.58" size="1.778" layer="96" display="off"/>
 <attribute name="MFN" x="477.52" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED9" gate="LED" x="233.68" y="81.28" smashed="yes">
-<attribute name="NAME" x="236.22" y="82.55" size="1.778" layer="95"/>
-<attribute name="VALUE" x="236.22" y="80.01" size="1.778" layer="96"/>
-<attribute name="DIST" x="233.68" y="81.28" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="233.68" y="81.28" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="233.68" y="81.28" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="233.68" y="81.28" size="1.778" layer="96" display="off"/>
+<instance part="LED9" gate="LED" x="274.32" y="66.04" smashed="yes">
+<attribute name="NAME" x="276.86" y="67.31" size="1.778" layer="95"/>
+<attribute name="VALUE" x="276.86" y="64.77" size="1.778" layer="96"/>
+<attribute name="DIST" x="274.32" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="274.32" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="274.32" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="274.32" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED10" gate="LED" x="246.38" y="35.56" smashed="yes">
-<attribute name="NAME" x="248.92" y="36.83" size="1.778" layer="95"/>
-<attribute name="VALUE" x="248.92" y="34.29" size="1.778" layer="96"/>
-<attribute name="DIST" x="246.38" y="35.56" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="246.38" y="35.56" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="246.38" y="35.56" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="246.38" y="35.56" size="1.778" layer="96" display="off"/>
+<instance part="LED10" gate="LED" x="254" y="114.3" smashed="yes">
+<attribute name="NAME" x="256.54" y="115.57" size="1.778" layer="95"/>
+<attribute name="VALUE" x="256.54" y="113.03" size="1.778" layer="96"/>
+<attribute name="DIST" x="254" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="254" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="254" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="254" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED11" gate="LED" x="220.98" y="15.24" smashed="yes">
-<attribute name="NAME" x="223.52" y="16.51" size="1.778" layer="95"/>
-<attribute name="VALUE" x="223.52" y="13.97" size="1.778" layer="96"/>
-<attribute name="DIST" x="220.98" y="15.24" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="220.98" y="15.24" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="220.98" y="15.24" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="220.98" y="15.24" size="1.778" layer="96" display="off"/>
+<instance part="LED11" gate="LED" x="274.32" y="17.78" smashed="yes">
+<attribute name="NAME" x="276.86" y="19.05" size="1.778" layer="95"/>
+<attribute name="VALUE" x="276.86" y="16.51" size="1.778" layer="96"/>
+<attribute name="DIST" x="274.32" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="274.32" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="274.32" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="274.32" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J1" gate="J" x="125.73" y="175.26">
 <attribute name="DIST" x="125.73" y="175.26" size="1.778" layer="96" display="off"/>
@@ -10863,29 +10815,29 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="535.94" y="209.55" size="1.778" layer="96" rot="MR0" display="off"/>
 <attribute name="MPN" x="535.94" y="209.55" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="175.26" y="119.38" rot="MR0">
-<attribute name="DIST" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="DPN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MFN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MPN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+<instance part="U$1" gate="G$1" x="190.5" y="116.84" rot="MR0">
+<attribute name="DIST" x="190.5" y="116.84" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="190.5" y="116.84" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFN" x="190.5" y="116.84" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="190.5" y="116.84" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="U$3" gate="G$1" x="175.26" y="53.34" rot="MR0">
-<attribute name="DIST" x="175.26" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="DPN" x="175.26" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MFN" x="175.26" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MPN" x="175.26" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
+<instance part="U$3" gate="G$1" x="190.5" y="53.34" rot="MR0">
+<attribute name="DIST" x="190.5" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="190.5" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFN" x="190.5" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="190.5" y="53.34" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="U$2" gate="G$1" x="175.26" y="91.44">
-<attribute name="DIST" x="175.26" y="91.44" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="175.26" y="91.44" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="175.26" y="91.44" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="175.26" y="91.44" size="1.778" layer="96" display="off"/>
+<instance part="U$2" gate="G$1" x="175.26" y="78.74">
+<attribute name="DIST" x="175.26" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="175.26" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="175.26" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="175.26" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$4" gate="G$1" x="175.26" y="25.4">
-<attribute name="DIST" x="175.26" y="25.4" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="175.26" y="25.4" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="175.26" y="25.4" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="175.26" y="25.4" size="1.778" layer="96" display="off"/>
+<instance part="U$4" gate="G$1" x="175.26" y="15.24">
+<attribute name="DIST" x="175.26" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="175.26" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="175.26" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="175.26" y="15.24" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7/UVLO" gate="R" x="398.78" y="71.12" rot="R270">
 <attribute name="DIST" x="398.78" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
@@ -11340,20 +11292,34 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="D1" gate="G$1" x="92.71" y="393.7"/>
 <instance part="D2" gate="G$1" x="92.71" y="373.38"/>
 <instance part="D3" gate="G$1" x="102.87" y="317.5" rot="R180"/>
+<instance part="3V-19" gate="G$1" x="254" y="137.16" rot="MR0"/>
+<instance part="3V-21" gate="G$1" x="210.82" y="71.12" rot="MR0"/>
+<instance part="3V-22" gate="G$1" x="254" y="73.66" rot="MR0"/>
+<instance part="3V-23" gate="G$1" x="160.02" y="96.52" rot="MR0"/>
+<instance part="R11" gate="R" x="160.02" y="25.4" smashed="yes" rot="R90">
+<attribute name="DIST" x="160.02" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DPN" x="160.02" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFN" x="160.02" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="160.02" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="163.6014" y="29.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="163.322" y="21.59" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="3V-20" gate="G$1" x="160.02" y="35.56" rot="MR0"/>
+<instance part="3V-9" gate="G$1" x="210.82" y="134.62" rot="MR0"/>
 </instances>
 <busses>
 <bus name="UART_LGR_VCC,UART_LGR_RX,UART_LGR_TX">
 <segment>
 <wire x1="116.84" y1="35.56" x2="68.58" y2="35.56" width="0.762" layer="92"/>
 <wire x1="68.58" y1="35.56" x2="68.58" y2="198.12" width="0.762" layer="92"/>
-<wire x1="116.84" y1="35.56" x2="116.84" y2="30.48" width="0.762" layer="92"/>
+<wire x1="116.84" y1="35.56" x2="116.84" y2="10.16" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="UART_FC_VCC,UART_FC_RX,UART_FC_TX">
 <segment>
-<wire x1="116.84" y1="101.6" x2="73.66" y2="101.6" width="0.762" layer="92"/>
-<wire x1="73.66" y1="101.6" x2="73.66" y2="213.36" width="0.762" layer="92"/>
-<wire x1="116.84" y1="101.6" x2="116.84" y2="96.52" width="0.762" layer="92"/>
+<wire x1="116.84" y1="73.66" x2="73.66" y2="73.66" width="0.762" layer="92"/>
+<wire x1="73.66" y1="73.66" x2="73.66" y2="213.36" width="0.762" layer="92"/>
+<wire x1="116.84" y1="73.66" x2="116.84" y2="88.9" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -11456,11 +11422,6 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </net>
 <net name="UART_FC_TX" class="0">
 <segment>
-<wire x1="116.84" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
-<label x="119.38" y="96.52" size="1.778" layer="95"/>
-<pinref part="R48" gate="R" pin="1"/>
-</segment>
-<segment>
 <pinref part="CF1" gate="G$1" pin="26"/>
 <wire x1="38.1" y1="200.66" x2="43.18" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="200.66" x2="43.18" y2="203.2" width="0.1524" layer="91"/>
@@ -11472,6 +11433,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="TP31" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="203.2" x2="73.66" y2="203.2" width="0.1524" layer="91"/>
 <junction x="66.04" y="203.2"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND1"/>
+<wire x1="116.84" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCB5_EN" class="0">
@@ -11623,57 +11588,60 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <net name="RXD0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(RXD/PDI)PE0"/>
-<wire x1="203.2" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="160.02" x2="213.36" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="38.1" x2="205.74" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="Q12" gate="G$1" pin="G"/>
-<wire x1="213.36" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
-<junction x="213.36" y="38.1"/>
+<wire x1="203.2" y1="160.02" x2="215.9" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="160.02" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="38.1" x2="205.74" y2="38.1" width="0.1524" layer="91"/>
 <label x="205.74" y="38.1" size="1.778" layer="95"/>
 <label x="205.74" y="160.02" size="1.778" layer="95"/>
 <pinref part="R53" gate="R" pin="2"/>
+<junction x="215.9" y="38.1"/>
+<wire x1="215.9" y1="38.1" x2="269.24" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="Q12" gate="G$1" pin="G"/>
+<wire x1="269.24" y1="38.1" x2="269.24" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXD0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(TXD/PDO)PE1"/>
-<wire x1="203.2" y1="162.56" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="162.56" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="58.42" x2="241.3" y2="58.42" width="0.1524" layer="91"/>
-<junction x="210.82" y="58.42"/>
+<wire x1="203.2" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="162.56" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
 <label x="203.2" y="58.42" size="1.778" layer="95"/>
 <label x="205.74" y="162.56" size="1.778" layer="95"/>
-<pinref part="R54" gate="R" pin="2"/>
-<pinref part="Q11" gate="G$1" pin="G"/>
+<pinref part="U$3" gate="G$1" pin="GND1"/>
+<wire x1="203.2" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="48.26" x2="254" y2="48.26" width="0.1524" layer="91"/>
+<junction x="213.36" y="48.26"/>
+<pinref part="LED8" gate="LED" pin="K"/>
+<wire x1="254" y1="48.26" x2="254" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXD1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(TXD1/INT3)PD3"/>
 <wire x1="203.2" y1="190.5" x2="228.6" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="190.5" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="124.46" x2="254" y2="124.46" width="0.1524" layer="91"/>
-<junction x="228.6" y="124.46"/>
-<label x="219.71" y="124.46" size="1.778" layer="95"/>
+<label x="234.95" y="124.46" size="1.778" layer="95"/>
 <label x="205.74" y="190.5" size="1.778" layer="95"/>
-<pinref part="R49" gate="R" pin="2"/>
-<pinref part="Q9" gate="G$1" pin="G"/>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
+<wire x1="228.6" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="190.5" x2="228.6" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="LED10" gate="LED" pin="K"/>
+<wire x1="228.6" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
+<junction x="228.6" y="111.76"/>
 </segment>
 </net>
 <net name="RXD1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(RXD1/INT2)PD2"/>
 <wire x1="203.2" y1="187.96" x2="226.06" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="187.96" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="187.96" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="91.44" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
 <label x="219.71" y="104.14" size="1.778" layer="95"/>
 <label x="205.74" y="187.96" size="1.778" layer="95"/>
 <pinref part="R50" gate="R" pin="1"/>
 <pinref part="Q10" gate="G$1" pin="G"/>
-<wire x1="228.6" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
-<junction x="226.06" y="104.14"/>
+<wire x1="226.06" y1="91.44" x2="269.24" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="91.44" x2="269.24" y2="88.9" width="0.1524" layer="91"/>
+<junction x="226.06" y="91.44"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -11688,7 +11656,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </net>
 <net name="UART_LGR_RX" class="0">
 <segment>
-<wire x1="144.78" y1="33.02" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="33.02" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
 <label x="119.38" y="33.02" size="1.778" layer="95"/>
 <pinref part="R51" gate="R" pin="1"/>
 </segment>
@@ -11708,8 +11676,8 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </net>
 <net name="UART_FC_RX" class="0">
 <segment>
-<wire x1="116.84" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
-<label x="119.38" y="99.06" size="1.778" layer="95"/>
+<wire x1="116.84" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="119.38" y="86.36" size="1.778" layer="95"/>
 <pinref part="R47" gate="R" pin="1"/>
 </segment>
 <segment>
@@ -11728,65 +11696,32 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="162.56" y1="119.38" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="119.38" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="116.84" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R47" gate="R" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R49" gate="R" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
-<wire x1="190.5" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<wire x1="154.94" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R48" gate="R" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="162.56" y1="53.34" x2="157.48" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="53.34" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="53.34" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R51" gate="R" pin="2"/>
 <pinref part="U$3" gate="G$1" pin="VOUT"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R54" gate="R" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="VIN"/>
-<wire x1="190.5" y1="58.42" x2="187.96" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <wire x1="195.58" y1="38.1" x2="190.5" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="38.1" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="25.4" x2="187.96" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="38.1" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R53" gate="R" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="VOUT"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<wire x1="162.56" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R52" gate="R" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
+<wire x1="190.5" y1="27.94" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="15.24" x2="190.5" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="15.24" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART_LGR_TX" class="0">
-<segment>
-<wire x1="144.78" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
-<label x="119.38" y="30.48" size="1.778" layer="95"/>
-<pinref part="R52" gate="R" pin="1"/>
-</segment>
 <segment>
 <pinref part="CF1" gate="G$1" pin="31"/>
 <wire x1="38.1" y1="187.96" x2="43.18" y2="187.96" width="0.1524" layer="91"/>
@@ -11800,12 +11735,16 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="66.04" y1="187.96" x2="68.58" y2="187.96" width="0.1524" layer="91"/>
 <junction x="66.04" y="187.96"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND1"/>
+<wire x1="116.84" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<wire x1="195.58" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="104.14" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="91.44" x2="187.96" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="91.44" x2="193.04" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="91.44" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="78.74" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="R50" gate="R" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="VOUT"/>
 </segment>
@@ -12049,13 +11988,13 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </net>
 <net name="UART_LGR_VCC" class="0">
 <segment>
-<wire x1="162.56" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="58.42" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="58.42" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
 <label x="119.38" y="35.56" size="1.778" layer="95"/>
 <pinref part="C33" gate="CE" pin="2"/>
-<junction x="149.86" y="58.42"/>
+<junction x="139.7" y="58.42"/>
 <pinref part="U$3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -12074,13 +12013,13 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </net>
 <net name="UART_FC_VCC" class="0">
 <segment>
-<wire x1="162.56" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="124.46" x2="137.16" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
-<label x="119.38" y="101.6" size="1.778" layer="95"/>
+<wire x1="177.8" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="121.92" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
+<label x="119.38" y="88.9" size="1.778" layer="95"/>
 <pinref part="C31" gate="CE" pin="2"/>
-<junction x="149.86" y="124.46"/>
+<junction x="139.7" y="121.92"/>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -12218,12 +12157,12 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <junction x="142.24" y="241.3"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="96.52" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="3V-1" gate="G$1" pin="3V"/>
 <pinref part="C32" gate="CE" pin="2"/>
-<junction x="195.58" y="96.52"/>
+<wire x1="198.12" y1="86.36" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VDD"/>
-<wire x1="187.96" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="83.82" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
+<junction x="198.12" y="83.82"/>
 </segment>
 <segment>
 <pinref part="R4" gate="R" pin="1"/>
@@ -12251,12 +12190,12 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="129.54" y1="180.34" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="30.48" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="20.32" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="3V-2" gate="G$1" pin="3V"/>
 <pinref part="C34" gate="CE" pin="2"/>
-<junction x="195.58" y="30.48"/>
+<junction x="195.58" y="20.32"/>
 <pinref part="U$4" gate="G$1" pin="VDD"/>
-<wire x1="187.96" y1="30.48" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="20.32" x2="195.58" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q12" gate="G$1" pin="S"/>
@@ -12276,16 +12215,8 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <junction x="266.7" y="177.8"/>
 </segment>
 <segment>
-<pinref part="3V-9" gate="G$1" pin="3V"/>
-<pinref part="Q11" gate="G$1" pin="S"/>
-</segment>
-<segment>
 <pinref part="3V-10" gate="G$1" pin="3V"/>
 <pinref part="Q10" gate="G$1" pin="S"/>
-</segment>
-<segment>
-<pinref part="3V-11" gate="G$1" pin="3V"/>
-<pinref part="Q9" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="3V-16" gate="G$1" pin="3V"/>
@@ -12321,6 +12252,33 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="RA0" gate="R" pin="1"/>
 <pinref part="3V-6" gate="G$1" pin="3V"/>
 <wire x1="254" y1="238.76" x2="254" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R22" gate="R" pin="1"/>
+<pinref part="3V-19" gate="G$1" pin="3V"/>
+<wire x1="254" y1="134.62" x2="254" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R54" gate="R" pin="2"/>
+<pinref part="3V-21" gate="G$1" pin="3V"/>
+</segment>
+<segment>
+<pinref part="R48" gate="R" pin="2"/>
+<pinref part="3V-23" gate="G$1" pin="3V"/>
+</segment>
+<segment>
+<pinref part="R11" gate="R" pin="2"/>
+<pinref part="3V-20" gate="G$1" pin="3V"/>
+<wire x1="160.02" y1="30.48" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R49" gate="R" pin="2"/>
+<pinref part="3V-9" gate="G$1" pin="3V"/>
+</segment>
+<segment>
+<pinref part="3V-22" gate="G$1" pin="3V"/>
+<pinref part="R61" gate="R" pin="1"/>
+<wire x1="254" y1="71.12" x2="254" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -13281,9 +13239,9 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PF0(ADC0)"/>
 <wire x1="154.94" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="160.02" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="142.24" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="142.24" x2="251.46" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="160.02" x2="147.32" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="144.78" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="144.78" x2="251.46" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="187.96" x2="266.7" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="COMM"/>
 </segment>
@@ -13294,22 +13252,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="R61" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$58" class="0">
-<segment>
-<pinref part="Q9" gate="G$1" pin="D"/>
-<pinref part="R61" gate="R" pin="1"/>
-</segment>
-</net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="Q10" gate="G$1" pin="D"/>
 <pinref part="R24" gate="R" pin="1"/>
-</segment>
-</net>
-<net name="N$54" class="0">
-<segment>
-<pinref part="Q11" gate="G$1" pin="D"/>
-<pinref part="R22" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$55" class="0">
@@ -13370,6 +13316,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <segment>
 <pinref part="R22" gate="R" pin="2"/>
 <pinref part="LED10" gate="LED" pin="A"/>
+<wire x1="254" y1="119.38" x2="254" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$60" class="0">
@@ -13387,9 +13334,9 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="43.18" y1="218.44" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(SDA/INT1)PD1"/>
 <wire x1="220.98" y1="185.42" x2="203.2" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="185.42" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="134.62" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="185.42" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="139.7" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
 <label x="205.74" y="185.42" size="1.778" layer="95"/>
 <wire x1="43.18" y1="218.44" x2="66.04" y2="218.44" width="0.1524" layer="91"/>
 <junction x="43.18" y="218.44"/>
@@ -13408,9 +13355,9 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="43.18" y1="223.52" x2="38.1" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(SCL/INT0)PD0"/>
 <wire x1="218.44" y1="182.88" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="223.52" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="137.16" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="137.16" x2="218.44" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="223.52" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="142.24" x2="218.44" y2="182.88" width="0.1524" layer="91"/>
 <label x="205.74" y="182.88" size="1.778" layer="95"/>
 <wire x1="43.18" y1="223.52" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
 <junction x="43.18" y="223.52"/>
@@ -13632,54 +13579,22 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="180.34" y1="152.4" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
-<wire x1="190.5" y1="111.76" x2="190.5" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="195.58" y1="88.9" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
-<junction x="195.58" y="86.36"/>
+<wire x1="198.12" y1="76.2" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<junction x="198.12" y="73.66"/>
 <pinref part="C32" gate="CE" pin="1"/>
 <pinref part="U$2" gate="G$1" pin="GND2"/>
-<wire x1="187.96" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="GND1"/>
-<wire x1="190.5" y1="45.72" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="48.26" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="162.56" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND1"/>
-</segment>
-<segment>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="160.02" y1="20.32" x2="162.56" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND1"/>
+<wire x1="187.96" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="LED11" gate="LED" pin="K"/>
-<wire x1="220.98" y1="10.16" x2="220.98" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="LED10" gate="LED" pin="K"/>
-<wire x1="246.38" y1="30.48" x2="246.38" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="12.7" x2="274.32" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND25" gate="1" pin="GND"/>
 <pinref part="LED9" gate="LED" pin="K"/>
-<wire x1="233.68" y1="76.2" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED8" gate="LED" pin="K"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="259.08" y1="96.52" x2="259.08" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="60.96" x2="274.32" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="259.08" y1="165.1" x2="266.7" y2="165.1" width="0.1524" layer="91"/>
@@ -14113,28 +14028,28 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="149.86" y1="116.84" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="114.3" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
-<junction x="149.86" y="114.3"/>
+<wire x1="139.7" y1="114.3" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<junction x="139.7" y="111.76"/>
 <pinref part="C31" gate="CE" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="GND2"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="149.86" y1="50.8" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
-<junction x="149.86" y="48.26"/>
+<wire x1="139.7" y1="50.8" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
+<junction x="139.7" y="48.26"/>
 <pinref part="C33" gate="CE" pin="1"/>
 <pinref part="U$3" gate="G$1" pin="GND2"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="195.58" y1="22.86" x2="195.58" y2="20.32" width="0.1524" layer="91"/>
-<junction x="195.58" y="20.32"/>
+<wire x1="195.58" y1="12.7" x2="195.58" y2="10.16" width="0.1524" layer="91"/>
+<junction x="195.58" y="10.16"/>
 <pinref part="C34" gate="CE" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="GND2"/>
-<wire x1="187.96" y1="20.32" x2="195.58" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="10.16" x2="195.58" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C28" gate="CE" pin="1"/>
@@ -14235,6 +14150,34 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="302.26" y1="198.12" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
 <label x="307.34" y="198.12" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC2" gate="G$1" pin="NO0\"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VIN"/>
+<wire x1="203.2" y1="121.92" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R49" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VIN"/>
+<pinref part="R54" gate="R" pin="1"/>
+<wire x1="203.2" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R48" gate="R" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<wire x1="160.02" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$54" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<pinref part="R11" gate="R" pin="1"/>
+<wire x1="162.56" y1="20.32" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
