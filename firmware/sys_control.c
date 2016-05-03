@@ -46,7 +46,7 @@ void gpio_init(void){
 	PORTA = 0x03;		//Output high on PORTA pins 0 and 1
 	DDRA = 0x03;		//Output direction for same pins
 	PORTF = 0x00;		//Output value 0 for all portf
-	DDRF = 0x02;		//Output enable for PORTF pin 1
+	DDRF = 0xFF;		//Output enable for PORTF pin 1
 }
 
 int main (void){
@@ -76,9 +76,29 @@ ISR(USART0_RX_vect){
 	if (data == 'G'){
 		TCNT1 = 0x0000;
 	}
+	switch(data){
+		case '1': 
+			PORTF ^= 0x1;
+		case '2': 
+			PORTF ^= 0x2;
+		case '3': 
+			PORTF ^= 0x4;
+		case '4': 
+			PORTF ^= 0x8;
+		case '5': 
+			PORTF ^= 0x10;
+		case '6': 
+			PORTF ^= 0x20;
+		case '7': 
+			PORTF ^= 0x40;
+		case '8': 
+			PORTF ^= 0x80;
+	}
+
 
 	//echo back for analysis
 	put_char(&data);
+	
 
 }
 
