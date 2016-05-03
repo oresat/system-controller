@@ -77,6 +77,8 @@ ISR(USART0_RX_vect){
 		TCNT1 = 0x0000;
 	}
 
+	//echo back for analysis
+	put_char(&data);
 
 }
 
