@@ -1,12 +1,17 @@
-/*
-	ORESAT Sputnik System Controller Module
-
-	Written by Michael Mathis
-
-	Reset a countdown whenever a 'G' is received by the uart
-	if a 'G' isn't received in time, the timer interrupt will 
-	run the reset_lgr routine
- */
+/*****************************************************
+ * System Controller for ORESAT Sputnik C3 module 	 *
+ * 													 *
+ * The system controller is designed to reset the    *
+ * low gain radio and payload if a latch up event    *
+ * is detected.										 *
+ * 													 *
+ * This controller firmware resets a countdown timer *
+ * whenever a 'G' is received by the uart. If a 'G'  *
+ * isn't received in time, the timer interrupt will  * 
+ * run the reset_lgr routine. 					     *
+ * 													 *
+ * Written by Michael Mathis						 *
+ *****************************************************/
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -21,7 +26,7 @@ void reset_lgr(void){
 	TCNT1 = 0x0000; 	//Reset the count or the countdown will run a long time
 }
 
-//Sets up the timer
+//Configures the timer enable timer interrupts
 void timer_init(void){
 	TCCR1B = 0x05;			//Clock divider select  = IO clock/1024
 	//OCR1A = 0x3E80;		//Set the compare value to 16000, about 2s if clock is running at 8Mhz
@@ -29,7 +34,7 @@ void timer_init(void){
 	TIMSK |= 0x10;			//Enable compare A interrupt
 }
 
-//Setup the uart
+//Setup the uart, enable uart RX interrupts
 void usart_init(){
  struct uart_options options = {
 	 .double_baud = 0,
@@ -42,6 +47,7 @@ void usart_init(){
 	UCSR0B |= 0x80;			//Enable RX interrupts
 }
 
+//Setup the GPIO pins to output and sets initial value
 void gpio_init(void){
 	PORTA = 0x03;		//Output high on PORTA pins 0 and 1
 	DDRA = 0x03;		//Output direction for same pins
@@ -49,15 +55,17 @@ void gpio_init(void){
 	DDRF = 0xFF;		//Output enable for PORTF pin 1
 }
 
+
 int main (void){
 	gpio_init();
 	usart_init();
 	timer_init();
-	sei();			//Enable interrupts
+	sei();			//Enable global interrupts
 	
 
-	/* set all pins of PORTF for output*/
+	
 	while (1) {
+		//Toggle an I'm alive LED
 		_delay_ms(100);
 		PORTF ^= 0x02;
 	}
@@ -72,11 +80,11 @@ ISR(TIMER1_COMPA_vect){
 //UART receive interrupt handler
 ISR(USART0_RX_vect){
 	uint8_t data;
-	data = UDR0;
-	if (data == 'G'){
-		TCNT1 = 0x0000;
+	data = UDR0;			//Read in data
+	if (data == 'G'){		//Test against lgr's I'm alive signal
+		TCNT1 = 0x0000;		//Reset timer count
 	}
-	switch(data){
+	switch(data){			//Toggle port f pins
 		case '1': 
 			PORTF ^= 0x1;
 		case '2': 
@@ -95,11 +103,8 @@ ISR(USART0_RX_vect){
 			PORTF ^= 0x80;
 	}
 
-
-	//echo back for analysis
+	//Echo the RX data back for analysis
 	put_char(&data);
-	
-
 }
 
 //General interrupt handler, do nothing if we get stray interrupts
