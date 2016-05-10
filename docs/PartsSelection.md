@@ -45,7 +45,7 @@ Rad-Hard Analogue: ISL75052SEH
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
 Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for radiation hardening.
 
-#### (#) Broadcom Limited ACPL-M61L-000E:
+#### U3, U4, U5, U6 Broadcom Limited ACPL-M61L-000E:
 Part: Optoisolator 3.75KV PUSH PULL 	
 Vendor: Digi-Key  
 Vendor Part No.: 516-2169-5-ND		
@@ -53,7 +53,7 @@ Vendor Part No.: 516-2169-5-ND
 Reasons: Much less complex than other ICs looked at. Bonus: This one has both a dual and single option.		
 Rad-hard Analogue: N/A
 
-#### (#) Texas Instruments TPS25944LRVCR:
+#### U7, U8, U9, U10, U11, U12, U13, U14 Texas Instruments TPS25944LRVCR:
 Part: IC Power Management eFuse 		
 Vendor: Digi-Key  
 Vendor Part No.: 296-42152-1-ND		
@@ -61,7 +61,7 @@ Vendor Part No.: 296-42152-1-ND
 Reasons: This IC offered the most complete solution compared to the competition. The competitors versions often required external circuitry or had limited features. The TPS25944LRVCR gives us all the features we need without being overly complex.	
 Rad-hard Analogue: N/A
 
-#### (#) Silicon Labs TS4100ITQ1633
+#### U15 Silicon Labs TS4100ITQ1633
 part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part No.: 336-3600-ND	
@@ -158,7 +158,7 @@ Rad-hard Analogue: N/A
 
 ### Capacitors
 
-**C2, C4, C6, C12, C14, C16, C20, C25, CFUSE3A, CLDO1 Samsung CL10B105KP8NNNC**:       
+**C2, C4, C6, C12, C14, C16, C20, C21, C22, C25 Samsung CL10B105KP8NNNC**:       
 Part: 1µF ±10% 10V X7R Ceramic Capacitor SMD, MLCC 0603 
 Vendor: Digi-Key  
 Vendor Part No.: 1276-1946-1-ND  
@@ -182,15 +182,15 @@ Vendor Part No.: 1276-2143-1-ND
 Reasons: These caps compliment the 8MHz Crystal on the ATMega 128 microcontroller.	
 Rad-hard Analogue: N/A	
 
-**CLDO3, Samsung CL10A225KQ8NNNC**:       
+**C29, Samsung CL10A225KQ8NNNC**:       
 Part: 2.2µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-1183-1-ND		
 [Datasheet](http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2015/08/14/S_CL10A225KQ8NNNC.pdf)  
 Reasons: Bypass Cap on the LDO. 	
 Rad-hard Analogue: N/A	
-
-**CN1, Samsung CL10A226KQ8NRNE**:       
+I
+**C24, Samsung CL10A226KQ8NRNE**:       
 Part: 22µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-2867-2-ND		
@@ -198,7 +198,7 @@ Vendor Part No.: 1276-2867-2-ND
 Reasons: This capacitor is used on the Hardware Watchdog as part of the RC timer.	 
 Rad-hard Analogue: N/A	
 
-**CLDO2, Kemet C0603C103J5RACTU**:       
+**C23, Kemet C0603C103J5RACTU**:       
 Part: 10000pF ±5% 50V X7R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 399-1092-1-ND	
@@ -216,7 +216,7 @@ Reasons: Bypass C26, C27, C28, and C30 are used as bypass caps on the ATMega 128
 Rad-hard Analogue: N/A	
 #### Resistors
 
-**RLDO1	Samsung	RC1608F103CS**:      
+**R60	Samsung	RC1608F103CS**:      
 Part: RES SMD 10K OHM 1% 1/10W 0603
 Vendor: Digi-Key  
 Vendor Part No.: 1276-3485-1-ND 	
@@ -232,7 +232,7 @@ Vendor Part No.: 1276-4787-1-ND
 Reasons: These resistors are configured as current monitoring resistors for the eFuse circuitry. They allow the microcontroller to monitor the amount of current through the output of each eFuse IC.	
 Rad-hard Analogue: N/A	
 
-**RNR, Samsung RC1608F474CS**:      
+**R62, Samsung RC1608F474CS**:      
 Part: RES SMD 470K OHM 1% 1/10W 0603
 Vendor: Digi-Key  
 Vendor Part No.: 1276-4902-1-ND  
@@ -240,7 +240,7 @@ Vendor Part No.: 1276-4902-1-ND
 Reasons: This resistor is part of the RC circuit in the hardware watchdog.	
 Rad-hard Analogue: N/A	
 
-**R4, R11, R47, R48, R49, R50, R51, R53, R54, RN1, RN2, RN3, RN4 Samsung RC0603FR-071KL**:      
+**R4, R11, R47, R48, R49, R50, R51, R53, R54, R63, R64, R65, R66 Samsung RC0603FR-071KL**:      
 Part: RES SMD 390 OHM 0.1% 1/16W 0603   
 Vendor: Digi-Key  
 Vendor Part No.: 1276-4610-1-ND 	
