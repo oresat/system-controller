@@ -24,93 +24,89 @@ Vendor
 Vendor Part No  
 Datasheet  
 Reasons  
-Rad-hard Analogue  
+Rad-hard Option  
 
 #### U1 Atmel ATMega128:  
-Vendor: Digi-Key 
+Part: Microcontroller 8BIT 128KB FLASH 	
+Vendor: Digi-Key 	
 Vendor Part No.: ATMEGA128-16AUR  
-[Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)  
-Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.	
- 
-**_Radhard Alternative_**	 
-Part No.: ATmegaS128	
-[Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)  
+[Datasheet](http://www.atmel.com/images/doc2467.pdf)  
+Reasons: The ATMega 128 comes in both a radiation hardened and non-hardened version. This gives us the ability to fabricate and test the full board for functionality usint the cheaper non-hard version before purchasing the more expensive radiation tollerant version. An additional benefit is that the CPU is easier to program than the one used on the LGR board.
+	
+**Rad-hard Option: ATmegaS128**	
+[Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)  
 
 #### U2 Texas Instruments LP5907MFX-3.0/NOPB: 
 Part:  MCU LDO  
 Vendor: Digi-Key  
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
-Reasons: Quickly found replacement for Skyworks AAT3215 LDO. Has same package and pin-out.  
-
-**_Radhard Alternative_**		
-<http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf>
-non-hardened part? <http://www.ti.com/lit/ds/symlink/tps7h1201-ht.pdf>
-Reasons: same footprint, but inputs are different so not worth the trouble
-Using a 3V version of the LNA that is used on the Low Gain Radio board.
+Reasons: Replacement for original choice - Skyworks AAT3215. This one has the same package and it also has an equivalent pin-out to the AAT3215. 	
+**Rad-Hard Option: ISL75052SEH**	
+[Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
+Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunatly, the pin-out is different so this chip does not offer a direct plug-and-play option for radiation hardening.
 
 #### (#) Broadcom Limited ACPL-M61L-000E:
-Part:OPTOISO 3.75KV PUSH PULL 5SO	
+Part: Optoisolator 3.75KV PUSH PULL 	
 Vendor: Digi-Key  
 Vendor Part#: 516-2169-5-ND		
-[Datasheet](www.avagotech.com/docs/AV02-2150EN)  
-Reasoning: Much less complex, has both a dual and single option 	
-**_Alternatives_**
-Part No: TLP2160  
-[Datasheet](http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP2160(TP,F)/TLP2160(TPF)CT-ND/5189796)  
-Reasoning: Too complex  
+[Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
+Reasons: Much less complex than other ICs looked at. This one has both a dual and single option.	
+Rad-hard Analogue: N/A
 
 #### (#) Texas Instruments TPS25944LRVCR:
 Part: IC Power Management eFuse 		
 Vendor: Digi-Key  
 Vendor Part#: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
-Reasoning: Other potential eFUse ICs required external circuitry and compromised features. This one gave us all the features we need without the compromise and without the need for extra external parts.
+Reasons: This IC offered the best solution compared to others that were looked at during the research process. The competitors versions generally required some extra external circuitry or were missing features.	
+Rad-hard Analogue: N/A
 
 #### (#) Silicon Labs TS4100ITQ1633
-part: 8:1 Mux	
+part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part#: 336-3600-ND	
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
-Reasoning: Small footprint, Supply Voltage (0.8V - 5.25V) and supply current (675nA)
+Reasoning: This IC was choosen because the of the operating voltage 0.8V tp 5.25V. Another reason was the small TQFN package.	
+Rad-hard Analogue: N/A
 
 #### C1 Elna America DSK-3R3H224U-HL:
 Part: 220 mF SuperCap	
 Vendor: Digi-Key  
 Vendor Part#: 604-1020-1-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
-Reasoning: Already have footprint & symbol in Eagle. Known reliability from use on the GPS board. Should provide about 50~60 secs supply in the case of complete power down.
+Reasoning:  The same capacitor was used on a previous PSAS project board and proved to be reliable. Bonus: Already have footprint & symbol in Eagle.	 
+Rad-hard Analogue: N/A
 
 #### D1 Vishay SSC53L-E3/57T
 part: Schottky Diode	
 Vendor: Digi-Key  		
 Vendor Part#: SSC53L-E3/57TGICT-ND	
 [Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)	
-Reasoning:
+Reasoning: The radiation hardened diode was found first and this was chosen because it has a similar forward voltage to the rad-hard version.
 
-#### ST 1N5819U:
-part: Radhard Diode		
+**Rad-Hard Option: ST 1N5819U:**		
 [Datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00241480.pdf)		
-Reasoning: Similar Forward On Voltage to radhard eqivalent (0.45V)
+Reasoning: One of the lowest forward voltage diodes available that is radiation hardened.
 
 #### X1 Abaracon LLC ABM3-8.000MHZ-D2Y-T:  
 Part:  8MHz +/- 20ppm Crystal    
 Vendor: Digi-Key  
 Vendor Part No.: 1535-10630-1-ND	
 [Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
-Reasons: Meets expected ppm and cost.
+Reasons: Meets expected ppm and at a decent value.
 
 #### MOSFETs
 **Q13 Didoes Inc. DMN62D0U-13:**		
 Part: OSFET N-CH 60V 0.38A:		
 Vendor: Digi-Key  
 Vendor Part#: DMN62D0U-13DICT-ND	
-[Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)
-Reasoning: Small footprint and cost		
-**_Radhard Alternative_**	
-Vendor: 
-Vendor Part No.: ATMEGA128-16AUR  
-<http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00295117.pdf>
+[Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)	
+Reasoning: This MOSFET has a threshold voltage that is between 0.5V and 1V. This allows the capcitor in the hardware watchdog time to discharge from 3V to the max threshold voltage of 1V before turning off the FET.	
+**Rad-Hard Option: Intenational Rectifier IRHLUB770Z4**	
+[Datasheet](http://www.irf.com/product-info/datasheets/data/irhlub770z4.pdf) 		
+Reasons: Lowest Threshold voltage of any FET I've looked at. This one is between 1V and 2V.
+
 
 **Q10, Q12 On Semi. DMN62D0U-13:** 
 Part: MOSFET P-CH 20V 3.2A SOT23:		
@@ -119,7 +115,7 @@ Vendor Part#: NTR4101PT1HOSCT-ND
 [Datasheet](http://www.onsemi.com/pub_link/Collateral/NTR4101P-D.PDF)
 Reasoning: Small footprint and cost 
 
-**D0A/0B Diodes Inc. DMG6601LVT-7**:     
+**Q0A/B, Q1A/B, Q2A/B, Q3A/B, Q4A/B, Q5A/B, Q6A/B, Q7A/B Diodes Inc. DMG6601LVT-7**:     
 Part: MOSFET, N/P pair     
 Vendor: Digi-Key  
 Vendor Part No.: DMG6601LVT-7DICT-ND 	  
