@@ -31,9 +31,8 @@ Part: Microcontroller 8BIT 128KB FLASH
 Vendor: Digi-Key 	
 Vendor Part No.: ATMEGA128-16AUR  
 [Datasheet](http://www.atmel.com/images/doc2467.pdf)  
-Reasons: The ATMega 128 comes in both a radiation hardened and non-hardened version. This gives us the ability to fabricate and test the full board for functionality using the cheaper non-hard version before purchasing the more expensive radiation tolerant version. An additional benefit is that the CPU is easier to program than the one used on the LGR board.
-	
-**Rad-hard Option: ATmegaS128**		
+Reasons: The ATMega 128 comes in both a radiation hardened and non-hardened version. This gives us the ability to fabricate and test the full board for functionality using the cheaper non-hard version before purchasing the more expensive radiation tolerant version. An additional benefit is that the CPU is easier to program than the one used on the LGR board.	
+Rad-hard Option: ATmegaS128		
 [Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)  
 
 #### U2 Texas Instruments LP5907MFX-3.0/NOPB: 
@@ -42,7 +41,7 @@ Vendor: Digi-Key
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
 Reasons: This is a replacement for our original choice, the Skyworks AAT3215. This one has the same package and it also has a functionally equivalent pin-out to the AAT3215. Just as imortant, the specs are very similar between the two chips.	
-**Rad-Hard Option: ISL75052SEH**	
+Rad-Hard Option: ISL75052SEH	
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
 Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for radiation hardening.
 
@@ -51,7 +50,7 @@ Part: Optoisolator 3.75KV PUSH PULL
 Vendor: Digi-Key  
 Vendor Part#: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
-Reasons: Much less complex than other ICs looked at. Bonus: This one has both a dual and single option.	
+Reasons: Much less complex than other ICs looked at. Bonus: This one has both a dual and single option.		
 Rad-hard Analogue: N/A
 
 #### (#) Texas Instruments TPS25944LRVCR:
@@ -83,9 +82,8 @@ part: Schottky Diode
 Vendor: Digi-Key  		
 Vendor Part#: SSC53L-E3/57TGICT-ND	
 [Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)	
-Reasoning: The radiation hardened diode was chosen before looking for an off-the-shelf equivalent and it's turn-on voltage is about 0.45V. This Diode was chosen because it has a similar turn-on voltage.
-
-**Rad-Hard Option: ST 1N5819U:**		
+Reasoning: The radiation hardened diode was chosen before looking for an off-the-shelf equivalent and it's turn-on voltage is about 0.45V. This Diode was chosen because it has a similar turn-on voltage.	
+Rad-Hard Option: ST 1N5819U:		
 [Datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00241480.pdf)		
 Reasoning: Low Turn-on voltage. 
 
@@ -104,7 +102,7 @@ Vendor: Digi-Key
 Vendor Part#: DMN62D0U-13DICT-ND	
 [Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)	
 Reasoning: This MOSFET has a threshold voltage that is between 0.5V and 1V. This allows the capacitor in the hardware watchdog time to discharge from 3V to the max threshold voltage of 1V before turning off the FET. Note: There does not seem to be a rad-hard analogue with this low of a threshold voltage.	
-**Rad-Hard Option: Intentional Rectifier IRHLUB770Z4**	
+Rad-Hard Option: Intentional Rectifier IRHLUB770Z4	
 [Data sheet](http://www.irf.com/product-info/datasheets/data/irhlub770z4.pdf) 		
 Reasons: Lowest Threshold voltage of any rad-hard FET I've looked at. This one is between 1V and 2V.
 
