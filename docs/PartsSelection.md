@@ -83,7 +83,7 @@ Vendor: Digi-Key
 Vendor Part No.: SSC53L-E3/57TGICT-ND	
 [Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)	
 Reasons: The radiation hardened diode was chosen before looking for an off-the-shelf equivalent and it's turn-on voltage is about 0.45V. This Diode was chosen because it has a similar turn-on voltage.	
-Rad-Hard Option: ST 1N5819U:		
+Rad-Hard Analogue: ST 1N5819U:		
 [Datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00241480.pdf)		
 Reasons: Low Turn-on voltage. 
 
