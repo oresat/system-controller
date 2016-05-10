@@ -8,8 +8,8 @@
 * [SuperCap](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#c1-elna-america-dsk-3r3h224u-hl) 	
 * [Schottky Diode](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#d1-vishay-ssc53l-e357t)		
 * [8MHz Crystal](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#x1-abaracon-llc-abm3-8000mhz-d2y-t)		
-* [MOSFETs](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#q13-didoes-inc-dmn62d0u-13)			
-* [Connectors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#j1-cnc-tech-3220-10-0100-00)					
+* [Transistors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#mosfets)		
+* [Connectors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#connectors)				
 * [LEDs](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#leds)	
 * [Capacitors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#capacitors)	
 * [Resistors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#resistors)
@@ -78,14 +78,15 @@ Reasoning: Small footprint, Supply Voltage (0.8V - 5.25V) and supply current (67
 Part: 220 mF SuperCap	
 Vendor: Digi-Key  
 Vendor Part#: 604-1020-1-ND		
-[Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)
+[Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
 Reasoning: Already have footprint & symbol in Eagle. Known reliability from use on the GPS board. Should provide about 50~60 secs supply in the case of complete power down.
 
 #### D1 Vishay SSC53L-E3/57T
 part: Schottky Diode	
 Vendor: Digi-Key  		
 Vendor Part#: SSC53L-E3/57TGICT-ND	
-[Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)
+[Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)	
+Reasoning:
 
 #### ST 1N5819U:
 part: Radhard Diode		
