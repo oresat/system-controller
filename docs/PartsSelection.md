@@ -1,8 +1,20 @@
 # Parts Selection for System Controller (work in progress) 
-**Table of Contents**
-* [Microcontroller]  
-* [Voltage Regulation]  
-* [Digital Components]  
+**Table of Contents**	
+* [Microcontroller](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u1-atmel-atmega128)	
+* [LDO](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u2-texas-instruments-lp5907mfx-30nopb)	
+* [Optical Isolator](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#-broadcom-limited-acpl-m61l-000e)		
+* [eFuse](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#-texas-instruments-tps25944lrvcr) 	
+* [8:1 Multiplexer](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#-silicon-labs-ts4100itq1633)		
+* [SuperCap](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#c1-elna-america-dsk-3r3h224u-hl) 	
+* [Schottky Diode](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#d1-vishay-ssc53l-e357t)		
+* [8MHz Crystal](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#x1-abaracon-llc-abm3-8000mhz-d2y-t)		
+* [MOSFETs](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#q13-didoes-inc-dmn62d0u-13)			
+* [Connectors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#j1-cnc-tech-3220-10-0100-00)					
+* [LEDs](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#leds)	
+* [Capacitors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#capacitors)	
+* [Resistors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#resistors)
+
+
 
 Format note  
 
@@ -18,41 +30,24 @@ Rad-hard Analogue
 Vendor: Digi-Key 
 Vendor Part No.: ATMEGA128-16AUR  
 [Non-hardened Datasheet](http://www.atmel.com/images/doc2467.pdf)  
-Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.  
-Rad-Hard Part No.: ATmegaS128	
+Reasons: Microcontroller has analogoues radiation hardened version meaning we can test at a low price. MCU is easily programmable.	
+ 
+**_Radhard Alternative_**	 
+Part No.: ATmegaS128	
 [Rad-hard Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)  
 
-#### Possible radhard MOSFET:
-Vendor: 
-Vendor Part No.: ATMEGA128-16AUR  
-<http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00295117.pdf>
-
-#### Radhard LDO:
-<http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf>
-non-hardened part? <http://www.ti.com/lit/ds/symlink/tps7h1201-ht.pdf>
--same footprint, but inputs are different so not worth the trouble
-Using the LNA LDO for the SysCon.
-
-#### J1 CNC Tech 3220-10-0100-00:  
-Part: JTAG Connector    
-Vendor: Digi-Key  
-Vendor Part No.: 1175-1627-ND   
-[Datasheet](http://cnctech.us/pdfs/3220-XX-0100-00.pdf)  
-Reasons: Generic JTAG connector used on practicum board. 
-
-#### X1 Abaracon LLC ABM3-8.000MHZ-D2Y-T:  
-Part:  8MHz +/- 20ppm Crystal    
-Vendor: Digi-Key  
-Vendor Part No.: 1535-10630-1-ND	
-[Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
-Reasons: Meets expected ppm and cost. 
-  
 #### U2 Texas Instruments LP5907MFX-3.0/NOPB: 
 Part:  MCU LDO  
 Vendor: Digi-Key  
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
 Reasons: Quickly found replacement for Skyworks AAT3215 LDO. Has same package and pin-out.  
+
+**_Radhard Alternative_**		
+<http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf>
+non-hardened part? <http://www.ti.com/lit/ds/symlink/tps7h1201-ht.pdf>
+Reasons: same footprint, but inputs are different so not worth the trouble
+Using a 3V version of the LNA that is used on the Low Gain Radio board.
 
 #### (#) Broadcom Limited ACPL-M61L-000E:
 Part:OPTOISO 3.75KV PUSH PULL 5SO	
@@ -65,26 +60,12 @@ Part No: TLP2160
 [Datasheet](http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP2160(TP,F)/TLP2160(TPF)CT-ND/5189796)  
 Reasoning: Too complex  
 
-#### C1 Elna America DSK-3R3H224U-HL:
-Part: 220 mF SuperCap	
-Vendor: Digi-Key  
-Vendor Part#: 604-1020-1-ND		
-[Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)
-Reasoning: Already have footprint & symbol in Eagle. Known reliability from use on the GPS board. Should provide about 50~60 secs supply in the case of complete power down.
-
 #### (#) Texas Instruments TPS25944LRVCR:
 Part: IC Power Management eFuse 		
 Vendor: Digi-Key  
 Vendor Part#: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
 Reasoning: Other potential eFUse ICs required external circuitry and compromised features. This one gave us all the features we need without the compromise and without the need for extra external parts.
-
-#### Q13 Didoes Inc. DMN62D0U-13 
-Part: N-channel MOSFET:		
-Vendor: Digi-Key  
-Vendor Part#: DMN62D0U-13DICT-ND	
-[Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)
-Reasoning: Small footprint and cost
 
 #### (#) Silicon Labs TS4100ITQ1633
 part: 8:1 Mux	
@@ -93,30 +74,71 @@ Vendor Part#: 336-3600-ND
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
 Reasoning: Small footprint, Supply Voltage (0.8V - 5.25V) and supply current (675nA)
 
+#### C1 Elna America DSK-3R3H224U-HL:
+Part: 220 mF SuperCap	
+Vendor: Digi-Key  
+Vendor Part#: 604-1020-1-ND		
+[Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)
+Reasoning: Already have footprint & symbol in Eagle. Known reliability from use on the GPS board. Should provide about 50~60 secs supply in the case of complete power down.
+
 #### D1 Vishay SSC53L-E3/57T
 part: Schottky Diode	
 Vendor: Digi-Key  		
 Vendor Part#: SSC53L-E3/57TGICT-ND	
-[Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)		
-Reasoning: Similar Forward On Voltage to radhard eqivalent (0.45V)
+[Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)
 
 #### ST 1N5819U:
 part: Radhard Diode		
-[Datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00241480.pdf)
+[Datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00241480.pdf)		
+Reasoning: Similar Forward On Voltage to radhard eqivalent (0.45V)
 
-#### CF1 Harwin Inc. M50-3202045:     
+#### X1 Abaracon LLC ABM3-8.000MHZ-D2Y-T:  
+Part:  8MHz +/- 20ppm Crystal    
+Vendor: Digi-Key  
+Vendor Part No.: 1535-10630-1-ND	
+[Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
+Reasons: Meets expected ppm and cost.
+
+#### MOSFETs
+**Q13 Didoes Inc. DMN62D0U-13:**		
+Part: OSFET N-CH 60V 0.38A:		
+Vendor: Digi-Key  
+Vendor Part#: DMN62D0U-13DICT-ND	
+[Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)
+Reasoning: Small footprint and cost		
+**_Radhard Alternative_**	
+Vendor: 
+Vendor Part No.: ATMEGA128-16AUR  
+<http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00295117.pdf>
+
+**Q10, Q12 On Semi. DMN62D0U-13:** 
+Part: MOSFET P-CH 20V 3.2A SOT23:		
+Vendor: Digi-Key  
+Vendor Part#: NTR4101PT1HOSCT-ND	
+[Datasheet](http://www.onsemi.com/pub_link/Collateral/NTR4101P-D.PDF)
+Reasoning: Small footprint and cost 
+
+**D0A/0B Diodes Inc. DMG6601LVT-7**:     
+Part: MOSFET, N/P pair     
+Vendor: Digi-Key  
+Vendor Part No.: DMG6601LVT-7DICT-ND 	  
+[Datasheet](http://www.diodes.com/_files/datasheets/DMG6601LVT.pdf)  
+Reasons: Familiarity with reliability of chip as it was used on previous PSAS project. Bonus: Already had the Eagle package in the PSAS library.
+ 
+#### Connectors
+**J1 CNC Tech 3220-10-0100-00:** 
+Part: JTAG Connector    
+Vendor: Digi-Key  
+Vendor Part No.: 1175-1627-ND   
+[Datasheet](http://cnctech.us/pdfs/3220-XX-0100-00.pdf)  
+Reasons: Generic JTAG connector used on practicum board. 
+
+**CF1 Harwin Inc. M50-3202045:**     
 Part: 40-Pinout Header     
 Vendor: Digi-Key  
 Vendor Part No.: 952-1381-5-ND  	  
 [Datasheet](https://cdn.harwin.com/pdfs/60page104.pdf)  
 Reasons: Design requirement for communication from the Cubesat and allows for communication between the LGR and the System Controller. 
-
-#### D0A/0B Diodes Inc. DMG6601LVT-7:     
-Part: MOSFET, N/P channel     
-Vendor: Digi-Key  
-Vendor Part No.: DMG6601LVT-7DICT-ND 	  
-[Datasheet](http://www.diodes.com/_files/datasheets/DMG6601LVT.pdf)  
-Reasons: Familiarity with reliability of chip as it was used on previous PSAS project. Bonus: Already had the Eagle package in the PSAS library.
 
 ### LEDs
 **LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, Wurth Electronics, Inc. 150060GS75000**:      
