@@ -101,7 +101,7 @@ Part: OSFET N-CH 60V 0.38A:
 Vendor: Digi-Key  
 Vendor Part No.: DMN62D0U-13DICT-ND		
 [Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)	
-Reasons: This MOSFET has a threshold voltage that is between 0.5V and 1V. This allows the capacitor in the hardware watchdog time to discharge from 3V to the max threshold voltage of 1V before turning off the FET. Note: There does not seem to be a rad-hard analogue with this low of a threshold voltage.	
+Reasons: This MOSFET has a threshold voltage that is between 0.5V and 1V. This allows the capacitor in the hardware watchdog time to discharge from 3V to the max threshold voltage of 1V before turning off the FET. Note: There does not seem to be a rad-hard analogue with this low of a threshold voltage.			
 Rad-Hard Option: Intentional Rectifier IRHLUB770Z4	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhlub770z4.pdf) 		
 Reasons: Lowest Threshold voltage of any rad-hard FET I've looked at. This one is between 1V and 2V.
