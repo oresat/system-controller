@@ -9921,14 +9921,28 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="TE "/>
 <attribute name="MPN" value="4-1676481-5"/>
 </part>
+<part name="R76" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="DNP/1k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-3484-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F102CS"/>
+</part>
+<part name="LED13" library="psas_c3_team05" deviceset="LED" device="-0603" value="DNP/GRN">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="732-4971-1-ND"/>
+<attribute name="MFN" value="Wurth Electronics INC."/>
+<attribute name="MPN" value="150060GS75000"/>
+</part>
+<part name="GND2" library="psas_c3_team05" deviceset="GND" device=""/>
+<part name="3V-11" library="supply-3v" deviceset="3V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="455.93" y="30.48" size="2.54" layer="97">William Harrington, James Heath, Shan Quinney</text>
-<wire x1="129.54" y1="406.4" x2="205.74" y2="406.4" width="0.1524" layer="97" style="longdash"/>
-<wire x1="205.74" y1="406.4" x2="205.74" y2="360.68" width="0.1524" layer="97" style="longdash"/>
-<wire x1="205.74" y1="360.68" x2="129.54" y2="360.68" width="0.1524" layer="97" style="longdash"/>
+<wire x1="129.54" y1="406.4" x2="233.68" y2="406.4" width="0.1524" layer="97" style="longdash"/>
+<wire x1="233.68" y1="406.4" x2="233.68" y2="360.68" width="0.1524" layer="97" style="longdash"/>
+<wire x1="233.68" y1="360.68" x2="129.54" y2="360.68" width="0.1524" layer="97" style="longdash"/>
 <wire x1="129.54" y1="360.68" x2="129.54" y2="406.4" width="0.1524" layer="97" style="longdash"/>
 <text x="132.08" y="403.86" size="1.778" layer="97">LDO for System Controller (RH)
 Why are we using this LDO?</text>
@@ -9998,6 +10012,7 @@ When all three pins are high the voltage at TP43 is 2.25V
 When two pins are high the voltage at TP43 is 1.5V
 When all three pins are high the voltage at TP43 is 0.75V</text>
 <text x="307.34" y="345.44" size="1.778" layer="97">Look for TPs connected to GND!!!!!!</text>
+<text x="546.1" y="7.62" size="2.54" layer="97">1.1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -11267,6 +11282,24 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="111.76" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="MPN" x="111.76" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
+<instance part="R76" gate="R" x="210.82" y="386.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="213.36" y="386.08" size="1.778" layer="95"/>
+<attribute name="VALUE" x="213.36" y="383.54" size="1.778" layer="96"/>
+<attribute name="DIST" x="210.82" y="386.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="210.82" y="386.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="210.82" y="386.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="210.82" y="386.08" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="LED13" gate="LED" x="210.82" y="375.92" smashed="yes">
+<attribute name="NAME" x="213.36" y="377.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="213.36" y="374.65" size="1.778" layer="96"/>
+<attribute name="DIST" x="210.82" y="375.92" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="210.82" y="375.92" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="210.82" y="375.92" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="210.82" y="375.92" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND2" gate="1" x="210.82" y="370.84"/>
+<instance part="3V-11" gate="G$1" x="210.82" y="393.7"/>
 </instances>
 <busses>
 <bus name="UART_LGR_VCC,UART_LGR_RX,UART_LGR_TX">
@@ -12239,6 +12272,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="3V-22" gate="G$1" pin="3V"/>
 <pinref part="R71" gate="R" pin="1"/>
 <wire x1="228.6" y1="68.58" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R76" gate="R" pin="1"/>
+<pinref part="3V-11" gate="G$1" pin="3V"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -14069,6 +14106,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="467.36" y1="88.9" x2="449.58" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U13" gate="G$1" pin="PGHT"/>
 </segment>
+<segment>
+<pinref part="LED13" gate="LED" pin="K"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$50" class="0">
 <segment>
@@ -14123,6 +14164,12 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="R74" gate="R" pin="1"/>
 <wire x1="162.56" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G$1" pin="VIN"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R76" gate="R" pin="2"/>
+<pinref part="LED13" gate="LED" pin="A"/>
 </segment>
 </net>
 </nets>
