@@ -50,7 +50,7 @@ Part: Optoisolator 3.75KV PUSH PULL
 Vendor: Digi-Key  
 Vendor Part No.: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
-Reasons: Much less complex than other ICs looked at. Most of the competitors require some external circuitry that is included internally with the ACPL-M61L. Note: The output is inverted.		
+Reasons: Much less complex than other ICs looked at. Note: The output is inverted.		
 Rad-hard Analogue: Avago HCPL5431		
 [Datasheet](http://www.avagotech.com/docs/AV02-3838EN)
 
@@ -59,7 +59,7 @@ Part: IC Power Management eFuse
 Vendor: Digi-Key  
 Vendor Part No.: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
-Reasons: This IC offered the most complete solution compared to the competition. The competitors versions often required external circuitry or had limited features. The TPS25944LRVCR gives us all the features we need without being overly complex.	
+Reasons: This IC offered the most complete solution compared to the competition. The competitors versions often required external circuitry or had limited features when compared with the TPS25944LRVCR.	
 Rad-hard Analogue: N/A
 
 #### U15 Silicon Labs TS4100ITQ1633
