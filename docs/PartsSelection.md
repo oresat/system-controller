@@ -2,7 +2,7 @@
 **Table of Contents**	
 * [Microcontroller](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u1-atmel-atmega128)	
 * [LDO](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u2-texas-instruments-lp5907mfx-30nopb)	
-* [Optical Isolator](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#-broadcom-limited-acpl-m61l-000e)		
+* [Optical Isolator](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u3-u4-u5-u6-broadcom-limited-acpl-m61l-000e)		
 * [eFuse](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#-texas-instruments-tps25944lrvcr) 	
 * [8:1 Multiplexer](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#-silicon-labs-ts4100itq1633)		
 * [SuperCap](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#c1-elna-america-dsk-3r3h224u-hl) 	
