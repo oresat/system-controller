@@ -64,7 +64,7 @@ Rad-hard Analogue: Intersil ISL706
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl705aeh-05beh-05ceh-06aeh-06beh-06ceh.pdf)
 
 #### U15 Silicon Labs TS4100ITQ1633
-part: 8:1 Mux	/ Analog Switch
+Part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part No.: 336-3600-ND	
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
@@ -81,7 +81,7 @@ Reasons:  The same capacitor was used on a previous PSAS project board and prove
 Rad-hard Analogue: N/A
 
 #### D1 Vishay SSC53L-E3/57T
-part: Schottky Diode	
+Part: Schottky Diode	
 Vendor: Digi-Key  		
 Vendor Part No.: SSC53L-E3/57TGICT-ND	
 [Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)	
@@ -155,7 +155,7 @@ Part: Green LEDs
 Vendor: Digi-Key  
 Vendor Part No.: 732-4971-1-ND 	
 [Datasheet](http://katalog.we-online.de/led/datasheet/150060GS75000.pdf)  
-Reasons: The green LEDs are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector.  They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. These LEDs will be removed on the space-ready board.	
+Reasons: The green LEDs are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector.  They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. These LEDs are for debugging only and will be removed before launch.	
 Rad-hard Analogue: N/A	
 
 **LED8, LED9, LED10, LED11, OSRAM Optp Semi. LA L296-Q2R2-1-Z**:      
@@ -247,7 +247,7 @@ Part: RES SMD 470K OHM 1% 1/10W 0603
 Vendor: Digi-Key  
 Vendor Part No.: 1276-4902-1-ND  
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
-Reasons: This resistor is part of the RC circuit in the hardware watchdog.	
+Reasons: This resistor is part of the RC circuit in the hardware watchdog and it compliments C24 to set the time constant for the charge rate and discharge rate of the capacitor.	
 Rad-hard Analogue: N/A	
 
 **R4, R11, R47, R48, R49, R50, R51, R53, R54, R63, R64, R65, R66 Samsung RC0603FR-071KL**:      
