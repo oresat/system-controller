@@ -40,17 +40,17 @@ Part:  MCU LDO
 Vendor: Digi-Key  
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
-Reasons: This is a replacement for our original choice - the Skyworks AAT3215. This one comes in the same package style and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is a low 120 mV.	
+Reasons: This is a replacement for our original choice - the Skyworks AAT3215, which is not available through digikey. This one comes in the same package style and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is a low 120 mV.	
 Rad-Hard Analogue: ISL75052SEH	
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
-Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for radiation hardening.
+Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for the rad-hard upgrade.
 
 #### U3, U4, U5, U6 Broadcom Limited ACPL-M61L-000E:
 Part: Optoisolator 3.75KV PUSH PULL 	
 Vendor: Digi-Key  
 Vendor Part No.: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
-Reasons: This IC is less complex than other ICs looked at. The output is inverted.		
+Reasons: This IC is less complex than other comparable products looked at. The chip can be powered from a 3.0V supply and features a low 1.6mA input current. The temperature range exceeds requirements on the high end (-40C to 105C). As a note, the output is inverted.		
 Rad-hard Analogue: Avago HCPL5431		
 [Datasheet](http://www.avagotech.com/docs/AV02-3838EN)
 
