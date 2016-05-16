@@ -77,7 +77,7 @@ Part: 220 mF SuperCap
 Vendor: Digi-Key  
 Vendor Part No.: 604-1020-1-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
-Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. Bonus: Already have footprint & symbol in Eagle. This capacitor should supply about half a minute of voltage if the power system fails.	 
+Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. This capacitor should supply about half a minute of voltage if the power system fails.	 
 Rad-hard Analogue: N/A
 
 #### D1 Vishay SSC53L-E3/57T
