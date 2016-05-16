@@ -227,65 +227,65 @@ Rad-hard Analogue: N/A
 #### Resistors
 
 **R60	Samsung	RC1608F103CS**:      
-Part: RES SMD 10K OHM 1% 1/10W 0603
-Vendor: Digi-Key  
-Vendor Part No.: 1276-3485-1-ND 	
+Part: RES SMD 10K OHM 1% 1/10W 0603				
+Vendor: Digi-Key				  
+Vendor Part No.: 1276-3485-1-N				 	
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: Used as a pull-up resistor on the LDO.		
 Rad-hard Analogue: N/A	    
 
 **RIMON0, RIMON1, RIMON2, RIMON3, RIMON4, RIMON5, RIMON6, RIMON7, Samsung RC1608F3012CS**:      
-Part: RES SMD 30K OHM 0.1% 1/10W 0603
-Vendor: Digi-Key  
-Vendor Part No.: 1276-4787-1-ND 	
+Part: RES SMD 30K OHM 0.1% 1/10W 0603				
+Vendor: Digi-Key			  
+Vendor Part No.: 1276-4787-1-N				 	
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: These resistors are configured as current monitoring resistors for the eFuse circuitry. They allow the microcontroller to monitor the amount of current through the output of each eFuse IC.	
 Rad-hard Analogue: N/A	
 
 **R62, Samsung RC1608F474CS**:      
-Part: RES SMD 470K OHM 1% 1/10W 0603
-Vendor: Digi-Key  
-Vendor Part No.: 1276-4902-1-ND  
+Part: RES SMD 470K OHM 1% 1/10W 0603				
+Vendor: Digi-Key			  
+Vendor Part No.: 1276-4902-1-ND 				 
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: This resistor is part of the RC circuit in the hardware watchdog and it compliments C24 to set the time constant for the charge rate and discharge rate of the capacitor.	
 Rad-hard Analogue: N/A	
 
 **R4, R11, R47, R48, R49, R50, R51, R53, R54, R63, R64, R65, R66 Samsung RC0603FR-071KL**:      
-Part: RES SMD 390 OHM 0.1% 1/16W 0603   
-Vendor: Digi-Key  
-Vendor Part No.: 1276-4610-1-ND 	
+Part: RES SMD 390 OHM 0.1% 1/16W 060			   
+Vendor: Digi-Key				  
+Vendor Part No.: 1276-4610-1-N				 	
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: R4 is used as a pull-up resistor for the !RESET line on the ATMega 128. R11, R47, R48, R49, R50, R51, R53, and R54 are used as pull-up resistors on the Optoisolators. RN1, RN2, RN3, and RN4 are used as part of the hardware watchdog voltage divide network. 	
 Rad-hard Analogue: N/A	
 
 **R2, R8, R14, R20, R28, R33, R38, R43 Yageo RC1608F472CS**:      
-Part: RES SMD 4.7K OHM 1% 1/10W 0603 
-Vendor: Digi-Key  
-Vendor Part No.: 1276-3502-1-ND 	
+Part: RES SMD 4.7K OHM 1% 1/10W 060				 
+Vendor: Digi-Key				  
+Vendor Part No.: 1276-3502-1-N				 	
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: These resistors are part of the external biasing of the eFuse section P/N MOSFET network.	
 Rad-hard Analogue: N/A	
 
 **R5, R10, R16, R25, R30, R35, R40, R45 Samsung RC1608F9312CS**:      
-Part: RES SMD 93.1K OHM 1% 1/10W 0603 
-Vendor: Digi-Key  
-Vendor Part No.: 1276-4837-1-ND  
+Part: RES SMD 93.1K OHM 1% 1/10W 060			 
+Vendor: Digi-Key				  
+Vendor Part No.: 1276-4837-1-ND 				 
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: Used as under voltage lock out for the eFuse IC's. This is part of a voltage divider network that sets the voltage at the EN/UVLO pin to 3V.	
 Rad-hard Analogue: N/A	
 
 **R6, R12, R18, R22, R23, R24, R26, R31, R36, R41, R46, R61 Samsung RC1608F102CS**:      
-Part: RES SMD 1K OHM 1% 1/10W 0603
-Vendor: Digi-Key  
-Vendor Part No.: 1276-3484-1-ND		
+Part: RES SMD 1K OHM 1% 1/10W 0603		
+Vendor: Digi-Key		 
+Vendor Part No.: 1276-3484-1-ND				
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons:  R22, R23, R24, and R61 are used as current limiting resistors on the Amber LEDs. R6, R12, R18, R26, R31, R36, R41, and R46 are used as current limiting resistors on the Green LEDs.	
 Rad-hard Analogue: N/A	
 
 **R0/UVLO, R1, R1/UVLO, R2/UVLO, R3, R3/UVLO, R4/UVLO, R5/UVLO, R6/UVLO, R7, R7/UVLO, R9, R13, R15, R19, R21, R27, R29, R32, R34, R37, R39, R42, R44, RA0, RA1, RA2, RA3, RA4, RA5, RA6, RA7, RILIM0, RILIM1, RILIM2, RILIM3, RILIM4, RILIM5, RILIM6, RILIM7 Samsung RC1608F473CS**:      
-Part: RES SMD 47K OHM 1% 1/10W 0603
-Vendor: Digi-Key  
-Vendor Part No.: 1276-4808-1-ND 	
+Part: RES SMD 47K OHM 1% 1/10W 0603		
+Vendor: Digi-Key		 
+Vendor Part No.: 1276-4808-1-ND 			
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
 Reasons: R0/UVLO, R1/UVLO, R2/UVLO, R3/UVLO, R4/UVLO, R5/UVLO, R6/UVLO, and R7/UVLO are part of the voltage divider network that sets the UVLO voltage on the eFues. R1, R3, R7, R9, R13, R15, R19, R21, R27, R29, R32, R34, R37, R39, R42, R44 are used as part of the bias on the eFuse P/N MOSFET network. RA0, RA1, RA2, RA3, RA4, RA5, RA6, RA7 are used as pull up resistors on the VCBX_FLT lines. RILIM0, RILIM1, RILIM2, RILIM3, RILIM4, RILIM5, RILIM6, RILIM7 are used to limit the current through the eFuse to 1.9A.	
 Rad-hard Analogue: N/A	
