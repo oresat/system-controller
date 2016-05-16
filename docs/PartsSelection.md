@@ -115,7 +115,8 @@ Vendor: Digi-Key
 Vendor Part No.: NTR4101PT1HOSCT-ND		
 [Datasheet](http://www.onsemi.com/pub_link/Collateral/NTR4101P-D.PDF)	
 Reasons: Small footprint and cost 	
-Rad-hard Analogue: N/A	
+Rad-hard Analogue: International Rectifier IRHYB597Z30CM	
+[Datasheet](http://www.irf.com/product-info/datasheets/data/irhyb597z30cm.pdf)
 
 **Q0A/B, Q1A/B, Q2A/B, Q3A/B, Q4A/B, Q5A/B, Q6A/B, Q7A/B Diodes Inc. DMG6601LVT-7**:     
 Part: MOSFET, N/P pair     
