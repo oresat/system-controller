@@ -40,7 +40,7 @@ Part:  MCU LDO
 Vendor: Digi-Key  
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
-Reasons: This is a replacement for our original choice - the Skyworks AAT3215. This one has the same package and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is 120 mV.	
+Reasons: This is a replacement for our original choice - the Skyworks AAT3215. This one comes in the same package style and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is a low 120 mV.	
 Rad-Hard Analogue: ISL75052SEH	
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
 Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for radiation hardening.
