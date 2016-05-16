@@ -150,12 +150,12 @@ Reasons: This is a design requirement for communication from the Cubesat and all
 Rad-hard Analogue: N/A	
 
 ### LEDs
-**LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, Wurth Electronics, Inc. 150060GS75000**:      
+**LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED 13 Wurth Electronics, Inc. 150060GS75000**:      
 Part: Green LEDs    
 Vendor: Digi-Key  
 Vendor Part No.: 732-4971-1-ND 	
 [Datasheet](http://katalog.we-online.de/led/datasheet/150060GS75000.pdf)  
-Reasons: The green LEDs are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector.  They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. These LEDs are for debugging only and will be removed before launch.	
+Reasons: LED0 - LED7 are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector.  They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. LED13 is functionally located at on the output of the 3V LDO. It will be physically located at the front of the board for debugging purposes. These LEDs are for debugging only and will be removed before launch.	
 Rad-hard Analogue: N/A	
 
 **LED8, LED9, LED10, LED11, OSRAM Optp Semi. LA L296-Q2R2-1-Z**:      
