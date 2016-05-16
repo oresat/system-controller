@@ -155,7 +155,7 @@ Part: Green LEDs
 Vendor: Digi-Key  
 Vendor Part No.: 732-4971-1-ND 	
 [Datasheet](http://katalog.we-online.de/led/datasheet/150060GS75000.pdf)  
-Reasons: Green LEDs are used for debugging power. The green LEDs are placed at the front of the board for easy viewing and when on represent that the power line of interest is working. The green LEDs are on the VCB0 - VCB7 lines and are located between the output of the eFuse modules and the input of the 40 pin connector. They are needed on the evaluation board and will be removed before actual launch.	
+Reasons: The green LEDs are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector.  They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. These LEDs will be removed on the space-ready board.	
 Rad-hard Analogue: N/A	
 
 **LED8, LED9, LED10, LED11, OSRAM Optp Semi. LA L296-Q2R2-1-Z**:      
