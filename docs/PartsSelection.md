@@ -33,7 +33,7 @@ Vendor Part No.: ATMEGA128L-8AU
 [Datasheet](http://www.atmel.com/images/doc2467.pdf)  
 Reasons: The ATMega 128 comes in both a radiation hardened and non-hardened version. This gives us the ability to fabricate and test the full board for functionality using the cheaper non-hardened version before purchasing the more expensive radiation tolerant part. An additional benefit is that the ATMega128 has a large community of users with access to open source code and documentaion. This will help us bring the chip up quickly.
 Rad-hard Analogue: ATmegaS128		
-[Datasheet](http://www.atmel.com/Images/2467s.pdf)  
+[Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)  
 
 #### U2 Texas Instruments LP5907MFX-3.0/NOPB: 
 Part:  MCU LDO  
