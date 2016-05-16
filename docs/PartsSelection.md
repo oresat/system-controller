@@ -50,7 +50,7 @@ Part: Optoisolator 3.75KV PUSH PULL
 Vendor: Digi-Key  
 Vendor Part No.: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
-Reasons: Much less complex than other ICs looked at. Note: The output is inverted.		
+Reasons: This IC is less complex than other ICs looked at. The output is inverted.		
 Rad-hard Analogue: Avago HCPL5431		
 [Datasheet](http://www.avagotech.com/docs/AV02-3838EN)
 
@@ -68,7 +68,7 @@ part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part No.: 336-3600-ND	
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
-Reasons: This 8:1 MUX has a supply voltage range that fit our needs (0.8V - 5.25V) and it utilizes a small QFN footprint.	
+Reasons: Could be considered generic. The voltage range fits our needs.	
 Rad-hard Analogue: ST M54HC4051		
 [Datasheet](http://www2.st.com/content/ccc/resource/technical/document/datasheet/20/18/fe/5f/87/91/46/35/CD00270015.pdf/files/CD00270015.pdf/jcr:content/translations/en.CD00270015.pdf)
 
