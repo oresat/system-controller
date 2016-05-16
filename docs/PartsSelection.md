@@ -60,7 +60,7 @@ Vendor: Digi-Key
 Vendor Part No.: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
 Reasons: This IC offered the most complete solution compared to the competition. The competitors versions often required external circuitry or had limited features when compared with the TPS25944LRVCR.	
-Rad-hard Analogue: N/A
+Rad-hard Analogue: not identified
 
 #### U15 Silicon Labs TS4100ITQ1633
 part: 8:1 Mux	/ Analog Switch
