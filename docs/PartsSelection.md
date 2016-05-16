@@ -124,8 +124,9 @@ Vendor: Digi-Key
 Vendor Part No.: DMG6601LVT-7DICT-ND 	  
 [Datasheet](http://www.diodes.com/_files/datasheets/DMG6601LVT.pdf)  
 Reasons: This IC has been used in a previous design and has proved to be reliable. Bonus: Already had the Eagle package in the PSAS Eagle CAD library.	
-Rad-hard Analogue: N/A	
- 
+Rad-hard Analogue: International Rectifier IRHLUC7670Z4			
+[Datasheet](http://www.irf.com/product-info/datasheets/data/irhluc7670z4.pdf)
+
 #### Connectors
 **J1 CNC Tech 3220-10-0100-00:** 
 Part: JTAG Connector    
