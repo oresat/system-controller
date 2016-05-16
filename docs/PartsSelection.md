@@ -95,7 +95,7 @@ Part:  8MHz +/- 20ppm Crystal
 Vendor: Digi-Key  
 Vendor Part No.: 1535-10630-1-ND	
 [Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
-Reasons: Good value crystal with decent ppm count.	
+Reasons: This is a good valued crystal with decent ppm count.	
 Rad-hard Analogue: Swept Crystal		
 [Datasheet](http://statek.com/products/pdf/SWCX1%20Swept%20Crystal%20Rev%20B.pdf)	
 Reasons: The swept crystal is radiationed hardened.
@@ -107,7 +107,7 @@ Part: OSFET N-CH 60V 0.38A:
 Vendor: Digi-Key  
 Vendor Part No.: DMN62D0U-13DICT-ND		
 [Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)	
-Reasons: This MOSFET has a threshold voltage that is between 0.5V and 1V. This allows the capacitor in the hardware watchdog time to discharge from 3V to the max threshold voltage of 1V before turning off the FET. Note: There does not seem to be a rad-hard analogue with this low of a threshold voltage.			
+Reasons: This MOSFET was chosen based on the threshold voltage range of 0.5V to 1V. This allows the capacitor in the hardware watchdog more time to discharge from the 3V rail to where the FET turns off. Note: It has been dificult to find a radiation hardened version of this transistor. 				
 Rad-Hard Option: Intentional Rectifier IRHLUB770Z4	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhlub770z4.pdf) 		
 Reasons: Lowest Threshold voltage of any rad-hard FET I've looked at. This one is between 1V and 2V.
@@ -138,7 +138,7 @@ Part: JTAG Connector
 Vendor: Digi-Key  
 Vendor Part No.: 1175-1627-ND   
 [Datasheet](http://cnctech.us/pdfs/3220-XX-0100-00.pdf)  
-Reasons: Generic JTAG connector. 	
+Reasons: This is a generic JTAG connector.	
 Rad-hard Analogue: N/A	
 
 **CF1 Harwin Inc. M50-3202045:**     
@@ -146,7 +146,7 @@ Part: 40-Pinout Header
 Vendor: Digi-Key  
 Vendor Part No.: 952-1381-5-ND  	  
 [Datasheet](https://cdn.harwin.com/pdfs/60page104.pdf)  
-Reasons: Design requirement for communication from the Cubesat and allows for communication between the LGR and the System Controller. 	
+Reasons: This is a design requirement for communication from the Cubesat and allows for a link between the LGR and System Controller. Other boards will also use this connector.	
 Rad-hard Analogue: N/A	
 
 ### LEDs
