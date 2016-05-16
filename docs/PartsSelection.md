@@ -51,7 +51,8 @@ Vendor: Digi-Key
 Vendor Part No.: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
 Reasons: Much less complex than other ICs looked at. Most of the competitors require some external circuitry that is included internally with the ACPL-M61L. Note: The output is inverted.		
-Rad-hard Analogue: N/A
+Rad-hard Analogue: Avago HCPL5431		
+[Datasheet](file:///Users/soquinney/Downloads/AV02-3838EN-DS-HCPL-540x-02Oct20120.pdf)
 
 #### U7, U8, U9, U10, U11, U12, U13, U14 Texas Instruments TPS25944LRVCR:
 Part: IC Power Management eFuse 		
