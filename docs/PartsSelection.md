@@ -77,7 +77,7 @@ Part: 220 mF SuperCap
 Vendor: Digi-Key  
 Vendor Part No.: 604-1020-1-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
-Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. Bonus: Already have footprint & symbol in Eagle.	 
+Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. Bonus: Already have footprint & symbol in Eagle. Capable of holding charge for about 30 seconds.	 
 Rad-hard Analogue: N/A
 
 #### D1 Vishay SSC53L-E3/57T
@@ -96,7 +96,8 @@ Vendor: Digi-Key
 Vendor Part No.: 1535-10630-1-ND	
 [Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
 Reasons: Good value crystal with decent ppm count.	
-Rad-hard Analogue: N/A
+Rad-hard Analogue: Swept Crystal
+[Datasheet](http://statek.com/products/pdf/SWCX1%20Swept%20Crystal%20Rev%20B.pdf)
 
 #### MOSFETs
 **Q13 Didoes Inc. DMN62D0U-13:**		
