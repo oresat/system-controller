@@ -133,7 +133,7 @@ Part: JTAG Connector
 Vendor: Digi-Key  
 Vendor Part No.: 1175-1627-ND   
 [Datasheet](http://cnctech.us/pdfs/3220-XX-0100-00.pdf)  
-Reasons: Generic JTAG connector used on practicum board. 	
+Reasons: Generic JTAG connector. 	
 Rad-hard Analogue: N/A	
 
 **CF1 Harwin Inc. M50-3202045:**     
