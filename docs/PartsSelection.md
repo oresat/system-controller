@@ -40,7 +40,7 @@ Part:  MCU LDO
 Vendor: Digi-Key  
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
-Reasons: This is a replacement for our original choice - the Skyworks AAT3215. This one has the same package and it also has a functionally equivalent pin-out to the AAT3215. Just as important, the specs are very similar between the two chips. The input voltage range is 2.2V to 5.5 V and the drop out voltage is 120 mV.	
+Reasons: This is a replacement for our original choice - the Skyworks AAT3215. This one has the same package and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is 120 mV.	
 Rad-Hard Analogue: ISL75052SEH	
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
 Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for radiation hardening.
@@ -68,7 +68,7 @@ part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part No.: 336-3600-ND	
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
-Reasons: This 8:1 MUX has a small footprint to take up less board space.	
+Reasons: This 8:1 MUX has a supply voltage range that fit our needs (0.8V - 5.25V) and it utilizes a small QFN footprint.	
 Rad-hard Analogue: ST M54HC4051		
 [Datasheet](http://www2.st.com/content/ccc/resource/technical/document/datasheet/20/18/fe/5f/87/91/46/35/CD00270015.pdf/files/CD00270015.pdf/jcr:content/translations/en.CD00270015.pdf)
 
@@ -77,7 +77,7 @@ Part: 220 mF SuperCap
 Vendor: Digi-Key  
 Vendor Part No.: 604-1020-1-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
-Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. Bonus: Already have footprint & symbol in Eagle. Capable of holding charge for about 30 seconds.	 
+Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. Bonus: Already have footprint & symbol in Eagle. This capacitor should supply about half a minute of voltage if the power system fails.	 
 Rad-hard Analogue: N/A
 
 #### D1 Vishay SSC53L-E3/57T
@@ -85,7 +85,7 @@ part: Schottky Diode
 Vendor: Digi-Key  		
 Vendor Part No.: SSC53L-E3/57TGICT-ND	
 [Datasheet](https://www.vishay.com/docs/88885/ssc53l.pdf)	
-Reasons: The radiation hardened diode was chosen before looking for an off-the-shelf equivalent and it's turn-on voltage is about 0.45V. This Diode was chosen because it has a similar turn-on voltage.	
+Reasons: This Diode was chosen because it has a similar turn-on voltage to the radiation hardened version.	
 Rad-Hard Analogue: ST 1N5819U:		
 [Datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00241480.pdf)		
 Reasons: Low Turn-on voltage. 
@@ -97,7 +97,9 @@ Vendor Part No.: 1535-10630-1-ND
 [Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
 Reasons: Good value crystal with decent ppm count.	
 Rad-hard Analogue: Swept Crystal		
-[Datasheet](http://statek.com/products/pdf/SWCX1%20Swept%20Crystal%20Rev%20B.pdf)
+[Datasheet](http://statek.com/products/pdf/SWCX1%20Swept%20Crystal%20Rev%20B.pdf)	
+Reasons: The swept crystal is radiationed hardened.
+
 
 #### MOSFETs
 **Q13 Didoes Inc. DMN62D0U-13:**		
@@ -115,18 +117,20 @@ Part: MOSFET P-CH 20V 3.2A SOT23:
 Vendor: Digi-Key  
 Vendor Part No.: NTR4101PT1HOSCT-ND		
 [Datasheet](http://www.onsemi.com/pub_link/Collateral/NTR4101P-D.PDF)	
-Reasons: Small footprint and cost 	
+Reasons: Generic P-channel MOSFET. 	
 Rad-hard Analogue: International Rectifier IRHYB597Z30CM	
-[Datasheet](http://www.irf.com/product-info/datasheets/data/irhyb597z30cm.pdf)
+[Datasheet](http://www.irf.com/product-info/datasheets/data/irhyb597z30cm.pdf)		
+Reasons: There are not a lot of rad-hard p-channel mosfets to choose from. This one had some similar characteristics to the non-hardened version.
 
 **Q0A/B, Q1A/B, Q2A/B, Q3A/B, Q4A/B, Q5A/B, Q6A/B, Q7A/B Diodes Inc. DMG6601LVT-7**:     
 Part: MOSFET, N/P pair     
 Vendor: Digi-Key  
 Vendor Part No.: DMG6601LVT-7DICT-ND 	  
 [Datasheet](http://www.diodes.com/_files/datasheets/DMG6601LVT.pdf)  
-Reasons: This IC has been used in a previous design and has proved to be reliable. Bonus: Already had the Eagle package in the PSAS Eagle CAD library.	
+Reasons: This chip has been used in a previous PSAS design and has proved to be reliable.	
 Rad-hard Analogue: International Rectifier IRHLUC7670Z4			
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhluc7670z4.pdf)
+Reasons: Again, there are not a lot of rad-hard mosfets to choose from.
 
 #### Connectors
 **J1 CNC Tech 3220-10-0100-00:** 
