@@ -60,7 +60,7 @@ Vendor: Digi-Key
 Vendor Part No.: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
 Reasons: This IC offered the most complete solution compared to the competition. The competitors versions often required external circuitry or had limited features when compared with the TPS25944LRVCR.	
-Rad-hard Analogue: Intersil ISL706
+Rad-hard Analogue: Intersil ISL706		
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl705aeh-05beh-05ceh-06aeh-06beh-06ceh.pdf)
 
 #### U15 Silicon Labs TS4100ITQ1633
