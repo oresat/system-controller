@@ -68,7 +68,7 @@ part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part No.: 336-3600-ND	
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
-Reasons: Could be considered generic. The voltage range fits our needs.	
+Reasons: Could be considered generic. The voltage range fits our needs.			
 Rad-hard Analogue: ST M54HC4051		
 [Datasheet](http://www2.st.com/content/ccc/resource/technical/document/datasheet/20/18/fe/5f/87/91/46/35/CD00270015.pdf/files/CD00270015.pdf/jcr:content/translations/en.CD00270015.pdf)
 
