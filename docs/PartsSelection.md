@@ -50,7 +50,7 @@ Part: Optoisolator 3.75KV PUSH PULL
 Vendor: Digi-Key  
 Vendor Part No.: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
-Reasons: Much less complex than other ICs looked at. Bonus: This one has both a dual and single option.		
+Reasons: Much less complex than other ICs looked at. Most of the competitors require some external circuitry that is included internally with the ACPL-M61L. Note: The output is inverted.		
 Rad-hard Analogue: N/A
 
 #### U7, U8, U9, U10, U11, U12, U13, U14 Texas Instruments TPS25944LRVCR:
