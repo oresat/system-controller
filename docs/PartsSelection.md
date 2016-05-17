@@ -31,7 +31,7 @@ Part: Microcontroller 8BIT 128KB FLASH
 Vendor: Digi-Key 	
 Vendor Part No.: ATMEGA128L-8AU 			
 [Datasheet](http://www.atmel.com/images/doc2467.pdf)  
-Reasons: The ATMega128 comes in both a radiation hardened and non-hardened version. This gives us the ability to fabricate and test the full board for functionality using the cheaper non-hardened version before purchasing the more expensive radiation tolerant part. An additional benefit is that the ATMega128 has a large community of users with access to open source code and documentaion. This will help us bring the chip up quickly.
+Reasons: The ATMega128 comes in both a radiation hardened and non-hardened version. This gives us the ability to fabricate and test the full board for functionality using the cheaper non-hardened version before purchasing the more expensive radiation tolerant part. An additional benefit is that the ATMega128 has a large community of users with access to open source code and documentation. This will help us bring the chip up quickly.
 Rad-hard Analogue: ATmegaS128		
 [Datasheet](http://aerosupport.atmel.com/Atmel/doc41036.pdf)  
 
@@ -40,7 +40,7 @@ Part:  MCU LDO
 Vendor: Digi-Key  
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
-Reasons: This is a replacement for our original choice - the Skyworks AAT3215, which is not available through digikey. This one comes in the same package style and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is a low 120 mV.	
+Reasons: This is a replacement for our original choice - the Skyworks AAT3215, which is not available through digikey. This one comes in the same package and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is a low 120 mV.	
 Rad-Hard Analogue: ISL75052SEH	
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
 Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for the rad-hard upgrade.
@@ -77,7 +77,7 @@ Part: 220 mF SuperCap
 Vendor: Digi-Key  
 Vendor Part No.: 604-1020-1-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
-Reasons:  The same capacitor was used on a previous PSAS project and proved to be reliable. This capacitor should supply about half a minute of charge if the power system fails.	 
+Reasons:  The same capacitor was used on a previous PSAS board and proved to be reliable. This capacitor should supply about half a minute of charge if the power system fails.	 
 Rad-hard Analogue: N/A
 
 #### D1, D2, D3 Vishay SSC53L-E3/57T
@@ -107,7 +107,7 @@ Part: MOSFET N-CH 60V 0.38A:
 Vendor: Digi-Key  
 Vendor Part No.: DMN62D0U-13DICT-ND		
 [Datasheet](http://www.diodes.com/_files/datasheets/DMN62D0U.pdf)	
-Reasons: This MOSFET was chosen based on the threshold voltage range of 0.5V to 1V. This allows the capacitor in the hardware watchdog more time to discharge from the 3V rail to where the FET turns off. Note: It has been dificult to find a radiation hardened version of this transistor. 				
+Reasons: This MOSFET was chosen based on the threshold voltage range of 0.5V to 1V. This allows the capacitor in the hardware watchdog circuitry more time to discharge from the 3V rail to where the FET turns off. Note: It has been dificult to find a radiation hardened transistor with a similar threshhold voltage range. This could be critical to reproducing the watchdog timing.				
 Rad-Hard Option: Intentional Rectifier IRHLUB770Z4	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhlub770z4.pdf) 		
 Reasons: Lowest Threshold voltage of any rad-hard FET viewed. This one is between 1V and 2V.
