@@ -120,7 +120,7 @@ Vendor Part No.: NTR4101PT1HOSCT-ND
 Reasons: Generic P-channel MOSFET. 	
 Rad-hard Analogue: International Rectifier IRHYB597Z30CM	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhyb597z30cm.pdf)		
-Reasons: There are not a lot of rad-hard p-channel mosfets to choose from. This one had some similar characteristics to the non-hardened version. Otherwise it could be considered generic.
+Reasons: There are not a lot of rad-hard p-channel mosfets to choose from. This transistor could be considered generic.
 
 **Q0A/B, Q1A/B, Q2A/B, Q3A/B, Q4A/B, Q5A/B, Q6A/B, Q7A/B Diodes Inc. DMG6601LVT-7**:     
 Part: MOSFET, N/P pair     
