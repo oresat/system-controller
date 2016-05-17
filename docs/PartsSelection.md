@@ -242,7 +242,7 @@ Vendor Part No.: 1276-4787-1-N
 Reasons: These resistors are configured as current monitoring resistors for the eFuse circuitry. They allow the microcontroller to monitor the amount of current through the output of each eFuse IC.	
 Rad-hard Analogue: N/A	
 
-**R18, Samsung RC1608F474CS**:      
+**R18 Samsung RC1608F474CS**:      
 Part: RES SMD 470K OHM 1% 1/10W 0603				
 Vendor: Digi-Key			  
 Vendor Part No.: 1276-4902-1-ND 				 
