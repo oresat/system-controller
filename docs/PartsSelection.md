@@ -8,7 +8,7 @@
 * [SuperCap](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#c1-elna-america-dsk-3r3h224u-hl) 	
 * [Schottky Diode](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#d1-vishay-ssc53l-e357t)		
 * [8MHz Crystal](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#x1-abaracon-llc-abm3-8000mhz-d2y-t)		
-* [Transistors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#mosfets)		
+* [MOSFETs](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#mosfets)		
 * [Connectors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#connectors)				
 * [LEDs](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#leds)	
 * [Capacitors](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#capacitors)	
@@ -150,7 +150,7 @@ Reasons: This is a design requirement for communication from the Cubesat and all
 Rad-hard Analogue: N/A	
 
 ### LEDs
-**LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED 13 Wurth Electronics, Inc. 150060GS75000**:      
+**LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED13 Wurth Electronics, Inc. 150060GS75000**:      
 Part: Green LEDs    
 Vendor: Digi-Key  
 Vendor Part No.: 732-4971-1-ND 	
