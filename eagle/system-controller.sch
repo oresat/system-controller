@@ -9143,7 +9143,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Kemet"/>
 <attribute name="MPN" value="C0603C104J4RACTU"/>
 </part>
-<part name="R60" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
+<part name="R60" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="0 Ohm">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="A103093CT-ND"/>
 <attribute name="MFN" value="TE "/>
@@ -9179,7 +9179,7 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="TE "/>
 <attribute name="MPN" value="4-1676481-5"/>
 </part>
-<part name="R72" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
+<part name="R72" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="0 Ohm">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="A103093CT-ND"/>
 <attribute name="MFN" value="TE "/>
@@ -10034,7 +10034,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="GND16" gate="1" x="139.7" y="43.18" rot="MR0"/>
 <instance part="C15" gate="CE" x="139.7" y="264.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.524" y="263.271" size="1.778" layer="95"/>
-<attribute name="VALUE" x="132.334" y="263.271" size="1.778" layer="96"/>
+<attribute name="VALUE" x="134.874" y="263.271" size="1.778" layer="96"/>
 <attribute name="DIST" x="139.7" y="264.16" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="DPN" x="139.7" y="264.16" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFN" x="139.7" y="264.16" size="1.778" layer="96" rot="R90" display="off"/>
@@ -10273,7 +10273,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="3V-18" gate="G$1" x="264.16" y="180.34"/>
 <instance part="C17" gate="CE" x="139.7" y="254" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.524" y="253.111" size="1.778" layer="95"/>
-<attribute name="VALUE" x="132.334" y="253.111" size="1.778" layer="96"/>
+<attribute name="VALUE" x="134.874" y="253.111" size="1.778" layer="96"/>
 <attribute name="DIST" x="139.7" y="254" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="DPN" x="139.7" y="254" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFN" x="139.7" y="254" size="1.778" layer="96" rot="R90" display="off"/>
@@ -10287,11 +10287,13 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="NAME" x="200.66" y="87.63" size="1.778" layer="95"/>
 <attribute name="VALUE" x="200.66" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="R60" gate="R" x="205.74" y="101.6" rot="R180">
+<instance part="R60" gate="R" x="205.74" y="101.6" smashed="yes" rot="R180">
 <attribute name="DIST" x="205.74" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="DPN" x="205.74" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFN" x="205.74" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="205.74" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="207.01" y="105.1814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="209.55" y="99.822" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R54" gate="R" x="195.58" y="129.54" smashed="yes" rot="R90">
 <attribute name="DIST" x="195.58" y="129.54" size="1.778" layer="96" rot="R90" display="off"/>

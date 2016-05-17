@@ -2423,7 +2423,7 @@ These rules will work for both Sunstone Circuits and OSH Park. They have Sunston
 <attribute name="VALUE" x="6.5" y="68" size="0.635" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="6.5" y="67" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R60" library="rcl_custom" package=".0603-B-NOSILK" value="390" x="10.3" y="72.8" smashed="yes" rot="R180">
+<element name="R60" library="rcl_custom" package=".0603-B-NOSILK" value="0 Ohm" x="10.3" y="72.8" smashed="yes" rot="R180">
 <attribute name="DIST" value="digikey" x="10.3" y="72.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFN" value="TE " x="10.3" y="72.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="4-1676481-5" x="10.3" y="72.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2477,7 +2477,7 @@ These rules will work for both Sunstone Circuits and OSH Park. They have Sunston
 <attribute name="VALUE" x="10.4" y="63.5" size="0.635" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="8.8" y="64.4" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R72" library="rcl_custom" package=".0603-B-NOSILK" value="390" x="9.7" y="48.5" smashed="yes">
+<element name="R72" library="rcl_custom" package=".0603-B-NOSILK" value="0 Ohm" x="9.7" y="48.5" smashed="yes">
 <attribute name="DIST" value="digikey" x="9.7" y="48.5" size="1.778" layer="27" display="off"/>
 <attribute name="MFN" value="TE " x="9.7" y="48.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="4-1676481-5" x="9.7" y="48.5" size="1.778" layer="27" display="off"/>
