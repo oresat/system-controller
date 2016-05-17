@@ -184,7 +184,7 @@ Vendor Part No.: 1276-2239-1-ND
 Reasons: C2, C8, C11, C16, C21, C24, C26, and C30 are used on the TPS25944LRVCR eFuse IC's to set the ramp rate of output voltage.	
 Rad-hard Analogue: N/A	
 
-**C15, C17, Samsung CL10C090DB8NNNC**:       
+**C15, C17 Samsung CL10C090DB8NNNC**:       
 Part: 9pF ±0.5pF 50V C0G, NP0 Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-2143-1-ND		
@@ -192,7 +192,7 @@ Vendor Part No.: 1276-2143-1-ND
 Reasons: These caps compliment the 8MHz Crystal on the ATMega128 microcontroller.	
 Rad-hard Analogue: N/A	
 
-**C5, Samsung CL10A225KQ8NNNC**:       
+**C5 Samsung CL10A225KQ8NNNC**:       
 Part: 2.2µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-1183-1-ND		
@@ -200,7 +200,7 @@ Vendor Part No.: 1276-1183-1-ND
 Reasons: C5 is used as a bypass capacitor on the LDO. 	
 Rad-hard Analogue: N/A	
 I
-**C10, Samsung CL10A226KQ8NRNE**:       
+**C10 Samsung CL10A226KQ8NRNE**:       
 Part: 22µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-2867-2-ND		
@@ -208,7 +208,7 @@ Vendor Part No.: 1276-2867-2-ND
 Reasons: This capacitor is used on the Hardware Watchdog as part of the RC timing circuit.	 
 Rad-hard Analogue: N/A	
 
-**C4, Kemet C0603C103J5RACTU**:       
+**C4 Kemet C0603C103J5RACTU**:       
 Part: 10000pF ±5% 50V X7R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 399-1092-1-ND	
@@ -217,7 +217,7 @@ Reasons: C4 is used as a bypass Cap on the AAT3215 LDO.	It is not used on the cu
 Rad-hard Analogue: N/A
 	 
 
-**C12, C13, C18, C19, C27, C28, C31, C32, Kemet C0603C103J5RACTU**:       
+**C12, C13, C18, C19, C27, C28, C31, C32 Kemet C0603C103J5RACTU**:       
 Part: 0.10µF ±5% 16V X7R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 399-1097-1-ND	
@@ -235,7 +235,7 @@ Reasons: This 10k resistor is used as a pull-up resistor on the LDO.
 Rad-hard Analogue: N/A	    
 
 **RIMON1, RIMON2, RIMON3, RIMON4, RIMON5, RIMON6, RIMON7, RIMON8 Samsung RC1608F3012CS**:      
-Part: RES SMD 30K OHM 0.1% 1/10W 0603				
+Part: RES SMD 30K OHM 1% 1/10W 0603				
 Vendor: Digi-Key			  
 Vendor Part No.: 1276-4787-1-N				 	
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
