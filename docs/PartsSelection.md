@@ -59,7 +59,7 @@ Part: IC Power Management eFuse
 Vendor: Digi-Key  
 Vendor Part No.: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
-Reasons: This IC offered the most complete solution compared to the competition. The chip can be powered from a 3.0V supply (has an operating voltage range of 2.7V to 18V). It has a current limiting feature, which is set by an external resistor. It alows for current monitoring, undervoltage protection, overvoltage protection, and the slew rate is adjustable through an external capacitor.		
+Reasons: This IC offered the most complete solution compared to the competition. The chip can be powered from a 3.0V supply (has an operating voltage range of 2.7V to 18V). It has a current limiting feature, which is set by an external resistor. It alows for current monitoring, undervoltage protection, overvoltage protection, and the slew rate is adjustable by use of an external capacitor.		
 Rad-hard Analogue: Intersil ISL706		
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl705aeh-05beh-05ceh-06aeh-06beh-06ceh.pdf)
 
