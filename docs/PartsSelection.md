@@ -141,7 +141,7 @@ Vendor Part No.: 1175-1627-ND
 Reasons: This is a generic JTAG connector.	
 Rad-hard Analogue: N/A	
 
-**CF1 Harwin Inc. M50-3202045:**     
+**CF1, CF2 Harwin Inc. M50-3202045:**     
 Part: 40-Pinout Header     
 Vendor: Digi-Key  
 Vendor Part No.: 952-1381-5-ND  	  
