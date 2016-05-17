@@ -41,9 +41,9 @@ Vendor: Digi-Key
 Vendor Part No.: 296-40357-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/lp5907.pdf)  
 Reasons: This is a replacement for our original choice - the Skyworks AAT3215, which is not available through digikey. This one comes in the same package and it also has a functionally equivalent pin-out to the AAT3215. The input voltage range is 2.2V to 5.5 V and the drop out voltage is a low 120 mV.	
-Rad-Hard Analogue: ISL75052SEH	
-[Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75052seh.pdf)	
-Reasons: This IC shares the same footprint as the LP5907MFX. Unfortunately, the pin-out is different so this chip does not offer a direct plug-and-play option for the rad-hard upgrade.
+Rad-Hard Analogue: ISL75051SEH	
+[Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl75051seh.pdf)	
+Reasons: Low drop out version - 65mV @ 1A and 225mV @ 3A. The IC operates over an input voltage range of 2.2V to 6.0V and can provide output voltages between 0.8V and 5V. The output voltage is fixed using an external voltage divider.
 
 #### U3, U4, U5, U6 Broadcom Limited ACPL-M61L-000E:
 Part: Optoisolator 3.75KV PUSH PULL 	
