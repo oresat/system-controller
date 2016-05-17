@@ -50,7 +50,7 @@ Part: Optoisolator 3.75KV PUSH PULL
 Vendor: Digi-Key  
 Vendor Part No.: 516-2169-5-ND		
 [Datasheet](http://www.avagotech.com/docs/AV02-2150EN)  
-Reasons: This IC is less complex than other comparable products looked at. The chip can be powered from a 3.0V supply and features a low 1.6mA input current. The temperature range exceeds requirements on the high end (-40C to 105C). As a note, the output is inverted.		
+Reasons: This IC is less complex than other comparable products. The chip can be powered from a 3.0V supply and features a low 1.6mA input current. The temperature range exceeds requirements on the high end (-40C to 105C). As a note, the output is inverted.		
 Rad-hard Analogue: Avago HCPL5431		
 [Datasheet](http://www.avagotech.com/docs/AV02-3838EN)
 
@@ -59,7 +59,7 @@ Part: IC Power Management eFuse
 Vendor: Digi-Key  
 Vendor Part No.: 296-42152-1-ND		
 [Datasheet](http://www.ti.com/lit/ds/symlink/tps25944a.pdf)		
-Reasons: This IC offered the most complete solution compared to the competition. The competitors versions often required external circuitry or had limited features when compared with the TPS25944LRVCR.	
+Reasons: This IC offered the most complete solution compared to the competition. The chip can be powered from a 3.0V supply (has an operating voltage range of 2.7V to 18V). It has a current limiting feature, which is set by an external resistor. It alows for current monitoring, undervoltage protection, overvoltage protection, and the slew rate is adjustable through an external capacitor.		
 Rad-hard Analogue: Intersil ISL706		
 [Datasheet](http://www.intersil.com/content/dam/Intersil/documents/isl7/isl705aeh-05beh-05ceh-06aeh-06beh-06ceh.pdf)
 
@@ -68,7 +68,7 @@ Part: 8:1 Mux	/ Analog Switch
 Vendor: Digi-Key  
 Vendor Part No.: 336-3600-ND	
 [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/TS410x.pdf)		
-Reasons: Could be considered generic. The voltage range fits our needs.			
+Reasons: This chip could be considered generic as there were no specific reasons that it was chosen other than it can be powered from 3.0V and comes in a small 3 x 3 TQFN package.			
 Rad-hard Analogue: ST M54HC4051		
 [Datasheet](http://www2.st.com/content/ccc/resource/technical/document/datasheet/20/18/fe/5f/87/91/46/35/CD00270015.pdf/files/CD00270015.pdf/jcr:content/translations/en.CD00270015.pdf)
 
@@ -77,7 +77,7 @@ Part: 220 mF SuperCap
 Vendor: Digi-Key  
 Vendor Part No.: 604-1020-1-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf)		
-Reasons:  The same capacitor was used on a previous PSAS project board and proved to be reliable. This capacitor should supply about half a minute of voltage if the power system fails.	 
+Reasons:  The same capacitor was used on a previous PSAS project and proved to be reliable. This capacitor should supply about half a minute of charge if the power system fails.	 
 Rad-hard Analogue: N/A
 
 #### D1 Vishay SSC53L-E3/57T
@@ -98,7 +98,7 @@ Vendor Part No.: 1535-10630-1-ND
 Reasons: This is a good valued crystal with decent ppm count.	
 Rad-hard Analogue: Swept Crystal		
 [Datasheet](http://statek.com/products/pdf/SWCX1%20Swept%20Crystal%20Rev%20B.pdf)	
-Reasons: The swept crystal is radiationed hardened.
+Reasons: The swept crystal is recommended for harsh environments. 
 
 
 #### MOSFETs
@@ -110,7 +110,7 @@ Vendor Part No.: DMN62D0U-13DICT-ND
 Reasons: This MOSFET was chosen based on the threshold voltage range of 0.5V to 1V. This allows the capacitor in the hardware watchdog more time to discharge from the 3V rail to where the FET turns off. Note: It has been dificult to find a radiation hardened version of this transistor. 				
 Rad-Hard Option: Intentional Rectifier IRHLUB770Z4	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhlub770z4.pdf) 		
-Reasons: Lowest Threshold voltage of any rad-hard FET I've looked at. This one is between 1V and 2V.
+Reasons: Lowest Threshold voltage of any rad-hard FET viewed. This one is between 1V and 2V.
 
 **Q10, Q12 On Semi. DMN62D0U-13:** 
 Part: MOSFET P-CH 20V 3.2A SOT23:		
@@ -120,7 +120,7 @@ Vendor Part No.: NTR4101PT1HOSCT-ND
 Reasons: Generic P-channel MOSFET. 	
 Rad-hard Analogue: International Rectifier IRHYB597Z30CM	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhyb597z30cm.pdf)		
-Reasons: There are not a lot of rad-hard p-channel mosfets to choose from. This one had some similar characteristics to the non-hardened version.
+Reasons: There are not a lot of rad-hard p-channel mosfets to choose from. This one had some similar characteristics to the non-hardened version. Otherwise it could be considered generic.
 
 **Q0A/B, Q1A/B, Q2A/B, Q3A/B, Q4A/B, Q5A/B, Q6A/B, Q7A/B Diodes Inc. DMG6601LVT-7**:     
 Part: MOSFET, N/P pair     
@@ -130,7 +130,7 @@ Vendor Part No.: DMG6601LVT-7DICT-ND
 Reasons: This chip has been used in a previous PSAS design and has proved to be reliable.	
 Rad-hard Analogue: International Rectifier IRHLUC7670Z4			
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhluc7670z4.pdf)
-Reasons: Again, there are not a lot of rad-hard mosfets to choose from.
+Reasons: Again, there are not a lot of rad-hard mosfets to choose from. This chip could be considered generic.
 
 #### Connectors
 **J1 CNC Tech 3220-10-0100-00:** 
@@ -146,7 +146,7 @@ Part: 40-Pinout Header
 Vendor: Digi-Key  
 Vendor Part No.: 952-1381-5-ND  	  
 [Datasheet](https://cdn.harwin.com/pdfs/60page104.pdf)  
-Reasons: This is a design requirement for communication from the Cubesat and allows for a link between the LGR and System Controller. Other boards will also use this connector.	
+Reasons: This is a design requirement for communication from the Cubesat and allows for a link between the LGR and System Controller.			
 Rad-hard Analogue: N/A	
 
 ### LEDs
