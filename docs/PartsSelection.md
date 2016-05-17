@@ -95,7 +95,7 @@ Part:  8MHz +/- 20ppm Crystal
 Vendor: Digi-Key  
 Vendor Part No.: 1535-10630-1-ND	
 [Datasheet](http://www.abracon.com/Resonators/abm3.pdf)  
-Reasons: This is a good valued crystal with decent ppm count.	
+Reasons: This is a good valued crystal with decent ppm count (+/-20ppm).	
 Rad-hard Analogue: Swept Crystal		
 [Datasheet](http://statek.com/products/pdf/SWCX1%20Swept%20Crystal%20Rev%20B.pdf)	
 Reasons: The swept crystal is recommended for harsh environments. 
