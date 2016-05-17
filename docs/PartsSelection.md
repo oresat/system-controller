@@ -199,7 +199,7 @@ Vendor Part No.: 1276-1183-1-ND
 [Datasheet](http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2015/08/14/S_CL10A225KQ8NNNC.pdf)  
 Reasons: C5 is used as a bypass capacitor on the LDO. 	
 Rad-hard Analogue: N/A	
-I
+
 **C10 Samsung CL10A226KQ8NRNE**:       
 Part: 22µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
@@ -235,7 +235,7 @@ Reasons: This 10k resistor is used as a pull-up resistor on the LDO.
 Rad-hard Analogue: N/A	    
 
 **RIMON1, RIMON2, RIMON3, RIMON4, RIMON5, RIMON6, RIMON7, RIMON8 Samsung RC1608F3012CS**:      
-Part: RES SMD 30K OHM 1% 1/10W 0603				
+Part: RES SMD 30.1K OHM 1% 1/10W 0603				
 Vendor: Digi-Key			  
 Vendor Part No.: 1276-4787-1-N				 	
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf)  
