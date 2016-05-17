@@ -155,7 +155,7 @@ Part: Green LEDs
 Vendor: Digi-Key  
 Vendor Part No.: 732-4971-1-ND 	
 [Datasheet](http://katalog.we-online.de/led/datasheet/150060GS75000.pdf)  
-Reasons: LED0 - LED7 are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector. LED13 is functionally located at on the output of the 3V LDO. They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. These LEDs are for debugging only and will be removed before launch.			
+Reasons: LED0 - LED7 are on the VCB0 - VCB7 lines and are functionally located between the output of the eFuse modules and the input of the 40 pin connector. LED13 is used to indicate 3.0V operation. They are placed at the front of the board for easy viewing and when on represent that the line of interest is working. These LEDs are for debugging only and will be removed before launch.			
 Rad-hard Analogue: N/A	
 
 **LED8, LED9, LED10, LED11, OSRAM Optp Semi. LA L296-Q2R2-1-Z**:      
@@ -168,61 +168,61 @@ Rad-hard Analogue: N/A
 
 ### Capacitors
 
-**C2, C4, C6, C12, C14, C16, C20, C21, C22, C25 Samsung CL10B105KP8NNNC**:       
+**C1, C6, C7, C9, C14, C20, C22, C23, C25, C29 Samsung CL10B105KP8NNNC**:       
 Part: 1µF ±10% 10V X7R Ceramic Capacitor SMD, MLCC 0603 
 Vendor: Digi-Key  
 Vendor Part No.: 1276-1946-1-ND  
 [Datasheet](http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2015/06/15/CL10B105KP8NNNC.pdf)  
-Reasons: All capacitors are used as bypass caps. C2, C4, C6, C12, C14, C16, C20, and CFUSE3A are used on the eFuse ICs. C25 is found on the 8:1 Mux and CLD01 is on the LDO.	
+Reasons: These capacitors are used as bypass caps. C1, C7, C9, C14, C20, C22, C25, and C29 are used on the eFuse ICs. C23 is found on the 8:1 Mux and C6 is on the LDO.	
 Rad-hard Analogue: N/A	
 
-**C3, C5, C9, C11, C13, C15, C17, C19 Samsung CL10C222GA8NNNC**:       
+**C2, C8, C11, C16, C21, C24, C26, C30 Samsung CL10C222GA8NNNC**:       
 Part: 2200pF ±2% 25V C0G, NP0 Ceramic Capacitor SMD, MLCC 0603
 Vendor: Digi-Key  
 Vendor Part No.: 1276-2239-1-ND		
 [Datasheet](http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2015/06/03/CL10C222GA8NNNC.pdf)  
-Reasons: C3, C5, C9, C11, C13, C15, C17, C19 are used on the TPS25944LRVCR eFuse IC's to set the ramp rate of output voltage.	
+Reasons: C2, C8, C11, C16, C21, C24, C26, and C30 are used on the TPS25944LRVCR eFuse IC's to set the ramp rate of output voltage.	
 Rad-hard Analogue: N/A	
 
-**C7, C8, Samsung CL10C090DB8NNNC**:       
+**C15, C17, Samsung CL10C090DB8NNNC**:       
 Part: 9pF ±0.5pF 50V C0G, NP0 Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-2143-1-ND		
 [Datasheet](http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2015/06/03/CL10C090DB8NNNC.pdf)  
-Reasons: These caps compliment the 8MHz Crystal on the ATMega 128 microcontroller.	
+Reasons: These caps compliment the 8MHz Crystal on the ATMega128 microcontroller.	
 Rad-hard Analogue: N/A	
 
-**C29, Samsung CL10A225KQ8NNNC**:       
+**C5, Samsung CL10A225KQ8NNNC**:       
 Part: 2.2µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-1183-1-ND		
 [Datasheet](http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2015/08/14/S_CL10A225KQ8NNNC.pdf)  
-Reasons: Bypass Cap on the LDO. 	
+Reasons: C5 is used as a bypass capacitor on the LDO. 	
 Rad-hard Analogue: N/A	
 I
-**C24, Samsung CL10A226KQ8NRNE**:       
+**C10, Samsung CL10A226KQ8NRNE**:       
 Part: 22µF ±10% 6.3V X5R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 1276-2867-2-ND		
 [Datasheet](http://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10A226KQ8NRNE_Spec.pdf)  
-Reasons: This capacitor is used on the Hardware Watchdog as part of the RC timer.	 
+Reasons: This capacitor is used on the Hardware Watchdog as part of the RC timing circuit.	 
 Rad-hard Analogue: N/A	
 
-**C23, Kemet C0603C103J5RACTU**:       
+**C4, Kemet C0603C103J5RACTU**:       
 Part: 10000pF ±5% 50V X7R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 399-1092-1-ND	
 [Datasheet](http://www.kemet.com/docfinder?Partnumber=C0603C103J5RACTU)  
-Reasons: Bypass Cap on the LDO. 		
+Reasons: C4 is used as a bypass Cap on the AAT3215 LDO.	It is not used on the current LDO as that pin is a no connect.	
 Rad-hard Analogue: N/A
 	 
 
-**C26, C27, C28, C30, C31, C32, C33, C34, Kemet C0603C103J5RACTU**:       
+**C12, C13, C18, C19, C27, C28, C31, C32, Kemet C0603C103J5RACTU**:       
 Part: 0.10µF ±5% 16V X7R Ceramic Capacitor SMD, MLCC 0603	
 Vendor: Digi-Key  
 Vendor Part No.: 399-1097-1-ND	
 [Datasheet](http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf)  
-Reasons: Bypass C26, C27, C28, and C30 are used as bypass caps on the ATMega 128 microcontroller. C31, C32,C33, and C34 are bypass caps on the optoisolators.	
+Reasons: C12, C13, C18, and C19 are used as bypass caps on the ATMega128 microcontroller. C27, C28, C31, and C32 are used as bypass caps on the optoisolators.	
 Rad-hard Analogue: N/A	
 #### Resistors
 
