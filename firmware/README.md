@@ -17,12 +17,11 @@ The Makefile assumes an Atmel AVR JTAGICE3 is being used with an Atmega128.
 
 ## Fuse bits
 
-	In order for the clock to function properly the currect fuse bits need to be set.
-	This can be done in avrdude by including the following command line argument:
+In order for the clock to function properly the currect fuse bits need to be set. This can be done in avrdude by including the following command line argument:
 
-	'-U lfuse:w:0xc0:m -U hfuse:w:0x89:m -U efuse:w:0xff:m'
+	-U lfuse:w:0xc0:m -U hfuse:w:0x89:m -U efuse:w:0xff:m
 
-	The CKOPT bit is set so that the crystal receives more power so that it can be detected reliably at 8MHz. If CKOPT is not set, the clock from the crystal wont be strong enough.
+The CKOPT bit is set so that the crystal receives more power so that it can be detected reliably at 8MHz. If CKOPT is not set, the clock from the crystal wont be strong enough.
 
 ## Example usage
 
