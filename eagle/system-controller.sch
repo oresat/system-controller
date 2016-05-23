@@ -8616,19 +8616,19 @@ Source: avr.lbr</description>
 by exp-lbrs.ulp</description>
 <packages>
 <package name="QFN-20-L">
-<circle x="-2.27" y="-1.816" radius="0.254" width="0.15" layer="21"/>
+<circle x="-1.27" y="-1.016" radius="0.254" width="0.127" layer="21"/>
 <wire x1="-1.6764" y1="1.6764" x2="-2.1844" y2="1.6764" width="0.1524" layer="21"/>
 <wire x1="2.1844" y1="1.1684" x2="2.1844" y2="1.6764" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="-1.6764" x2="2.1844" y2="-1.6764" width="0.1524" layer="21"/>
+<wire x1="-2.1844" y1="-1.1684" x2="-2.1844" y2="-1.6764" width="0.1524" layer="21"/>
 <wire x1="-2.1844" y1="1.6764" x2="-2.1844" y2="1.1684" width="0.1524" layer="21"/>
 <wire x1="2.1844" y1="1.6764" x2="1.6764" y2="1.6764" width="0.1524" layer="21"/>
 <wire x1="2.1844" y1="-1.6764" x2="2.1844" y2="-1.1684" width="0.1524" layer="21"/>
-<wire x1="-2.2" y1="-1.2" x2="-1.7" y2="-1.7" width="0.1524" layer="21"/>
+<wire x1="-2.1844" y1="-1.6764" x2="-1.6764" y2="-1.6764" width="0.1524" layer="21"/>
 <wire x1="2" y1="1.5" x2="-2" y2="1.5" width="0.1524" layer="51"/>
 <wire x1="2" y1="-1.5" x2="2" y2="1.5" width="0.1524" layer="51"/>
-<wire x1="-2" y1="-1.2" x2="-1.7" y2="-1.5" width="0.1524" layer="51"/>
-<wire x1="-1.7" y1="-1.5" x2="2" y2="-1.5" width="0.1524" layer="51"/>
-<wire x1="-2" y1="1.5" x2="-2" y2="-1.2" width="0.1524" layer="51"/>
+<wire x1="-2" y1="-1.5" x2="2" y2="-1.5" width="0.1524" layer="51"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="-1.5" width="0.1524" layer="51"/>
 <smd name="1" x="-1.252" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
 <smd name="2" x="-0.752" y="-1.3945" dx="0.2" dy="0.6" layer="1" rot="R180"/>
 <smd name="3" x="-0.252" y="-1.3945" dx="0.2" dy="0.6" layer="1"/>
@@ -8649,31 +8649,35 @@ by exp-lbrs.ulp</description>
 <smd name="18" x="-1.91" y="0.25" dx="0.2" dy="0.6" layer="1" rot="R270"/>
 <smd name="19" x="-1.9045" y="-0.248" dx="0.2" dy="0.6" layer="1" rot="R270"/>
 <smd name="20" x="-1.9045" y="-0.748" dx="0.2" dy="0.6" layer="1" rot="R270"/>
-<smd name="21" x="0" y="0" dx="2.6" dy="1.6" layer="1" cream="no"/>
-<text x="3" y="0.5" size="1" layer="25" font="vector" ratio="15" rot="SR0">&gt;NAME</text>
-<text x="3" y="-1" size="1" layer="27" font="vector" ratio="15" rot="SR0">&gt;VALUE</text>
-<rectangle x1="-1.1" y1="-0.5" x2="-0.2" y2="0.5" layer="31"/>
-<rectangle x1="0.2" y1="-0.5" x2="1.1" y2="0.5" layer="31"/>
+<smd name="21" x="0" y="0" dx="2.6" dy="1.6" layer="1"/>
+<text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
 </package>
 <package name="DO-214AB">
-<wire x1="3.429" y1="-2.921" x2="-3.429" y2="-2.921" width="0.127" layer="21"/>
-<wire x1="-3.429" y1="-2.921" x2="-3.429" y2="2.921" width="0.127" layer="51"/>
-<wire x1="-3.429" y1="2.921" x2="3.429" y2="2.921" width="0.127" layer="21"/>
-<wire x1="3.429" y1="2.921" x2="3.429" y2="-2.921" width="0.127" layer="51"/>
-<wire x1="3.43" y1="2.9" x2="3.43" y2="2.3" width="0.127" layer="21"/>
-<wire x1="3.43" y1="-2.9" x2="3.43" y2="-2.3" width="0.127" layer="21"/>
-<wire x1="-3.43" y1="-2.9" x2="-3.43" y2="-2.3" width="0.127" layer="21"/>
-<wire x1="-3.43" y1="2.9" x2="-3.43" y2="2.3" width="0.127" layer="21"/>
+<wire x1="3.429" y1="-2.921" x2="-3.429" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="-3.429" y1="2.921" x2="3.429" y2="2.921" width="0.127" layer="51"/>
+<wire x1="3.43" y1="2.9" x2="3.43" y2="2.354" width="0.127" layer="51"/>
+<wire x1="3.43" y1="-2.9" x2="3.43" y2="-2.354" width="0.127" layer="51"/>
+<wire x1="-3.43" y1="-2.9" x2="-3.43" y2="-2.354" width="0.127" layer="51"/>
+<wire x1="-3.43" y1="2.9" x2="-3.43" y2="2.3286" width="0.127" layer="51"/>
 <rectangle x1="-3.429" y1="-2.921" x2="3.429" y2="2.921" layer="39" rot="R180"/>
 <smd name="1" x="-3.683" y="0" dx="2.286" dy="4.064" layer="1" rot="R180"/>
 <smd name="2" x="3.683" y="0" dx="2.286" dy="4.064" layer="1" rot="R180"/>
 <text x="-3.175" y="3.175" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-3.175" y="-4.064" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
-<polygon width="0.127" layer="21">
+<polygon width="0.127" layer="51">
 <vertex x="-0.889" y="1.905"/>
 <vertex x="1.016" y="0"/>
 <vertex x="-0.889" y="-1.905"/>
 </polygon>
+<wire x1="-3.5814" y1="2.3368" x2="-3.5814" y2="3.0734" width="0.127" layer="21"/>
+<wire x1="-3.5814" y1="3.0734" x2="-2.3114" y2="3.0734" width="0.127" layer="21"/>
+<wire x1="-3.5814" y1="-2.3622" x2="-3.5814" y2="-3.0734" width="0.127" layer="21"/>
+<wire x1="-3.5814" y1="-3.0734" x2="-2.3114" y2="-3.0734" width="0.127" layer="21"/>
+<wire x1="2.3368" y1="3.0734" x2="3.5814" y2="3.0734" width="0.127" layer="21"/>
+<wire x1="3.5814" y1="3.0734" x2="3.5814" y2="2.3622" width="0.127" layer="21"/>
+<wire x1="3.5814" y1="-2.3622" x2="3.5814" y2="-3.0734" width="0.127" layer="21"/>
+<wire x1="3.5814" y1="-3.0734" x2="2.3114" y2="-3.0734" width="0.127" layer="21"/>
 </package>
 <package name="SOT-23">
 <circle x="0.993" y="0.362" radius="0.1524" width="0.127" layer="21"/>
@@ -8702,10 +8706,10 @@ by exp-lbrs.ulp</description>
 <smd name="5" x="-1.255" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
 </package>
 <package name="QFN50P400X400X80-17N">
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.373" y1="1.373" x2="1.373" y2="1.373" width="0.127" layer="51"/>
+<wire x1="1.373" y1="1.373" x2="1.373" y2="-1.373" width="0.127" layer="51"/>
+<wire x1="1.373" y1="-1.373" x2="-1.373" y2="-1.373" width="0.127" layer="51"/>
+<wire x1="-1.373" y1="1.373" x2="-1.373" y2="-1.373" width="0.127" layer="51"/>
 <smd name="1" x="-1.4442" y="0.752" dx="0.28" dy="0.6" layer="1" rot="R270"/>
 <smd name="2" x="-1.4442" y="0.254" dx="0.28" dy="0.6" layer="1" rot="R270"/>
 <smd name="3" x="-1.4442" y="-0.254" dx="0.28" dy="0.6" layer="1" rot="R270"/>
@@ -8714,30 +8718,26 @@ by exp-lbrs.ulp</description>
 <smd name="6" x="-0.254" y="-1.4442" dx="0.28" dy="0.6" layer="1"/>
 <smd name="7" x="0.254" y="-1.4442" dx="0.28" dy="0.6" layer="1" rot="R180"/>
 <smd name="8" x="0.752" y="-1.4442" dx="0.28" dy="0.6" layer="1"/>
-<smd name="9" x="1.4442" y="-0.752" dx="0.28" dy="0.6" layer="1" rot="R270"/>
-<smd name="10" x="1.4442" y="-0.254" dx="0.28" dy="0.6" layer="1" rot="R270"/>
-<smd name="11" x="1.4442" y="0.254" dx="0.28" dy="0.6" layer="1" rot="R270"/>
-<smd name="12" x="1.4442" y="0.752" dx="0.28" dy="0.6" layer="1" rot="R270"/>
-<smd name="13" x="0.752" y="1.4442" dx="0.28" dy="0.6" layer="1"/>
-<smd name="14" x="0.254" y="1.4442" dx="0.28" dy="0.6" layer="1" rot="R180"/>
-<smd name="15" x="-0.254" y="1.4442" dx="0.28" dy="0.6" layer="1"/>
-<smd name="16" x="-0.752" y="1.4442" dx="0.28" dy="0.6" layer="1"/>
-<smd name="17" x="0" y="0" dx="1.8" dy="1.8" layer="1" cream="no"/>
-<text x="2.5" y="0.5" size="1" layer="25" font="vector" ratio="15" rot="SR0">&gt;NAME</text>
-<text x="2.5" y="-1" size="1" layer="27" font="vector" ratio="15" rot="SR0">&gt;VALUE</text>
-<wire x1="-1.5" y1="1.2" x2="-1.5" y2="1.5" width="0.15" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="-1.2" y2="1.5" width="0.15" layer="21"/>
-<wire x1="1.2" y1="1.5" x2="1.5" y2="1.5" width="0.15" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="1.2" width="0.15" layer="21"/>
-<wire x1="1.5" y1="-1.2" x2="1.5" y2="-1.5" width="0.15" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1.2" y2="-1.5" width="0.15" layer="21"/>
-<wire x1="-1.5" y1="-1.2" x2="-1.5" y2="-1.5" width="0.15" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.2" y2="-1.5" width="0.15" layer="21"/>
-<circle x="-1.8" y="1.8" radius="0.2" width="0.15" layer="21"/>
-<rectangle x1="-0.8" y1="0.2" x2="-0.2" y2="0.8" layer="31"/>
-<rectangle x1="0.2" y1="0.2" x2="0.8" y2="0.8" layer="31"/>
-<rectangle x1="0.2" y1="-0.8" x2="0.8" y2="-0.2" layer="31"/>
-<rectangle x1="-0.8" y1="-0.8" x2="-0.2" y2="-0.2" layer="31"/>
+<smd name="9" x="1.4558" y="-0.752" dx="0.28" dy="0.6" layer="1" rot="R270"/>
+<smd name="10" x="1.4558" y="-0.254" dx="0.28" dy="0.6" layer="1" rot="R270"/>
+<smd name="11" x="1.4558" y="0.254" dx="0.28" dy="0.6" layer="1" rot="R270"/>
+<smd name="12" x="1.4558" y="0.752" dx="0.28" dy="0.6" layer="1" rot="R270"/>
+<smd name="13" x="0.752" y="1.4558" dx="0.28" dy="0.6" layer="1"/>
+<smd name="14" x="0.254" y="1.4558" dx="0.28" dy="0.6" layer="1" rot="R180"/>
+<smd name="15" x="-0.254" y="1.4558" dx="0.28" dy="0.6" layer="1"/>
+<smd name="16" x="-0.752" y="1.4558" dx="0.28" dy="0.6" layer="1"/>
+<smd name="17" x="0" y="0" dx="1.8" dy="1.8" layer="1"/>
+<text x="-4.5974" y="3.048" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.6642" y="-4.9022" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="1.016" y1="1.524" x2="1.524" y2="1.524" width="0.127" layer="21"/>
+<wire x1="1.524" y1="1.524" x2="1.524" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-1.016" x2="1.524" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-1.524" x2="1.016" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-1.524" x2="-1.524" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-1.524" x2="-1.524" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="-1.524" y2="1.524" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.524" x2="-1.016" y2="1.524" width="0.127" layer="21"/>
+<circle x="-1.016" y="0.762" radius="0.1419875" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8760,6 +8760,7 @@ by exp-lbrs.ulp</description>
 <pin name="PGOOD" x="15.24" y="2.54" length="middle" rot="R180"/>
 <text x="-9.652" y="-9.652" size="1.524" layer="95">&gt;eFuse</text>
 <text x="-8.636" y="10.414" size="1.524" layer="94">TPS25944LRVCR</text>
+<text x="-5.08" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="DIODE*-1">
 <description>SSC53L, Vishay 5A, 4.5V Forward Voltage</description>
@@ -9008,9 +9009,19 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="GND13" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND17" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="R25" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="A103093CT-ND"/>
@@ -9045,9 +9056,19 @@ by exp-lbrs.ulp</description>
 <attribute name="MPN" value="RC1608F102CS"/>
 </part>
 <part name="GND5" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND19" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C8" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C8" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND20" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP2" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND21" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9069,44 +9090,104 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="OSRAM Opto Semi,"/>
 <attribute name="MPN" value="LA L296-Q2R2-1-Z"/>
 </part>
-<part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND27" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND28" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP3" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND29" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND30" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND31" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C30" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C30" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND32" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP4" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND33" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND34" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND36" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C24" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C24" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND37" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP5" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND38" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND39" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND40" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C21" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C21" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND41" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP6" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND42" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND43" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND44" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C16" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND45" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP7" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND46" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="GND47" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k"/>
+<part name="RIMON7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="30k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4787-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F3012CS"/>
+</part>
 <part name="GND48" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="C26" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF"/>
+<part name="C26" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2nF">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-2239-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="CL10C222GA8NNNC"/>
+</part>
 <part name="GND49" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="VOP8" library="oresat-eagle" deviceset="VBUS" device=""/>
 <part name="GND50" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9683,9 +9764,19 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Kemet"/>
 <attribute name="MPN" value="C0603C103J5RACTU"/>
 </part>
-<part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="470k"/>
+<part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="470k">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="1276-4902-1-ND"/>
+<attribute name="MFN" value="Samsung"/>
+<attribute name="MPN" value="RC1608F474CS"/>
+</part>
 <part name="GND53" library="psas_c3_team05" deviceset="GND" device=""/>
-<part name="Q3" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="DON3035L"/>
+<part name="Q3" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="DON3035L">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="DMN62D0U-13DICT-ND"/>
+<attribute name="MFN" value="Diodes Inc."/>
+<attribute name="MPN" value="DMN62D0U-13"/>
+</part>
 <part name="GND54" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V1" library="supply-3v" deviceset="3V" device=""/>
 <part name="GND55" library="psas_c3_team05" deviceset="GND" device=""/>
@@ -9886,9 +9977,24 @@ by exp-lbrs.ulp</description>
 <part name="TP32" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP33" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP34" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="D1" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device="" value="SSC53L"/>
-<part name="D2" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device="" value="SSC53L"/>
-<part name="D3" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device=""/>
+<part name="D1" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device="" value="SSC53L">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="SSC53L-E3/57TGICT-ND"/>
+<attribute name="MFN" value="Vishay"/>
+<attribute name="MPN" value="SSC53L-E3/57T"/>
+</part>
+<part name="D2" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device="" value="SSC53L">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="SSC53L-E3/57TGICT-ND"/>
+<attribute name="MFN" value="Vishay"/>
+<attribute name="MPN" value="SSC53L-E3/57T"/>
+</part>
+<part name="D3" library="system-controller" deviceset="SMD-DIODE-SCHOTTKY-40V-5A(DO-214AB)-SSC53L" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="SSC53L-E3/57TGICT-ND"/>
+<attribute name="MFN" value="Vishay"/>
+<attribute name="MPN" value="SSC53L-E3/57T"/>
+</part>
 <part name="3V-19" library="supply-3v" deviceset="3V" device=""/>
 <part name="3V-21" library="supply-3v" deviceset="3V" device=""/>
 <part name="3V-22" library="supply-3v" deviceset="3V" device=""/>
@@ -9901,20 +10007,90 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="3V-20" library="supply-3v" deviceset="3V" device=""/>
 <part name="3V-9" library="supply-3v" deviceset="3V" device=""/>
-<part name="U2" library="system-controller" deviceset="LP5907MFX-3.0" device=""/>
-<part name="U11" library="system-controller" deviceset="ACPL-M61L" device=""/>
-<part name="U12" library="system-controller" deviceset="ACPL-M61L" device=""/>
-<part name="U14" library="system-controller" deviceset="ACPL-M61L" device=""/>
-<part name="U15" library="system-controller" deviceset="ACPL-M61L" device=""/>
-<part name="U1" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U3" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U4" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U5" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U6" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U9" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U10" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U13" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4"/>
-<part name="U8" library="system-controller" deviceset="TS4100" device=""/>
+<part name="U2" library="system-controller" deviceset="LP5907MFX-3.0" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-40357-1-ND"/>
+<attribute name="MFN" value="Texas Inst."/>
+<attribute name="MPN" value="LP5907MFX-3.0/NOPB"/>
+</part>
+<part name="U11" library="system-controller" deviceset="ACPL-M61L" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="516-2169-5-ND"/>
+<attribute name="MFN" value="Broadcom"/>
+<attribute name="MPN" value="ACPL-M61L-000E"/>
+</part>
+<part name="U12" library="system-controller" deviceset="ACPL-M61L" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="516-2169-5-ND"/>
+<attribute name="MFN" value="Broadcom"/>
+<attribute name="MPN" value="ACPL-M61L-000E"/>
+</part>
+<part name="U14" library="system-controller" deviceset="ACPL-M61L" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="516-2169-5-ND"/>
+<attribute name="MFN" value="Broadcom"/>
+<attribute name="MPN" value="ACPL-M61L-000E"/>
+</part>
+<part name="U15" library="system-controller" deviceset="ACPL-M61L" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="516-2169-5-ND"/>
+<attribute name="MFN" value="Broadcom"/>
+<attribute name="MPN" value="ACPL-M61L-000E"/>
+</part>
+<part name="U1" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U3" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U4" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U5" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U6" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U9" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U10" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U13" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="296-42152-1-ND"/>
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS25944LRVCR"/>
+</part>
+<part name="U8" library="system-controller" deviceset="TS4100" device="">
+<attribute name="DIST" value="digikey"/>
+<attribute name="DPN" value="336-3600-ND "/>
+<attribute name="MFN" value="Silicon Labs"/>
+<attribute name="MPN" value="TS4100ITQ1633"/>
+</part>
 <part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="390">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="A103093CT-ND"/>
@@ -10013,6 +10189,7 @@ When two pins are high the voltage at TP43 is 1.5V
 When all three pins are high the voltage at TP43 is 0.75V</text>
 <text x="307.34" y="345.44" size="1.778" layer="97">Look for TPs connected to GND!!!!!!</text>
 <text x="546.1" y="7.62" size="2.54" layer="97">1.1</text>
+<text x="175.26" y="363.22" size="1.778" layer="97">Pin 4 is a NC. Remove C4 from future layouts.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10087,6 +10264,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON1" gate="R" x="457.2" y="396.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="400.05" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="400.05" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="396.24" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="396.24" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="396.24" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="396.24" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND" gate="1" x="370.84" y="401.32" smashed="yes">
 <attribute name="VALUE" x="368.3" y="398.78" size="1.778" layer="96"/>
@@ -10094,6 +10275,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="C2" gate="CE" x="408.94" y="398.78" smashed="yes">
 <attribute name="NAME" x="410.464" y="399.161" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="394.081" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="398.78" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="398.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="398.78" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="398.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R25" gate="R" x="144.78" y="274.32" rot="R270">
 <attribute name="DIST" x="144.78" y="274.32" size="1.778" layer="96" rot="R270" display="off"/>
@@ -10138,11 +10323,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON2" gate="R" x="457.2" y="350.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="354.33" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="354.33" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="350.52" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="350.52" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="350.52" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="350.52" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND19" gate="1" x="370.84" y="355.6"/>
 <instance part="C8" gate="CE" x="408.94" y="353.06" smashed="yes">
 <attribute name="NAME" x="410.464" y="353.441" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="348.361" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="353.06" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="353.06" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="353.06" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="353.06" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND20" gate="1" x="457.2" y="337.82"/>
 <instance part="VOP2" gate="1" x="370.84" y="375.92"/>
@@ -10172,11 +10365,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON3" gate="R" x="457.2" y="304.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="308.61" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="308.61" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="304.8" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="304.8" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="304.8" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="304.8" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND27" gate="1" x="370.84" y="309.88"/>
 <instance part="C11" gate="CE" x="408.94" y="307.34" smashed="yes">
 <attribute name="NAME" x="410.464" y="307.721" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="302.641" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="307.34" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="307.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="307.34" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="307.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND28" gate="1" x="457.2" y="292.1"/>
 <instance part="VOP3" gate="1" x="370.84" y="330.2"/>
@@ -10185,11 +10386,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON8" gate="R" x="457.2" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="80.01" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="80.01" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND31" gate="1" x="370.84" y="81.28"/>
 <instance part="C30" gate="CE" x="408.94" y="78.74" smashed="yes">
 <attribute name="NAME" x="410.464" y="79.121" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="74.041" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND32" gate="1" x="457.2" y="63.5"/>
 <instance part="VOP4" gate="1" x="370.84" y="101.6"/>
@@ -10198,11 +10407,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON6" gate="R" x="457.2" y="167.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="171.45" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="171.45" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="167.64" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="167.64" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="167.64" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="167.64" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND36" gate="1" x="370.84" y="172.72"/>
 <instance part="C24" gate="CE" x="408.94" y="170.18" smashed="yes">
 <attribute name="NAME" x="410.464" y="170.561" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="165.481" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="170.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND37" gate="1" x="457.2" y="154.94"/>
 <instance part="VOP5" gate="1" x="370.84" y="193.04"/>
@@ -10211,11 +10428,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON5" gate="R" x="457.2" y="213.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="217.17" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="217.17" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="213.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="213.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="213.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="213.36" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND40" gate="1" x="370.84" y="218.44"/>
 <instance part="C21" gate="CE" x="408.94" y="215.9" smashed="yes">
 <attribute name="NAME" x="410.464" y="216.281" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="211.201" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="215.9" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="215.9" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="215.9" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="215.9" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND41" gate="1" x="457.2" y="200.66"/>
 <instance part="VOP6" gate="1" x="370.84" y="238.76"/>
@@ -10224,11 +10449,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON4" gate="R" x="457.2" y="259.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="262.89" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="262.89" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIST" x="457.2" y="259.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="457.2" y="259.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="259.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="259.08" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND44" gate="1" x="370.84" y="264.16"/>
 <instance part="C16" gate="CE" x="408.94" y="261.62" smashed="yes">
 <attribute name="NAME" x="410.464" y="262.001" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="256.921" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="261.62" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="261.62" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="261.62" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="261.62" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND45" gate="1" x="457.2" y="246.38"/>
 <instance part="VOP7" gate="1" x="370.84" y="284.48"/>
@@ -10237,11 +10470,19 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="RIMON7" gate="R" x="457.2" y="124.46" smashed="yes" rot="R270">
 <attribute name="NAME" x="458.6986" y="128.27" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="453.898" y="128.27" size="1.778" layer="96" rot="R270"/>
+<attribute name="DPN" x="457.2" y="124.46" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DIST" x="457.2" y="124.46" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="457.2" y="124.46" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="457.2" y="124.46" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND48" gate="1" x="370.84" y="129.54"/>
 <instance part="C26" gate="CE" x="408.94" y="127" smashed="yes">
 <attribute name="NAME" x="410.464" y="127.381" size="1.778" layer="95"/>
 <attribute name="VALUE" x="410.464" y="122.301" size="1.778" layer="96"/>
+<attribute name="DIST" x="408.94" y="127" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="408.94" y="127" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="408.94" y="127" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="408.94" y="127" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND49" gate="1" x="457.2" y="111.76"/>
 <instance part="VOP8" gate="1" x="370.84" y="149.86"/>
@@ -10919,11 +11160,20 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="96.52" y="312.42" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="96.52" y="312.42" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R18" gate="R" x="88.9" y="309.88" rot="R270"/>
+<instance part="R18" gate="R" x="88.9" y="309.88" rot="R270">
+<attribute name="DIST" x="88.9" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DPN" x="88.9" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFN" x="88.9" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="88.9" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND53" gate="1" x="96.52" y="299.72"/>
 <instance part="Q3" gate="G$1" x="81.28" y="320.04" smashed="yes" rot="MR0">
 <attribute name="NAME" x="76.2" y="320.675" size="1.27" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="76.2" y="316.23" size="1.27" layer="96" rot="MR0"/>
+<attribute name="DIST" x="81.28" y="320.04" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="81.28" y="320.04" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFN" x="81.28" y="320.04" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="81.28" y="320.04" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="GND54" gate="1" x="78.74" y="309.88"/>
 <instance part="3V1" gate="G$1" x="185.42" y="292.1"/>
@@ -11247,9 +11497,24 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <instance part="TP34" gate="G$1" x="66.04" y="187.96" smashed="yes">
 <attribute name="NAME" x="68.58" y="187.96" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="D1" gate="G$1" x="92.71" y="393.7"/>
-<instance part="D2" gate="G$1" x="92.71" y="373.38"/>
-<instance part="D3" gate="G$1" x="102.87" y="317.5" rot="R180"/>
+<instance part="D1" gate="G$1" x="92.71" y="393.7">
+<attribute name="DIST" x="92.71" y="393.7" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="92.71" y="393.7" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="92.71" y="393.7" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="92.71" y="393.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D2" gate="G$1" x="92.71" y="373.38">
+<attribute name="DIST" x="92.71" y="373.38" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="92.71" y="373.38" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="92.71" y="373.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="92.71" y="373.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D3" gate="G$1" x="102.87" y="317.5" rot="R180">
+<attribute name="DIST" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DPN" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="102.87" y="317.5" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="3V-19" gate="G$1" x="256.54" y="147.32" rot="MR0"/>
 <instance part="3V-21" gate="G$1" x="195.58" y="68.58" rot="MR0"/>
 <instance part="3V-22" gate="G$1" x="228.6" y="71.12" rot="MR0"/>
@@ -11264,20 +11529,90 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </instance>
 <instance part="3V-20" gate="G$1" x="160.02" y="40.64" rot="MR0"/>
 <instance part="3V-9" gate="G$1" x="195.58" y="137.16" rot="MR0"/>
-<instance part="U2" gate="G$1" x="167.64" y="387.35"/>
-<instance part="U11" gate="G$1" x="175.26" y="119.38" rot="MR0"/>
-<instance part="U12" gate="G$1" x="175.26" y="88.9"/>
-<instance part="U14" gate="G$1" x="175.26" y="50.8" rot="MR0"/>
-<instance part="U15" gate="G$1" x="175.26" y="20.32"/>
-<instance part="U1" gate="G$1" x="434.34" y="408.94"/>
-<instance part="U3" gate="G$1" x="434.34" y="363.22"/>
-<instance part="U4" gate="G$1" x="434.34" y="317.5"/>
-<instance part="U5" gate="G$1" x="434.34" y="271.78"/>
-<instance part="U6" gate="G$1" x="434.34" y="226.06"/>
-<instance part="U9" gate="G$1" x="434.34" y="180.34"/>
-<instance part="U10" gate="G$1" x="434.34" y="137.16"/>
-<instance part="U13" gate="G$1" x="434.34" y="88.9"/>
-<instance part="U8" gate="G$1" x="284.48" y="187.96"/>
+<instance part="U2" gate="G$1" x="167.64" y="387.35">
+<attribute name="DIST" x="167.64" y="387.35" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="167.64" y="387.35" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="167.64" y="387.35" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="167.64" y="387.35" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U11" gate="G$1" x="175.26" y="119.38" rot="MR0">
+<attribute name="DIST" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="U12" gate="G$1" x="175.26" y="88.9">
+<attribute name="DIST" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U14" gate="G$1" x="175.26" y="50.8" rot="MR0">
+<attribute name="DIST" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFN" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DPN" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="U15" gate="G$1" x="175.26" y="20.32">
+<attribute name="DIST" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U1" gate="G$1" x="434.34" y="408.94">
+<attribute name="MPN" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U3" gate="G$1" x="434.34" y="363.22">
+<attribute name="MPN" x="434.34" y="363.22" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="363.22" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="363.22" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="363.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U4" gate="G$1" x="434.34" y="317.5">
+<attribute name="MPN" x="434.34" y="317.5" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="317.5" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="317.5" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="317.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U5" gate="G$1" x="434.34" y="271.78">
+<attribute name="MPN" x="434.34" y="271.78" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="271.78" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="271.78" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="271.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U6" gate="G$1" x="434.34" y="226.06">
+<attribute name="MPN" x="434.34" y="226.06" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="226.06" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="226.06" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="226.06" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U9" gate="G$1" x="434.34" y="180.34">
+<attribute name="MPN" x="434.34" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="180.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U10" gate="G$1" x="434.34" y="137.16">
+<attribute name="MPN" x="434.34" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U13" gate="G$1" x="434.34" y="88.9">
+<attribute name="MPN" x="434.34" y="88.9" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="434.34" y="88.9" size="1.778" layer="96" display="off"/>
+<attribute name="DIST" x="434.34" y="88.9" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="434.34" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U8" gate="G$1" x="284.48" y="187.96">
+<attribute name="DIST" x="284.48" y="187.96" size="1.778" layer="96" display="off"/>
+<attribute name="DPN" x="284.48" y="187.96" size="1.778" layer="96" display="off"/>
+<attribute name="MFN" x="284.48" y="187.96" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="284.48" y="187.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R19" gate="R" x="111.76" y="309.88" rot="R270">
 <attribute name="DIST" x="111.76" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="DPN" x="111.76" y="309.88" size="1.778" layer="96" rot="R270" display="off"/>
