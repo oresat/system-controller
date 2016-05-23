@@ -120,7 +120,7 @@ Vendor Part No.: NTR4101PT1HOSCT-ND
 Reasons: Generic P-channel MOSFET. 	
 Rad-hard Analogue: International Rectifier IRHYB597Z30CM	
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhyb597z30cm.pdf)		
-Reasons: There are not a lot of rad-hard p-channel mosfets to choose from. This transistor could be considered generic.
+Reasons: This transistor should be considered generic.
 
 **Q1, Q2, Q4, Q5, Q6, Q7, Q8, Q10 Diodes Inc. DMG6601LVT-7**     
 Description: MOSFET, N/P pair     
@@ -130,7 +130,7 @@ Vendor Part No.: DMG6601LVT-7DICT-ND
 Reasons: This chip has been used in a previous PSAS design and has proved to be reliable.	
 Rad-hard Analogue: International Rectifier IRHLUC7670Z4			
 [Datasheet](http://www.irf.com/product-info/datasheets/data/irhluc7670z4.pdf)
-Reasons: Again, there are not a lot of rad-hard mosfets to choose from. This chip could be considered generic.
+Reasons: This chip should be considered generic.
 
 #### Connectors
 **J1 CNC Tech 3220-10-0100-00** 
