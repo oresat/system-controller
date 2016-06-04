@@ -6,6 +6,10 @@ The System Controller (SC) is part of the sputnik capstone project and is a robu
 
 ## Contents
 
+datasheets - datasheets for components used
+
+docs - documentation
+
 eagle - contains Schematic and PCB layout for the System Controller
 
 firmware - contains firmware for the System Controller and tools for compiling/debugging
