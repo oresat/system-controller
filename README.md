@@ -8,7 +8,7 @@ The System Controller (SC) is part of the sputnik capstone project and is a robu
 [Parts Selection](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md)  
 [Bill of Materials](https://github.com/oresat/system-controller/blob/master/docs/BOM_SC.xls)  
 [Eagle Schematic](https://github.com/oresat/system-controller/blob/master/eagle/system-controller.sch)    
-[Eagle Layout](https://github.com/oresat/low-gain-radio/blob/master/eagle/low-gain-radio.brd)    
+[Eagle Layout](https://github.com/oresat/system-controller/blob/master/eagle/system-controller.brd)    
 [Test Plan](https://github.com/oresat/low-gain-radio/blob/master/docs/Test_Plan_Sputnik_Capstone.md#sputnik-capstone-test-plan)   
 
 ## Contents
