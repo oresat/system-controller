@@ -1,7 +1,6 @@
 # OreSat "System controller" Board
 <p align="center">
-
-![image of System Controller_board](https://cloud.githubusercontent.com/assets/14911274/15880855/0a21da22-2ce6-11e6-9eb7-03c3dbf73aa6.png)
+  <img src="https://cloud.githubusercontent.com/assets/14911274/15880855/0a21da22-2ce6-11e6-9eb7-03c3dbf73aa6.png"/>
 </p>
 ## Overview
 
