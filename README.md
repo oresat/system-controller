@@ -1,5 +1,5 @@
 # OreSat "System controller" Board
-
+![image of System Controller_board](https://cloud.githubusercontent.com/assets/14911274/15880699/a9ea9262-2ce4-11e6-8fe5-72985635abf4.png)
 ## Overview
 
 The System Controller (SC) is part of the sputnik capstone project and is a robust module that is a vital piece of the avionics stack for the cubesat. It is tasked with performing the most critical job of all: monitoring the well-being of the stack and power cycling modules when [Single-Event Upsets](https://en.wikipedia.org/wiki/Single_event_upset) happen.
