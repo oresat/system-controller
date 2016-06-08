@@ -1,4 +1,4 @@
-# Parts Selection for System Controller (work in progress) 
+# Parts Selection for System Controller
 **Table of Contents**	
 * [Microcontroller](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u1-atmel-atmega128)	
 * [LDO](https://github.com/oresat/system-controller/blob/master/docs/PartsSelection.md#u2-texas-instruments-lp5907mfx-30nopb)	
