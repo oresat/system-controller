@@ -1,6 +1,6 @@
 # OreSat "System controller" Board
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/14911274/15908833/86da389c-2d78-11e6-990a-24c96bd0aba1.png"/>
+  <img src="http://i.imgur.com/rMV6EQp.png"/>
 </p>
 ## Overview
 
