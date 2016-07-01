@@ -1,11 +1,11 @@
 # OreSat "System controller" Board
 <p align="center">
-  <img src="http://i.imgur.com/rMV6EQp.png"/>
+  <img src="https://cloud.githubusercontent.com/assets/14911274/15908833/86da389c-2d78-11e6-990a-24c96bd0aba1.png"/>
 </p>
 ## Overview
 
 The System Controller (SC) is part of the sputnik capstone project and is a robust module that is a vital piece of the avionics stack for the cubesat. It is tasked with performing the most critical job of all: monitoring the well-being of the stack and power cycling modules when [Single-Event Upsets](https://en.wikipedia.org/wiki/Single_event_upset) happen. At the heart of the module will be a radiation hardened microcontroller that communicates with the Low Gain Radio and Payload via UART. There are power switches with circuit breakers ("efuses") connected to the microcontroller that allow it to control the flow of power to all of the other systems/modules on the CubeSat.  
-
+![Low level diagram of System Controller](http://i.imgur.com/rMV6EQp.png)  
 
 
 ## Main Topics
