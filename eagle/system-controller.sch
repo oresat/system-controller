@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="b3D" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
 <layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
@@ -90,7 +91,10 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="yes"/>
+<layer number="114" name="secv1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="secv12" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="117" name="secv21" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -100,6 +104,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="bLogo" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -135,6 +140,10 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="yes"/>
@@ -8693,18 +8702,6 @@ by exp-lbrs.ulp</description>
 <text x="-1.905" y="1.905" size="0.889" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-2.54" size="0.889" layer="25">&gt;VALUE</text>
 </package>
-<package name="ACPL-M61L">
-<circle x="-1.405" y="-1.995" radius="0.2" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="1.905" x2="1.935" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.935" y1="1.905" x2="1.935" y2="-2.485" width="0.127" layer="21"/>
-<wire x1="1.935" y1="-2.485" x2="-1.905" y2="-2.485" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-2.485" x2="-1.905" y2="1.905" width="0.127" layer="21"/>
-<smd name="1" x="-1.255" y="-3.655" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="2" x="1.285" y="-3.655" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="3" x="1.285" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="4" x="0.015" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="5" x="-1.255" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-</package>
 <package name="QFN50P400X400X80-17N">
 <wire x1="-1.373" y1="1.373" x2="1.373" y2="1.373" width="0.127" layer="51"/>
 <wire x1="1.373" y1="1.373" x2="1.373" y2="-1.373" width="0.127" layer="51"/>
@@ -8785,18 +8782,6 @@ by exp-lbrs.ulp</description>
 <pin name="VOUT" x="12.7" y="1.27" length="short" rot="R180"/>
 <text x="-6.35" y="7.112" size="1.778" layer="94">LP5907MFK</text>
 <text x="-15.24" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="ACPL-M61L">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND1" x="-12.7" y="-5.08" length="short"/>
-<pin name="GND2" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="VDD" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="VIN" x="-12.7" y="5.08" length="short" direction="in"/>
-<pin name="VOUT" x="12.7" y="0" length="short" rot="R180"/>
-<text x="-6.604" y="7.62" size="1.778" layer="94">ACPL-M61L</text>
 </symbol>
 <symbol name="8:1MUX">
 <wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
@@ -8886,25 +8871,6 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ACPL-M61L">
-<gates>
-<gate name="G$1" symbol="ACPL-M61L" x="-7.62" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="ACPL-M61L">
-<connects>
-<connect gate="G$1" pin="GND1" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
-<connect gate="G$1" pin="VOUT" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TS4100" prefix="IC">
 <gates>
 <gate name="G$1" symbol="8:1MUX" x="0" y="0"/>
@@ -8928,6 +8894,61 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="NO6" pad="16"/>
 <connect gate="G$1" pin="NO7" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="v2_sync_box">
+<description>Generated from &lt;b&gt;v2_sync_box.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="ACPL-M61L">
+<circle x="-1.405" y="-1.695" radius="0.2" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="2.205" x2="1.935" y2="2.205" width="0.127" layer="21"/>
+<wire x1="1.935" y1="2.205" x2="1.935" y2="-2.185" width="0.127" layer="21"/>
+<wire x1="1.935" y1="-2.185" x2="-1.905" y2="-2.185" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-2.185" x2="-1.905" y2="2.205" width="0.127" layer="21"/>
+<smd name="1" x="-1.255" y="-3.355" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="2" x="1.285" y="-3.355" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="3" x="1.285" y="3.375" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="4" x="0.015" y="3.375" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="5" x="-1.255" y="3.375" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ACPL-M61L">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND1" x="-12.7" y="-5.08" length="short"/>
+<pin name="GND2" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="VIN" x="-12.7" y="5.08" length="short" direction="in"/>
+<pin name="VOUT" x="12.7" y="0" length="short" rot="R180"/>
+<text x="-6.604" y="7.62" size="1.778" layer="94">ACPL-M61L</text>
+<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ACPL-M61L">
+<gates>
+<gate name="G$1" symbol="ACPL-M61L" x="-7.62" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="ACPL-M61L">
+<connects>
+<connect gate="G$1" pin="GND1" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10007,25 +10028,25 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Texas Inst."/>
 <attribute name="MPN" value="LP5907MFX-3.0/NOPB"/>
 </part>
-<part name="U11" library="system-controller" deviceset="ACPL-M61L" device="">
+<part name="U11" library="v2_sync_box" deviceset="ACPL-M61L" device="">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="516-2169-5-ND"/>
 <attribute name="MFN" value="Broadcom"/>
 <attribute name="MPN" value="ACPL-M61L-000E"/>
 </part>
-<part name="U12" library="system-controller" deviceset="ACPL-M61L" device="">
+<part name="U12" library="v2_sync_box" deviceset="ACPL-M61L" device="">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="516-2169-5-ND"/>
 <attribute name="MFN" value="Broadcom"/>
 <attribute name="MPN" value="ACPL-M61L-000E"/>
 </part>
-<part name="U14" library="system-controller" deviceset="ACPL-M61L" device="">
+<part name="U14" library="v2_sync_box" deviceset="ACPL-M61L" device="">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="516-2169-5-ND"/>
 <attribute name="MFN" value="Broadcom"/>
 <attribute name="MPN" value="ACPL-M61L-000E"/>
 </part>
-<part name="U15" library="system-controller" deviceset="ACPL-M61L" device="">
+<part name="U15" library="v2_sync_box" deviceset="ACPL-M61L" device="">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="516-2169-5-ND"/>
 <attribute name="MFN" value="Broadcom"/>
