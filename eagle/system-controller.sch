@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8736,6 +8736,18 @@ by exp-lbrs.ulp</description>
 <wire x1="-1.524" y1="1.524" x2="-1.016" y2="1.524" width="0.127" layer="21"/>
 <circle x="-1.016" y="0.762" radius="0.1419875" width="0.127" layer="21"/>
 </package>
+<package name="ACPL-M61L">
+<circle x="-1.405" y="-1.995" radius="0.2" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="1.905" x2="1.935" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.935" y1="1.905" x2="1.935" y2="-2.485" width="0.127" layer="21"/>
+<wire x1="1.935" y1="-2.485" x2="-1.905" y2="-2.485" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-2.485" x2="-1.905" y2="1.905" width="0.127" layer="21"/>
+<smd name="1" x="-1.255" y="-3.655" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="2" x="1.285" y="-3.655" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="3" x="1.285" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="4" x="0.015" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+<smd name="5" x="-1.255" y="3.075" dx="1.8" dy="0.64" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TPS25944LRVCR">
@@ -8806,6 +8818,18 @@ by exp-lbrs.ulp</description>
 <pin name="VDD" x="-17.78" y="-10.16" length="middle"/>
 <text x="-4.572" y="12.954" size="1.9304" layer="94">TS4100</text>
 <text x="-12.7" y="-15.24" size="1.6764" layer="97">8:1 MUX</text>
+</symbol>
+<symbol name="ACPL-M61L">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="CATHODE" x="-12.7" y="-5.08" length="short"/>
+<pin name="GND" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="ANODE" x="-12.7" y="5.08" length="short" direction="in"/>
+<pin name="VO" x="12.7" y="0" length="short" rot="R180"/>
+<text x="-6.604" y="7.62" size="1.778" layer="94">ACPL-M61L</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8901,42 +8925,6 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="v2_sync_box">
-<description>Generated from &lt;b&gt;v2_sync_box.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="ACPL-M61L">
-<circle x="-1.405" y="-1.695" radius="0.2" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="2.205" x2="1.935" y2="2.205" width="0.127" layer="21"/>
-<wire x1="1.935" y1="2.205" x2="1.935" y2="-2.185" width="0.127" layer="21"/>
-<wire x1="1.935" y1="-2.185" x2="-1.905" y2="-2.185" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-2.185" x2="-1.905" y2="2.205" width="0.127" layer="21"/>
-<smd name="1" x="-1.255" y="-3.355" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="2" x="1.285" y="-3.355" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="3" x="1.285" y="3.375" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="4" x="0.015" y="3.375" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<smd name="5" x="-1.255" y="3.375" dx="1.8" dy="0.64" layer="1" rot="R90"/>
-<text x="-2.54" y="-2.54" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ACPL-M61L">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND1" x="-12.7" y="-5.08" length="short"/>
-<pin name="GND2" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="VDD" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="VIN" x="-12.7" y="5.08" length="short" direction="in"/>
-<pin name="VOUT" x="12.7" y="0" length="short" rot="R180"/>
-<text x="-6.604" y="7.62" size="1.778" layer="94">ACPL-M61L</text>
-<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
 <deviceset name="ACPL-M61L">
 <gates>
 <gate name="G$1" symbol="ACPL-M61L" x="-7.62" y="10.16"/>
@@ -8944,11 +8932,11 @@ by exp-lbrs.ulp</description>
 <devices>
 <device name="" package="ACPL-M61L">
 <connects>
-<connect gate="G$1" pin="GND1" pad="2"/>
-<connect gate="G$1" pin="GND2" pad="3"/>
+<connect gate="G$1" pin="ANODE" pad="1"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
-<connect gate="G$1" pin="VOUT" pad="4"/>
+<connect gate="G$1" pin="VO" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10028,30 +10016,6 @@ by exp-lbrs.ulp</description>
 <attribute name="MFN" value="Texas Inst."/>
 <attribute name="MPN" value="LP5907MFX-3.0/NOPB"/>
 </part>
-<part name="U11" library="v2_sync_box" deviceset="ACPL-M61L" device="">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="516-2169-5-ND"/>
-<attribute name="MFN" value="Broadcom"/>
-<attribute name="MPN" value="ACPL-M61L-000E"/>
-</part>
-<part name="U12" library="v2_sync_box" deviceset="ACPL-M61L" device="">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="516-2169-5-ND"/>
-<attribute name="MFN" value="Broadcom"/>
-<attribute name="MPN" value="ACPL-M61L-000E"/>
-</part>
-<part name="U14" library="v2_sync_box" deviceset="ACPL-M61L" device="">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="516-2169-5-ND"/>
-<attribute name="MFN" value="Broadcom"/>
-<attribute name="MPN" value="ACPL-M61L-000E"/>
-</part>
-<part name="U15" library="v2_sync_box" deviceset="ACPL-M61L" device="">
-<attribute name="DIST" value="digikey"/>
-<attribute name="DPN" value="516-2169-5-ND"/>
-<attribute name="MFN" value="Broadcom"/>
-<attribute name="MPN" value="ACPL-M61L-000E"/>
-</part>
 <part name="U1" library="system-controller" deviceset="TPS25944LRVCR" device="WQFN-20-3X4">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DPN" value="296-42152-1-ND"/>
@@ -10126,6 +10090,10 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="GND2" library="psas_c3_team05" deviceset="GND" device=""/>
 <part name="3V-11" library="supply-3v" deviceset="3V" device=""/>
+<part name="U$1" library="system-controller" deviceset="ACPL-M61L" device=""/>
+<part name="U$2" library="system-controller" deviceset="ACPL-M61L" device=""/>
+<part name="U$3" library="system-controller" deviceset="ACPL-M61L" device=""/>
+<part name="U$4" library="system-controller" deviceset="ACPL-M61L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11544,30 +11512,6 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <attribute name="MFN" x="167.64" y="387.35" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="167.64" y="387.35" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U11" gate="G$1" x="175.26" y="119.38" rot="MR0">
-<attribute name="DIST" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="DPN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MFN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MPN" x="175.26" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
-</instance>
-<instance part="U12" gate="G$1" x="175.26" y="88.9">
-<attribute name="DIST" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="175.26" y="88.9" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U14" gate="G$1" x="175.26" y="50.8" rot="MR0">
-<attribute name="DIST" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MPN" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="MFN" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
-<attribute name="DPN" x="175.26" y="50.8" size="1.778" layer="96" rot="MR0" display="off"/>
-</instance>
-<instance part="U15" gate="G$1" x="175.26" y="20.32">
-<attribute name="DIST" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
-<attribute name="MFN" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
-<attribute name="DPN" x="175.26" y="20.32" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="U1" gate="G$1" x="434.34" y="408.94">
 <attribute name="MPN" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
 <attribute name="DIST" x="434.34" y="408.94" size="1.778" layer="96" display="off"/>
@@ -11646,6 +11590,10 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </instance>
 <instance part="GND2" gate="1" x="210.82" y="370.84"/>
 <instance part="3V-11" gate="G$1" x="210.82" y="393.7"/>
+<instance part="U$1" gate="G$1" x="175.26" y="119.38" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="175.26" y="50.8" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="175.26" y="88.9"/>
+<instance part="U$4" gate="G$1" x="175.26" y="20.32"/>
 </instances>
 <busses>
 <bus name="UART_LGR_VCC,UART_LGR_RX,UART_LGR_TX">
@@ -11750,8 +11698,8 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </segment>
 <segment>
 <wire x1="109.22" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U12" gate="G$1" pin="GND1"/>
 <label x="111.76" y="83.82" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
 <net name="VCB5_EN" class="0">
@@ -11926,7 +11874,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <junction x="213.36" y="45.72"/>
 <pinref part="LED11" gate="LED" pin="K"/>
 <wire x1="228.6" y1="45.72" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U14" gate="G$1" pin="GND1"/>
+<pinref part="U$2" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
 <net name="TXD1" class="0">
@@ -11941,7 +11889,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="228.6" y1="114.3" x2="256.54" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="114.3" x2="256.54" y2="121.92" width="0.1524" layer="91"/>
 <junction x="228.6" y="114.3"/>
-<pinref part="U11" gate="G$1" pin="GND1"/>
+<pinref part="U$1" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
 <net name="RXD1" class="0">
@@ -12013,7 +11961,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="162.56" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="119.38" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R62" gate="R" pin="2"/>
-<pinref part="U11" gate="G$1" pin="VOUT"/>
+<pinref part="U$1" gate="G$1" pin="VO"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -12021,7 +11969,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="162.56" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="50.8" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R73" gate="R" pin="2"/>
-<pinref part="U14" gate="G$1" pin="VOUT"/>
+<pinref part="U$2" gate="G$1" pin="VO"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -12030,7 +11978,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="R72" gate="R" pin="1"/>
 <wire x1="187.96" y1="20.32" x2="190.5" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="20.32" x2="190.5" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G$1" pin="VOUT"/>
+<pinref part="U$4" gate="G$1" pin="VO"/>
 </segment>
 </net>
 <net name="UART_LGR_TX" class="0">
@@ -12049,8 +11997,8 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 </segment>
 <segment>
 <wire x1="106.68" y1="15.24" x2="162.56" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G$1" pin="GND1"/>
 <label x="109.22" y="15.24" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -12059,7 +12007,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="193.04" y1="101.6" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R60" gate="R" pin="2"/>
-<pinref part="U12" gate="G$1" pin="VOUT"/>
+<pinref part="U$3" gate="G$1" pin="VO"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12300,7 +12248,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <label x="109.22" y="33.02" size="1.778" layer="95"/>
 <pinref part="C31" gate="CE" pin="2"/>
 <junction x="139.7" y="55.88"/>
-<pinref part="U14" gate="G$1" pin="VDD"/>
+<pinref part="U$2" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="CF1" gate="G$1" pin="28"/>
@@ -12325,7 +12273,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <label x="111.76" y="99.06" size="1.778" layer="95"/>
 <pinref part="C27" gate="CE" pin="2"/>
 <junction x="140.97" y="124.46"/>
-<pinref part="U11" gate="G$1" pin="VDD"/>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="CF1" gate="G$1" pin="22"/>
@@ -12467,7 +12415,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="198.12" y1="96.52" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
 <junction x="198.12" y="93.98"/>
-<pinref part="U12" gate="G$1" pin="VDD"/>
+<pinref part="U$3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="R25" gate="R" pin="1"/>
@@ -12494,7 +12442,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <pinref part="C32" gate="CE" pin="2"/>
 <junction x="195.58" y="25.4"/>
 <wire x1="187.96" y1="25.4" x2="195.58" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G$1" pin="VDD"/>
+<pinref part="U$4" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="Q11" gate="G$1" pin="S"/>
@@ -13884,7 +13832,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <junction x="198.12" y="83.82"/>
 <pinref part="C28" gate="CE" pin="1"/>
 <wire x1="187.96" y1="83.82" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U12" gate="G$1" pin="GND2"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -14323,7 +14271,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="162.56" y1="114.3" x2="140.97" y2="114.3" width="0.1524" layer="91"/>
 <junction x="140.97" y="114.3"/>
 <pinref part="C27" gate="CE" pin="1"/>
-<pinref part="U11" gate="G$1" pin="GND2"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -14331,7 +14279,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <wire x1="162.56" y1="45.72" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
 <junction x="139.7" y="45.72"/>
 <pinref part="C31" gate="CE" pin="1"/>
-<pinref part="U14" gate="G$1" pin="GND2"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -14339,7 +14287,7 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <junction x="195.58" y="15.24"/>
 <pinref part="C32" gate="CE" pin="1"/>
 <wire x1="187.96" y1="15.24" x2="195.58" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G$1" pin="GND2"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C18" gate="CE" pin="1"/>
@@ -14448,28 +14396,28 @@ When all three pins are high the voltage at TP43 is 0.75V</text>
 <segment>
 <wire x1="187.96" y1="124.46" x2="195.58" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R54" gate="R" pin="1"/>
-<pinref part="U11" gate="G$1" pin="VIN"/>
+<pinref part="U$1" gate="G$1" pin="ANODE"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R70" gate="R" pin="1"/>
 <wire x1="187.96" y1="55.88" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U14" gate="G$1" pin="VIN"/>
+<pinref part="U$2" gate="G$1" pin="ANODE"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R61" gate="R" pin="1"/>
 <wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U12" gate="G$1" pin="VIN"/>
+<pinref part="U$3" gate="G$1" pin="ANODE"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="R74" gate="R" pin="1"/>
 <wire x1="162.56" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G$1" pin="VIN"/>
+<pinref part="U$4" gate="G$1" pin="ANODE"/>
 </segment>
 </net>
 <net name="N$6" class="0">
