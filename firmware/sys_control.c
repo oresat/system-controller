@@ -7,68 +7,35 @@
  * whenever a 'G' is received by the uart. If a 'G'  *
  * isn't received in time, the timer interrupt will  * 
  * run the reset_lgr routine. 			     *
- * Written by Michael Mathis			     *
+ * Originally programmed by Michael Mathis	     *
+ * Refactored and maintained by William Harrington   *
  *****************************************************/
 
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
 #include "uart.h"
+#include "port.h"
+#include <stdlib.h>
 
 //#define F_CPU 8000000UL add this to your util/delay.h to get rid of compiler warning
 
-enum pin_mode {ON, OFF, TOGGLE};
-enum data_direction {INPUT, OUTPUT};
+enum efuse {VCB0_EN = (uint8_t)'1',
+	    VCB1_EN,
+	    VCB2_EN,
+	    VCB3_EN,
+	    VCB4_EN,
+	    VCB5_EN,
+	    VCB6_EN,
+	    VCB7_EN
+	   };
 
-void toggle_pin(volatile uint8_t * port, uint8_t pin, enum pin_mode mode){
-	/* only accept PORTx registers */
-	if((port != &PORTA) |
-	   (port != &PORTB) |
-	   (port != &PORTC) |
-	   (port != &PORTD) |
-	   (port != &PORTE) |
-	   (port != &PORTF) |
-	   (port != &PORTG)) return;
-	switch(mode){
-		case TOGGLE:
-			*port ^= pin;
-		case ON:
-			*port |= pin;
-		case OFF:
-			*port &= ~pin;
-		default: return;
-        }
-	return;
-}
-
-void set_io_direction(volatile uint8_t * reg, uint8_t pin, enum data_direction dir){
-	/* only accept DDRx registers */
-	if((reg != &DDRA) |
-           (reg != &DDRB) |
-     	   (reg != &DDRC) |
-     	   (reg != &DDRD) |
-           (reg != &DDRE) |
-           (reg != &DDRF) |
-           (reg != &DDRG)) return;
-	switch(dir){
-		case INPUT:
-			*reg &= ~pin;
-		case OUTPUT:
-			*reg |= pin;
-		default: return;
-        }
-	return;
-}
-
-
-//Pull PORTA pins 0 and 1 down for 2 seconds then reset the timer count
 void reset_lgr(void){
-	//PORTA &= 0xFC;		//Pull lgr reset line down
-	toggle_pin(&PORTA, 0x3, OFF);  //Pull lgr reset line down
+	//Pull PORTA pins 0 and 1 down for 2 seconds then reset the timer count
+	toggle_pin(&PORTA, (pin1 | pin0), OFF);  //Pull lgr reset line down
 	_delay_ms(2000);
-	//PORTA |= 0x03;		//Start the lgr again
-	toggle_pin(&PORTA, 0x03, ON);   //Start the lgr again
-	TCNT1 = 0x0000;			//Reset the count or the countdown will run a long time
+	toggle_pin(&PORTA, (pin1 | pin0), ON);   //Start the lgr again
+	TCNT1 = 0x0000;			         //Reset the count or the countdown will run a long time
 }
 
 void timer_init(void){
@@ -92,21 +59,9 @@ void usart_init(){
 	UCSR0B |= 0x80;			//Enable RX interrupts
 }
 
-//Setup the GPIO pins to output and sets initial value
-void gpio_init(void){
-	//PORTA = 0x03;		//Output high on PORTA pins 0 and 1
-	toggle_pin(&PORTA, 0x3, ON);
-	//DDRA = 0x03;		//Output direction for same pins
-	set_io_direction(&DDRA, 0x3, OUTPUT);
-	//PORTF = 0x00;		//Output value 0 for all portf
-        toggle_pin(&PORTF, 0xFF, OFF);
-	//DDRF = 0xFF;		//Output enable for PORTF pin 1
-	set_io_direction(&DDRF, 0xFF, OUTPUT);
-}
-
-
 int main (void){
 	gpio_init();
+	adc_init();
 	usart_init();
 	timer_init();
 	sei();			//Enable global interrupts
@@ -114,51 +69,40 @@ int main (void){
 
 	
 	while (1) {
-		//Toggle an I'm alive LED
 		_delay_ms(100);
-		//PORTF ^= 0x02;
-		toggle_pin(&PORTF, 0x2, TOGGLE);
 	}
 	return 0;
 }
 
-//Timer 1 compare register A interrupt handler
 ISR(TIMER1_COMPA_vect){
+	//Timer 1 compare register A interrupt handler
 	reset_lgr();
 }
 
-//UART receive interrupt handler
 ISR(USART0_RX_vect){
+	//UART receive interrupt handler
 	uint8_t data;
 	data = UDR0;			//Read in data
 	if (data == 'G'){		//Test against lgr's I'm alive signal
 		TCNT1 = 0x0000;		//Reset timer count
 	}
 	switch(data){			//Toggle port f pins
-		case '1': 
-			//PORTF ^= 0x1;
-			toggle_pin(&PORTF, 0x1, TOGGLE);
-		case '2': 
-			//PORTF ^= 0x2;
-			toggle_pin(&PORTF, 0x2, TOGGLE);
-		case '3': 
-			//PORTF ^= 0x4;
-			toggle_pin(&PORTF, 0x4, TOGGLE);
-		case '4': 
-                  	//PORTF ^= 0x8;
-			toggle_pin(&PORTF, 0x8, TOGGLE);
-		case '5': 
-                  	//PORTF ^= 0x10;
-			toggle_pin(&PORTF, 0x10, TOGGLE);
-		case '6': 
-                  	//PORTF ^= 0x20;
-			toggle_pin(&PORTF, 0x20, TOGGLE);
-		case '7': 
-                  	//PORTF ^= 0x40;
-			toggle_pin(&PORTF, 0x40, TOGGLE);
-		case '8': 
-                  	//PORTF ^= 0x80;
-			toggle_pin(&PORTF, 0x80, TOGGLE);
+		case VCB0_EN: 
+			toggle_pin(&PORTA, pin7, TOGGLE);
+		case VCB1_EN: 
+			toggle_pin(&PORTA, pin6, TOGGLE);
+		case VCB2_EN: 
+			toggle_pin(&PORTA, pin5, TOGGLE);
+		case VCB3_EN: 
+                  	toggle_pin(&PORTA, pin4, TOGGLE);
+		case VCB4_EN: 
+                  	toggle_pin(&PORTA, pin3, TOGGLE);
+		case VCB5_EN: 
+                  	toggle_pin(&PORTA, pin2, TOGGLE);
+		case VCB6_EN: 
+                  	toggle_pin(&PORTA, pin1, TOGGLE);
+		case VCB7_EN: 
+                  	toggle_pin(&PORTA, pin0, TOGGLE);
 	}
 
 	//Echo the RX data back for analysis
