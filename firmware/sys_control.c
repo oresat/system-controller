@@ -64,6 +64,7 @@ void usart_init(){
 int main (void){
 	gpio_init();
 	adc_init();
+	i2c_init();
 	usart_init();
 	timer_init();
 	sei();			//Enable global interrupts
