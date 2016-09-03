@@ -16,6 +16,8 @@
 #include <avr/interrupt.h>
 #include "uart.h"
 #include "port.h"
+#include "adc.h"
+#include "i2c.h"
 #include <stdlib.h>
 
 //#define F_CPU 8000000UL add this to your util/delay.h to get rid of compiler warning

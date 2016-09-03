@@ -1,5 +1,5 @@
 PRG            = sys_control
-OBJ            = sys_control.o uart.o port.o adc.o
+OBJ            = sys_control.o uart.o port.o adc.o i2c.o
 MCU_TARGET     = atmega128
 OPTIMIZE       = -O2
 
