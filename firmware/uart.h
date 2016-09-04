@@ -16,9 +16,11 @@
 #define DOUBLE_BAUD	0x2
 
 //UCSR0B Configuration
-#define RECEIVER_ENABLE		0x10
-#define TRANSMITTER_ENABLE	0x08
-#define UCSR0B_CHAR_SIZE_MASK	0x08
+#define RECEIVER_ENABLE		1 << RXEN
+#define TRANSMITTER_ENABLE	1 << TXEN
+#define UCSR0B_CHAR_SIZE_MASK	1 << 3
+#define TX_INTERRUPT_ENABLE     1 << RXCIE
+#define RX_INTERRUPT_ENABLE     1 << TXCIE
 
 //UCSR0C Configuration
 #define NO_PARITY			0x00
@@ -66,10 +68,15 @@ struct uart_options {
 	uint16_t baud_rate;		//Baudrate 
 };
 
-void uart_init(struct uart_options);
-void get_char(uint8_t * recv_char);
-void put_char(uint8_t * send_char);
-void put_char_9(int * send_val);
+void uart0_init(struct uart_options);
+void uart0_get_char(uint8_t * recv_char);
+void uart0_put_char(uint8_t * send_char);
+void uart0_put_char_9(int * send_val);
+
+void uart1_init(struct uart_options);
+void uart1_get_char(uint8_t * recv_char);
+void uart1_put_char(uint8_t * send_char);
+void uart1_put_char_9(int * send_val);
 
 
 #endif /* USART_H_ */

@@ -57,8 +57,7 @@ void usart_init(){
 		.parity = NO_PARITY,
 		.baud_rate = 51,			//9600bps at fosc = 8 MHz
 	};
-	uart_init(options);
-	UCSR0B |= 0x80;			//Enable RX interrupts
+	uart0_init(options);
 }
 
 int main (void){
@@ -67,9 +66,7 @@ int main (void){
 	i2c_init();
 	usart_init();
 	timer_init();
-	sei();			//Enable global interrupts
-	
-
+	sei();			//Enable global interrupts	
 	
 	while (1) {
 		_delay_ms(100);
@@ -85,7 +82,7 @@ ISR(TIMER1_COMPA_vect){
 ISR(USART0_RX_vect){
 	//UART receive interrupt handler
 	uint8_t data;
-	data = UDR0;			//Read in data
+	uart0_get_char(&data);
 	if (data == 'G'){		//Test against lgr's I'm alive signal
 		TCNT1 = 0x0000;		//Reset timer count
 	}
@@ -109,7 +106,7 @@ ISR(USART0_RX_vect){
 	}
 
 	//Echo the RX data back for analysis
-	put_char(&data);
+	uart0_put_char(&data);
 }
 
 //General interrupt handler, do nothing if we get stray interrupts
