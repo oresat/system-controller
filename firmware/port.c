@@ -31,12 +31,12 @@ void gpio_init(void){
 
 void toggle_pin(volatile uint8_t * port, uint8_t pin, enum pin_mode mode){
 	/* only accept PORTx registers */
-	if((port != &PORTA) &
-	   (port != &PORTB) &
-	   (port != &PORTC) &
-	   (port != &PORTD) &
-	   (port != &PORTE) &
-	   (port != &PORTF) &
+	if((port != &PORTA) &&
+	   (port != &PORTB) &&
+	   (port != &PORTC) &&
+	   (port != &PORTD) &&
+	   (port != &PORTE) &&
+	   (port != &PORTF) &&
 	   (port != &PORTG)) return;
 	switch(mode){
 		case TOGGLE:
@@ -52,12 +52,12 @@ void toggle_pin(volatile uint8_t * port, uint8_t pin, enum pin_mode mode){
 
 void set_io_direction(volatile uint8_t * reg, uint8_t pin, enum data_direction dir){
 	/* only accept DDRx registers */
-	if((reg != &DDRA) &
-           (reg != &DDRB) &
-     	   (reg != &DDRC) &
-     	   (reg != &DDRD) &
-           (reg != &DDRE) &
-           (reg != &DDRF) &
+	if((reg != &DDRA) &&
+           (reg != &DDRB) &&
+     	   (reg != &DDRC) &&
+     	   (reg != &DDRD) &&
+           (reg != &DDRE) &&
+           (reg != &DDRF) &&
            (reg != &DDRG)) return;
 	switch(dir){
 		case INPUT:
