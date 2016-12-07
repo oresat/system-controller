@@ -1,97 +1,175 @@
 /*
- * uart.c
- *
- * Created: 4/27/2016 6:26:03 PM
- *  Author: michael
- */ 
-
- #include "uart.h"
- 
- /*
-	Sets all the asyncronous options for the USART
-
-	uart_options struct defined and explained in uart.h
+    UART driver for ATMega128
+    Programmed by William Harrington
  */
-void uart0_init(struct uart_options options){
-	UCSR0A |= options.double_baud;
-	UCSR0B |= (TRANSMITTER_ENABLE | RECEIVER_ENABLE | 
-		(options.char_size & UCSR0B_CHAR_SIZE_MASK));
-	//UCSR0B |= (RX_INTERRUPT_ENABLE | TX_INTERRUPT_ENABLE);
-	UCSR0B |= (RX_INTERRUPT_ENABLE);
-	UCSR0C = options.parity + ONE_STOP_BIT + 
-		(options.char_size & UCSR0C_CHAR_SIZE_MASK);
-	UBRR0H = (options.baud_rate >> 8) & 0x0F;
-	UBRR0L = options.baud_rate & 0xFF;
-}
 
-void uart0_get_char(uint8_t * recv_char){
-	*recv_char = UDR0;
-}
+#include "uart.h"
 
+static usart_config_t activeCfg;
 /*
-	Writes a single character to the UART out
+static bool check_configuration(usart_config_t * cfg){
+    switch(cfg->module){
+       case UART0:
+           if((UBRR0H == ((cfg->baud >> 8) & 0xFF)) &&
+              (UBRR0L == ((cfg->baud) & 0xFF)) &&
+              ((UCSR0B >> RXEN) & 0x1) &&
+              ((UCSR0B >> TXEN) & 0x1) &&
+              ((UCSR0C >> USBS) & 0x1) &&
+              ((UCSR0C >> UCSZ0) & 0x1)
+              ){
+               return true;
+           }
+           else return false;
+       case UART1:
+           if((UBRR1H == ((cfg->baud >> 8) & 0xFF)) &&
+              (UBRR1L == ((cfg->baud) & 0xFF)) &&
+              ((UCSR1B >> RXEN) & 0x1) &&
+              ((UCSR1B >> TXEN) & 0x1) &&
+              ((UCSR1C >> USBS) & 0x1) &&
+              ((UCSR1C >> UCSZ0) & 0x1)
+              ){
+               return true;
+           }
+           else return false;
+       case USART0:
+           if((UBRR0H == ((cfg->baud >> 8) & 0xFF)) &&
+              (UBRR0L == ((cfg->baud) & 0xFF)) &&
+              ((UCSR0B >> RXEN) & 0x1) &&
+              ((UCSR0B >> TXEN) & 0x1) &&
+              ((UCSR0C >> USBS) & 0x1) &&
+              ((UCSR0C >> UCSZ0) & 0x1) &&
+              ((UCSR0C >> 6) & 0x1)
+              ){
+               return true;
+           }
+           else return false;
+       case USART1:
+           if(UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
+              (UBRR1L == ((cfg->baud) & 0xFF)) &&
+              ((UCSR1B >> RXEN) & 0x1) &&
+              ((UCSR1B >> TXEN) & 0x1) &&
+              ((UCSR1C >> USBS) & 0x1) &&
+              ((UCSR1C >> UCSZ0) & 0x1) &&
+              ((UCSR1C >> 6) & 0x1)
+              ){
+               return true;
+           }
+           else return false;
+       default:
+           return false;
+    }
+}
 */
-void uart0_put_char(uint8_t * send_char){
-	//This function was adapted from the Atmel ATmega128/ATmega128L datasheet
-	/* Wait for empty transmit buffer */
-	while ( !( UCSR0A & (1<<UDRE)) );
-	/* Put data into buffer, sends the data */
-	UDR0 = *send_char;
+static bool uart_init(usart_config_t * cfg){
+    activeCfg = *cfg;
+    switch(cfg->module){
+       case UART0:
+           UBRR0H = (cfg->baud >> 8) & 0xFF;
+           UBRR0L = cfg->baud & 0xFF;
+           return (setBit(&UCSR0B, RXEN) &&
+                   setBit(&UCSR0B, TXEN) &&
+                   setBit(&UCSR0C, USBS) &&
+                   setBit(&UCSR0C, UCSZ0) &&
+                   UBRR0H == ((cfg->baud >> 8) & 0xFF) &&
+                   UBRR0L == ((cfg->baud) & 0xFF));
+           //UCSR0B = (1<<RXEN) | (1<<TXEN);
+           //UCSR0C = (1<<USBS)|(3<<UCSZ0);
+           //return check_configuration(cfg);
+       case UART1:
+           UBRR1H = (cfg->baud >> 8) & 0xFF;
+           UBRR1L = cfg->baud & 0xFF;
+           return (setBit(&UCSR1B, RXEN) &&
+                   setBit(&UCSR1B, TXEN) &&
+                   setBit(&UCSR1C, USBS) &&
+                   setBit(&UCSR1C, UCSZ0) &&
+                   UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
+                   UBRR1L == ((cfg->baud) & 0xFF));
+           //UCSR1B = (1<<RXEN) | (1<<TXEN);
+           //UCSR1C = (1<<USBS)|(3<<UCSZ0);
+           //return check_configuration(cfg);
+       case USART0:
+           UBRR0H = (cfg->baud >> 8) & 0xFF;
+           UBRR0L = cfg->baud & 0xFF;
+           return (setBit(&UCSR0B, RXEN) &&
+                   setBit(&UCSR0B, TXEN) &&
+                   setBit(&UCSR0C, USBS) &&
+                   setBit(&UCSR0C, UCSZ0) &&
+                   UBRR0H == ((cfg->baud >> 8) & 0xFF) &&
+                   UBRR0L == ((cfg->baud) & 0xFF));
+           //UCSR0B = (1<<RXEN) | (1<<TXEN);
+           //UCSR0C = (1<<6)|(1<<USBS)|(3<<UCSZ0);
+           //return check_configuration(cfg);
+       case USART1:
+           UBRR1H = (cfg->baud >> 8) & 0xFF;
+           UBRR1L = cfg->baud & 0xFF;
+           return (setBit(&UCSR1B, RXEN) &&
+                   setBit(&UCSR1B, TXEN) &&
+                   setBit(&UCSR1C, USBS) &&
+                   setBit(&UCSR1C, UCSZ0) &&
+                   UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
+                   UBRR1L == ((cfg->baud) & 0xFF));
+           //UCSR1B = (1<<RXEN) | (1<<TXEN);
+           //UCSR1C = (1<<6)|(1<<USBS)|(3<<UCSZ0);
+           //return check_configuration(cfg);
+       default:
+           return false;
+    }
 }
 
-/*
-	There is a special protocol for sending and reading 9 bit characters
-*/
-void uart0_put_char_9(int * send_val){
-	 //This function was adapted from the Atmel ATmega128/ATmega128L datasheet
-	 /* Copy 9th bit to TXB8 */
-	 UCSR0B &= ~(1<<TXB8);
-	 if ( *send_val & 0x0100 )
-	 UCSR0B |= (1<<TXB8);
-	 /* Put data into buffer, sends the data */
-	 UDR0 = *send_val & 0xFF;
+bool usart_init(usart_config_t * cfg){
+    return uart_init(cfg);
 }
 
- /*
-	Sets all the asyncronous options for the USART
-
-	uart_options struct defined and explained in uart.h
- */
-void uart1_init(struct uart_options options){
-	UCSR1A |= options.double_baud;
-	UCSR1B |= (TRANSMITTER_ENABLE | RECEIVER_ENABLE | 
-		(options.char_size & UCSR0B_CHAR_SIZE_MASK));
-	UCSR1B |= (RX_INTERRUPT_ENABLE | TX_INTERRUPT_ENABLE);
-	UCSR1C = options.parity + ONE_STOP_BIT + 
-		(options.char_size & UCSR0C_CHAR_SIZE_MASK);
-	UBRR1H = (options.baud_rate >> 8) & 0x0F;
-	UBRR1L = options.baud_rate & 0xFF;
+bool put_char(unsigned char ch){
+    usart_module_t module = activeCfg.module;
+    usart_mode_t mode = activeCfg.mode;
+    if(module == UART0 || module == USART0){
+        if(mode == MODE_8_BIT){
+            while (!(UCSR0A & (1<<UDRE)));
+            UDR0 = ch;
+            while(!((UCSR0A >> 6) & 0x1));
+            return true;
+        }
+        else if(mode == MODE_9_BIT){
+            return false;
+        }
+    }
+    else if(module == UART1 || module == USART1){
+        if(mode == MODE_8_BIT){
+            while (!(UCSR1A & (1<<UDRE)));
+            UDR1 = ch;
+            while(!((UCSR1A >> 6) & 0x1));
+            return true;
+        }
+        else if(mode == MODE_9_BIT){
+            return false;
+        }
+    }
+    return false;
 }
 
-void uart1_get_char(uint8_t * recv_char){
-	*recv_char = UDR1;
-}
-
-/*
-	Writes a single character to the UART out
-*/
-void uart1_put_char(uint8_t * send_char){
-	//This function was adapted from the Atmel ATmega128/ATmega128L datasheet
-	/* Wait for empty transmit buffer */
-	while ( !( UCSR1A & (1<<UDRE)) );
-	/* Put data into buffer, sends the data */
-	UDR1 = *send_char;
-}
-
-/*
-	There is a special protocol for sending and reading 9 bit characters
-*/
-void uart1_put_char_9(int * send_val){
-	 //This function was adapted from the Atmel ATmega128/ATmega128L datasheet
-	 /* Copy 9th bit to TXB8 */
-	 UCSR1B &= ~(1<<TXB8);
-	 if ( *send_val & 0x0100 )
-	 UCSR1B |= (1<<TXB8);
-	 /* Put data into buffer, sends the data */
-	 UDR1 = *send_val & 0xFF;
+bool get_char(unsigned char * ch){
+    usart_module_t module = activeCfg.module;
+    usart_mode_t mode = activeCfg.mode;
+    if(module == UART0 || module == USART0){
+        if(mode == MODE_8_BIT){
+            while(!(UCSR0A & (1<<RXC)));
+            *ch = UDR0;
+            return (bool)((UCSR0A >> 7) & 0x1);
+        }
+        else if(mode == MODE_9_BIT){
+            return false;
+        }
+    }
+    else if(module == UART1 || module == USART1){
+        if(mode == MODE_8_BIT){
+            while(!(UCSR1A & (1<<RXC)));
+            *ch = UDR1;
+            return (bool)((UCSR1A >> 7) & 0x1);
+        }
+        else if(mode == MODE_9_BIT){
+            return false;
+        }
+    }
+    return false;
 }

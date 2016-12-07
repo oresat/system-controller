@@ -8,10 +8,11 @@
 
 #include <avr/io.h>
 #include <stdint.h>
+#include <stdbool.h>
 
-enum pin_mode {ON, OFF, TOGGLE};
-enum data_direction {INPUT, OUTPUT};
-
+typedef enum {ON, OFF, TOGGLE} pin_mode_t;
+typedef enum {INPUT, OUTPUT} data_direction_t;
+/*
 enum pin_num {pin0 = (1 << 0),
      	      pin1 = (1 << 1),
        	      pin2 = (1 << 2),
@@ -21,11 +22,26 @@ enum pin_num {pin0 = (1 << 0),
     	      pin6 = (1 << 6),
      	      pin7 = (1 << 7),
 	      pinALL = 0xFF
-};
+};*/
 
-void gpio_init();
-void toggle_pin(volatile uint8_t * port, uint8_t pin, enum pin_mode mode);
-void set_io_direction(volatile uint8_t * reg, uint8_t pin, enum data_direction dir);
+typedef enum {
+    pin0,
+    pin1,
+    pin2,
+    pin3,
+    pin4,
+    pin5,
+    pin6,
+    pin7,
+    pinALL = 0xFF
+}pin_num_t;
+
+bool toggleBit(volatile uint8_t * reg, uint8_t bit);
+bool setBit(volatile uint8_t * reg, uint8_t bit);
+bool clearBit(volatile uint8_t * reg, uint8_t bit);
+bool toggle_pin(volatile uint8_t * port, uint8_t pin, pin_mode_t mode);
+bool set_io_direction(volatile uint8_t * reg, uint8_t pin, data_direction_t dir);
+bool gpio_init();
 
 
 #endif

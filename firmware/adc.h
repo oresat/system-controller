@@ -8,8 +8,11 @@
 
 #include <avr/io.h>
 #include <stdint.h>
+#include <stdbool.h>
+#include "port.h"
 
-void adc_init();
+bool adc_init();
+//void adc_init();
 uint16_t adc_read();
 
 #endif

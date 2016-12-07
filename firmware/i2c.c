@@ -1,24 +1,24 @@
 #include "i2c.h"
 
-void i2c_init(){
+/* for some reason these aren't defined in the standard AVR stuff */
+#ifndef TWBR3
+#define TWBR3 3
+#endif
+
+#ifndef TWBR2
+#define TWBR2 2
+#endif
+
+//void i2c_init(){
+bool i2c_init(){
 	/* set prescaler value to 1*/
-	TWSR &= ~((1 << TWPS1) | (1 << TWPS0));
-
-
-        /* for some reason these aren't defined in the standard AVR stuff */
-	#ifndef TWBR3
-	#define TWBR3 3
-	#endif
-
-	#ifndef TWBR2
-	#define TWBR2 2
-	#endif
-
-	/* set SCL to 200kHz */
-	TWBR |= ((1 << TWBR3) | (1 << TWBR2));
-
-	/* enable TWI */
-	TWCR = (1 << TWEN);
+    return (clearBit(&TWSR, TWPS1) &&
+            clearBit(&TWSR, TWPS0) &&
+            /* set SCL to 200kHz */            
+            setBit(&TWBR, TWBR3) &&
+            setBit(&TWBR, TWBR2) &&
+           	/* enable TWI */
+            setBit(&TWCR, TWEN));
 }
 
 static uint8_t i2c_status(){
@@ -42,7 +42,9 @@ static void i2c_stop(){
 }
 
 static bool write_byte(uint8_t slave_addr, uint8_t data){
-	if(slave_addr & 0x1) slave_addr &= ~(1 << 0);
+	if(slave_addr & 0x1){
+        slave_addr &= ~(1 << 0);
+    }
 
 	/* send start condition */
 	i2c_start();
@@ -128,7 +130,7 @@ static bool read_byte_NACK(uint8_t slave_addr, uint8_t * dest){
 	/* slave addr not acknowledged */
 	if(i2c_status() != TW_MT_SLA_ACK) return false;
 
-        TWCR = (1 << TWINT) | (1 << TWEN);
+    TWCR = (1 << TWINT) | (1 << TWEN);
 
 	while(!(TWCR & (1 << TWINT)));
 
@@ -145,7 +147,7 @@ bool i2c_read(uint8_t slave_addr, uint8_t * dest, uint8_t len){
 		/* last byte, wait for nack */
 		if(i == (len - 1)){
 			if(!read_byte_NACK(slave_addr + i, dest + i)) return false;
-                }
+        }
 	}
 	i2c_stop();
 	return true;

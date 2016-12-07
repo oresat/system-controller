@@ -13,14 +13,47 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
+//#define F_CPU 8000000UL add this to your util/delay.h to get rid of compiler warning
+
 #include <avr/interrupt.h>
 #include "uart.h"
 #include "port.h"
 #include "adc.h"
 #include "i2c.h"
 #include <stdlib.h>
+#include "debug.h"
 
-//#define F_CPU 8000000UL add this to your util/delay.h to get rid of compiler warning
+/* uart configuration */
+usart_config_t cfg = {
+    .module = UART0,
+    .baud = 51, //9600
+    .mode = MODE_8_BIT
+};
+
+#if DEBUG
+void testTxUART(){
+    usart_init(&cfg);
+    uint8_t data[3] = {'G', '\r', '\n'};
+    uint8_t i;
+    if(!set_io_direction(&DDRF, pin0, OUTPUT)){
+        trap(STAGE1);
+    }
+    if(!toggle_pin(&PORTF, pin0, OFF)){
+        trap(STAGE2);
+    }
+	while (1) {
+		_delay_ms(500);
+        if(!toggle_pin(&PORTF, pin0, TOGGLE)){
+            trap(STAGE3);
+        }
+        for(i=0; i < 3; i++){
+            if(!put_char(data[i])){
+                trap(STAGE4);
+            }
+        }
+	}
+}
+#endif
 
 enum efuse {VCB0_EN = (uint8_t)'1',
 	    VCB1_EN,
@@ -48,28 +81,28 @@ void timer_init(void){
 	TIMSK |= 0x10;			//Enable compare A interrupt
 }
 
-void usart_init(){
-	//Setup the uart, enable uart RX interrupts
-	struct uart_options options = {
-		.double_baud = 0,
-		.char_size = CHAR_SIZE_8,
-		.stop_bits = ONE_STOP_BIT,
-		.parity = NO_PARITY,
-		.baud_rate = 51,			//9600bps at fosc = 8 MHz
-	};
-	uart0_init(options);
-}
-
 int main (void){
-	gpio_init();
-	adc_init();
-	i2c_init();
-	usart_init();
-	timer_init();
-	sei();			//Enable global interrupts	
+    if(DEBUG){
+        testTxUART();
+    }
+	if(!gpio_init()){
+        trap(STAGE1);
+    }
+    if(!usart_init(&cfg)){
+        trap(STAGE2);
+    }
+	//adc_init();
+	//i2c_init();
+	//timer_init();
+	//sei();			//Enable global interrupts
+    unsigned char data = 'G';
 	
 	while (1) {
-		_delay_ms(100);
+		_delay_ms(500);
+        if(!put_char(data)){
+            trap(STAGE3);
+        }
+        toggle_pin(&PORTF, pin0, TOGGLE);
 	}
 	return 0;
 }
@@ -81,32 +114,40 @@ ISR(TIMER1_COMPA_vect){
 
 ISR(USART0_RX_vect){
 	//UART receive interrupt handler
-	uint8_t data;
-	uart0_get_char(&data);
-	if (data == 'G'){		//Test against lgr's I'm alive signal
+	unsigned char * data;
+	get_char(data);
+	if ((*data) == 'G'){		//Test against lgr's I'm alive signal
 		TCNT1 = 0x0000;		//Reset timer count
 	}
-	switch(data){			//Toggle port f pins
+	switch(*data){			//Toggle port f pins
 		case VCB0_EN: 
 			toggle_pin(&PORTA, pin7, TOGGLE);
+            break;
 		case VCB1_EN: 
 			toggle_pin(&PORTA, pin6, TOGGLE);
+            break;
 		case VCB2_EN: 
 			toggle_pin(&PORTA, pin5, TOGGLE);
+            break;
 		case VCB3_EN: 
-                  	toggle_pin(&PORTA, pin4, TOGGLE);
+            toggle_pin(&PORTA, pin4, TOGGLE);
+            break;
 		case VCB4_EN: 
-                  	toggle_pin(&PORTA, pin3, TOGGLE);
+            toggle_pin(&PORTA, pin3, TOGGLE);
+            break;
 		case VCB5_EN: 
-                  	toggle_pin(&PORTA, pin2, TOGGLE);
+            toggle_pin(&PORTA, pin2, TOGGLE);
+            break;
 		case VCB6_EN: 
-                  	toggle_pin(&PORTA, pin1, TOGGLE);
+            toggle_pin(&PORTA, pin1, TOGGLE);
+            break;
 		case VCB7_EN: 
-                  	toggle_pin(&PORTA, pin0, TOGGLE);
+            toggle_pin(&PORTA, pin0, TOGGLE);
+            break;
 	}
 
 	//Echo the RX data back for analysis
-	uart0_put_char(&data);
+	put_char(*data);
 }
 
 //General interrupt handler, do nothing if we get stray interrupts
