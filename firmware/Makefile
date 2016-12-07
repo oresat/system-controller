@@ -1,5 +1,7 @@
 PRG            = sys_control
-OBJ            = sys_control.o uart.o port.o adc.o i2c.o
+OBJ            = sys_control.o uart.o port.o adc.o i2c.o debug.o
+#PRG            = example
+#OBJ            = example.o
 MCU_TARGET     = atmega128
 OPTIMIZE       = -O2
 
@@ -28,10 +30,7 @@ clean:
 	rm -rf *.lst *.map $(EXTRA_CLEAN_FILES)
 
 load: $(PRG).hex
-#	avrdude -c jtag3 -p atmega128 -U lfuse:w:0xC0:m
-#	avrdude -c jtag3 -p atmega128 -U hfuse:w:0x1:m
-#	avrdude -c jtag3 -p atmega128 -U efuse:w:0xFF:m
-	avrdude -c jtag3 -p atmega128 -U flash:w:$(PRG).hex
+	sudo avrdude -c dragon_jtag -p m128 -U flash:w:$(PRG).hex
 
 lst:  $(PRG).lst
 
