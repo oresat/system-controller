@@ -1,5 +1,5 @@
 PRG            = sys_control
-OBJ            = sys_control.o uart.o port.o adc.o i2c.o debug.o
+OBJ            = sys_control.o uart.o port.o adc.o i2c.o debug.o timer.o
 #PRG            = example
 #OBJ            = example.o
 MCU_TARGET     = atmega128

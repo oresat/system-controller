@@ -22,38 +22,21 @@
 #include "i2c.h"
 #include <stdlib.h>
 #include "debug.h"
+#include "timer.h"
 
 /* uart configuration */
-usart_config_t cfg = {
+usart_config_t usart_cfg = {
     .module = UART0,
     .baud = 51, //9600
     .mode = MODE_8_BIT
 };
 
-#if DEBUG
-void testTxUART(){
-    usart_init(&cfg);
-    uint8_t data[3] = {'G', '\r', '\n'};
-    uint8_t i;
-    if(!set_io_direction(&DDRF, pin0, OUTPUT)){
-        trap(STAGE1);
-    }
-    if(!toggle_pin(&PORTF, pin0, OFF)){
-        trap(STAGE2);
-    }
-	while (1) {
-		_delay_ms(500);
-        if(!toggle_pin(&PORTF, pin0, TOGGLE)){
-            trap(STAGE3);
-        }
-        for(i=0; i < 3; i++){
-            if(!put_char(data[i])){
-                trap(STAGE4);
-            }
-        }
-	}
-}
-#endif
+/* timer configuration */
+timer_cfg_t timer_cfg = {
+    .clk_divider = 0x5,
+    .compare_val = 0xFA0,
+    .interrupt_mask = 0x10,
+};
 
 enum efuse {VCB0_EN = (uint8_t)'1',
 	    VCB1_EN,
@@ -65,51 +48,71 @@ enum efuse {VCB0_EN = (uint8_t)'1',
 	    VCB7_EN
 	   };
 
-void reset_lgr(void){
+bool reset_lgr(void){
+    //critical task, must be performed, disable interrupts
+    cli();
+    
 	//Pull PORTA pins 0 and 1 down for 2 seconds then reset the timer count
-	toggle_pin(&PORTA, (pin1 | pin0), OFF);  //Pull lgr reset line down
+    uint8_t i;
+    for(i = 0; i < 2; i++){
+        if(!toggle_pin(&PORTA, i, OFF)){
+            return false;
+        }
+    }
 	_delay_ms(2000);
-	toggle_pin(&PORTA, (pin1 | pin0), ON);   //Start the lgr again
-	TCNT1 = 0x0000;			         //Reset the count or the countdown will run a long time
+    for(i = 0; i < 2; i++){
+        if(!toggle_pin(&PORTA, i, ON)){
+            return false;
+        }
+    }
+
+    //reset the counter
+	TCNT1 = 0x0000;
+
+    //allow for interrupts again
+    sei();
+
+    return true;
 }
 
-void timer_init(void){
-	//Configures the timer enable timer interrupts
-	TCCR1B = 0x05;			//Clock divider select  = IO clock/1024
-	//OCR1A = 0x3E80;		//Set the compare value to 16000, about 2s if clock is running at 8Mhz
-	OCR1A = 0x0FA0;
-	TIMSK |= 0x10;			//Enable compare A interrupt
+bool start_periph(){
+    return (gpio_init() &&
+            usart_init(&usart_cfg) &&
+            adc_init() &&
+            i2c_init() &&
+            timer_init(&timer_cfg));
 }
 
 int main (void){
-    if(DEBUG){
-        testTxUART();
-    }
-	if(!gpio_init()){
+    #if DEBUG_UART_TX
+    testTxUART();
+    #endif
+    #if DEBUG_MAIN
+    unsigned char data = 'G';
+    #endif
+
+    if(!start_periph()){
         trap(STAGE1);
     }
-    if(!usart_init(&cfg)){
-        trap(STAGE2);
-    }
-	//adc_init();
-	//i2c_init();
-	//timer_init();
-	//sei();			//Enable global interrupts
-    unsigned char data = 'G';
+	sei(); //Enable global interrupts
 	
 	while (1) {
-		_delay_ms(500);
+        #if DEBUG_MAIN
+   		_delay_ms(500);
         if(!put_char(data)){
-            trap(STAGE3);
+            trap(STAGE2);
         }
         toggle_pin(&PORTF, pin0, TOGGLE);
+        #endif
 	}
 	return 0;
 }
 
 ISR(TIMER1_COMPA_vect){
 	//Timer 1 compare register A interrupt handler
-	reset_lgr();
+	if(!reset_lgr()){
+        trap(STAGE2);
+    }
 }
 
 ISR(USART0_RX_vect){

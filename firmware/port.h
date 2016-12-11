@@ -12,17 +12,6 @@
 
 typedef enum {ON, OFF, TOGGLE} pin_mode_t;
 typedef enum {INPUT, OUTPUT} data_direction_t;
-/*
-enum pin_num {pin0 = (1 << 0),
-     	      pin1 = (1 << 1),
-       	      pin2 = (1 << 2),
-       	      pin3 = (1 << 3),
-       	      pin4 = (1 << 4),
-       	      pin5 = (1 << 5),
-    	      pin6 = (1 << 6),
-     	      pin7 = (1 << 7),
-	      pinALL = 0xFF
-};*/
 
 typedef enum {
     pin0,
@@ -32,8 +21,7 @@ typedef enum {
     pin4,
     pin5,
     pin6,
-    pin7,
-    pinALL = 0xFF
+    pin7
 }pin_num_t;
 
 bool toggleBit(volatile uint8_t * reg, uint8_t bit);
