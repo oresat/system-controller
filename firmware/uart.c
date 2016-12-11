@@ -1,118 +1,55 @@
 /*
-    UART driver for ATMega128
-    Programmed by William Harrington
+ UART driver for ATMega128
+ Programmed by William Harrington
  */
 
 #include "uart.h"
 
 static usart_config_t activeCfg;
-/*
-static bool check_configuration(usart_config_t * cfg){
-    switch(cfg->module){
-       case UART0:
-           if((UBRR0H == ((cfg->baud >> 8) & 0xFF)) &&
-              (UBRR0L == ((cfg->baud) & 0xFF)) &&
-              ((UCSR0B >> RXEN) & 0x1) &&
-              ((UCSR0B >> TXEN) & 0x1) &&
-              ((UCSR0C >> USBS) & 0x1) &&
-              ((UCSR0C >> UCSZ0) & 0x1)
-              ){
-               return true;
-           }
-           else return false;
-       case UART1:
-           if((UBRR1H == ((cfg->baud >> 8) & 0xFF)) &&
-              (UBRR1L == ((cfg->baud) & 0xFF)) &&
-              ((UCSR1B >> RXEN) & 0x1) &&
-              ((UCSR1B >> TXEN) & 0x1) &&
-              ((UCSR1C >> USBS) & 0x1) &&
-              ((UCSR1C >> UCSZ0) & 0x1)
-              ){
-               return true;
-           }
-           else return false;
-       case USART0:
-           if((UBRR0H == ((cfg->baud >> 8) & 0xFF)) &&
-              (UBRR0L == ((cfg->baud) & 0xFF)) &&
-              ((UCSR0B >> RXEN) & 0x1) &&
-              ((UCSR0B >> TXEN) & 0x1) &&
-              ((UCSR0C >> USBS) & 0x1) &&
-              ((UCSR0C >> UCSZ0) & 0x1) &&
-              ((UCSR0C >> 6) & 0x1)
-              ){
-               return true;
-           }
-           else return false;
-       case USART1:
-           if(UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
-              (UBRR1L == ((cfg->baud) & 0xFF)) &&
-              ((UCSR1B >> RXEN) & 0x1) &&
-              ((UCSR1B >> TXEN) & 0x1) &&
-              ((UCSR1C >> USBS) & 0x1) &&
-              ((UCSR1C >> UCSZ0) & 0x1) &&
-              ((UCSR1C >> 6) & 0x1)
-              ){
-               return true;
-           }
-           else return false;
-       default:
-           return false;
-    }
-}
-*/
+
 static bool uart_init(usart_config_t * cfg){
     activeCfg = *cfg;
     switch(cfg->module){
-       case UART0:
-           UBRR0H = (cfg->baud >> 8) & 0xFF;
-           UBRR0L = cfg->baud & 0xFF;
-           return (setBit(&UCSR0B, RXEN) &&
-                   setBit(&UCSR0B, TXEN) &&
-                   setBit(&UCSR0C, USBS) &&
-                   setBit(&UCSR0C, UCSZ0) &&
-                   UBRR0H == ((cfg->baud >> 8) & 0xFF) &&
-                   UBRR0L == ((cfg->baud) & 0xFF));
-           //UCSR0B = (1<<RXEN) | (1<<TXEN);
-           //UCSR0C = (1<<USBS)|(3<<UCSZ0);
-           //return check_configuration(cfg);
-       case UART1:
-           UBRR1H = (cfg->baud >> 8) & 0xFF;
-           UBRR1L = cfg->baud & 0xFF;
-           return (setBit(&UCSR1B, RXEN) &&
-                   setBit(&UCSR1B, TXEN) &&
-                   setBit(&UCSR1C, USBS) &&
-                   setBit(&UCSR1C, UCSZ0) &&
-                   UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
-                   UBRR1L == ((cfg->baud) & 0xFF));
-           //UCSR1B = (1<<RXEN) | (1<<TXEN);
-           //UCSR1C = (1<<USBS)|(3<<UCSZ0);
-           //return check_configuration(cfg);
-       case USART0:
-           UBRR0H = (cfg->baud >> 8) & 0xFF;
-           UBRR0L = cfg->baud & 0xFF;
-           return (setBit(&UCSR0B, RXEN) &&
-                   setBit(&UCSR0B, TXEN) &&
-                   setBit(&UCSR0C, USBS) &&
-                   setBit(&UCSR0C, UCSZ0) &&
-                   UBRR0H == ((cfg->baud >> 8) & 0xFF) &&
-                   UBRR0L == ((cfg->baud) & 0xFF));
-           //UCSR0B = (1<<RXEN) | (1<<TXEN);
-           //UCSR0C = (1<<6)|(1<<USBS)|(3<<UCSZ0);
-           //return check_configuration(cfg);
-       case USART1:
-           UBRR1H = (cfg->baud >> 8) & 0xFF;
-           UBRR1L = cfg->baud & 0xFF;
-           return (setBit(&UCSR1B, RXEN) &&
-                   setBit(&UCSR1B, TXEN) &&
-                   setBit(&UCSR1C, USBS) &&
-                   setBit(&UCSR1C, UCSZ0) &&
-                   UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
-                   UBRR1L == ((cfg->baud) & 0xFF));
-           //UCSR1B = (1<<RXEN) | (1<<TXEN);
-           //UCSR1C = (1<<6)|(1<<USBS)|(3<<UCSZ0);
-           //return check_configuration(cfg);
-       default:
-           return false;
+        case UART0:
+            UBRR0H = (cfg->baud >> 8) & 0xFF;
+            UBRR0L = cfg->baud & 0xFF;
+            return (setBit(&UCSR0B, RXEN) &&
+                    setBit(&UCSR0B, TXEN) &&
+                    setBit(&UCSR0C, USBS) &&
+                    setBit(&UCSR0C, UCSZ0) &&
+                    UBRR0H == ((cfg->baud >> 8) & 0xFF) &&
+                    UBRR0L == ((cfg->baud) & 0xFF));
+        case UART1:
+            UBRR1H = (cfg->baud >> 8) & 0xFF;
+            UBRR1L = cfg->baud & 0xFF;
+            return (setBit(&UCSR1B, RXEN) &&
+                    setBit(&UCSR1B, TXEN) &&
+                    setBit(&UCSR1C, USBS) &&
+                    setBit(&UCSR1C, UCSZ0) &&
+                    UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
+                    UBRR1L == ((cfg->baud) & 0xFF));
+        case USART0:
+            UBRR0H = (cfg->baud >> 8) & 0xFF;
+            UBRR0L = cfg->baud & 0xFF;
+            return (setBit(&UCSR0B, RXEN) &&
+                    setBit(&UCSR0B, TXEN) &&
+                    setBit(&UCSR0C, USBS) &&
+                    setBit(&UCSR0C, UCSZ0) &&
+                    setBit(&UCSR0C, 6) &&
+                    UBRR0H == ((cfg->baud >> 8) & 0xFF) &&
+                    UBRR0L == ((cfg->baud) & 0xFF));
+        case USART1:
+            UBRR1H = (cfg->baud >> 8) & 0xFF;
+            UBRR1L = cfg->baud & 0xFF;
+            return (setBit(&UCSR1B, RXEN) &&
+                    setBit(&UCSR1B, TXEN) &&
+                    setBit(&UCSR1C, USBS) &&
+                    setBit(&UCSR1C, UCSZ0) &&
+                    setBit(&UCSR1C, 6) &&
+                    UBRR1H == ((cfg->baud >> 8) & 0xFF) &&
+                    UBRR1L == ((cfg->baud) & 0xFF));
+        default:
+            return false;
     }
 }
 

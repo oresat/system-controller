@@ -1,6 +1,6 @@
 /*
-    Atmega128 UART driver
-    Programmed by William Harrington
+ Atmega128 UART driver
+ Programmed by William Harrington
  */
 
 

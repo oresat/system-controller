@@ -20,8 +20,8 @@ void testTxUART(){
     if(!toggle_pin(&PORTF, pin0, OFF)){
         trap(STAGE2);
     }
-	while (1) {
-		_delay_ms(500);
+    while (1) {
+        _delay_ms(500);
         if(!toggle_pin(&PORTF, pin0, TOGGLE)){
             trap(STAGE3);
         }
@@ -30,6 +30,6 @@ void testTxUART(){
                 trap(STAGE4);
             }
         }
-	}
+    }
 }
 #endif

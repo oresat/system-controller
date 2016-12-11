@@ -12,7 +12,6 @@
 #include "port.h"
 
 bool adc_init();
-//void adc_init();
 uint16_t adc_read();
 
 #endif

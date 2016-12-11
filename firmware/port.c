@@ -35,50 +35,50 @@ bool clearBit(volatile uint8_t * reg, uint8_t bit){
 }
 
 bool toggle_pin(volatile uint8_t * port, uint8_t pin, pin_mode_t mode){
-	/* only accept PORTx registers */
-	if((port != &PORTA) &&
-	   (port != &PORTB) &&
-	   (port != &PORTC) &&
-	   (port != &PORTD) &&
-	   (port != &PORTE) &&
-	   (port != &PORTF) &&
-	   (port != &PORTG)) return false;
+    /* only accept PORTx registers */
+    if((port != &PORTA) &&
+       (port != &PORTB) &&
+       (port != &PORTC) &&
+       (port != &PORTD) &&
+       (port != &PORTE) &&
+       (port != &PORTF) &&
+       (port != &PORTG)) return false;
     
-	switch(mode){
-		case TOGGLE:
+    switch(mode){
+        case TOGGLE:
             return toggleBit(port, pin);
-		case ON:
+        case ON:
             return setBit(port, pin);
-		case OFF:
+        case OFF:
             return clearBit(port, pin);
         default: return false;
     }
 }
 
 bool set_io_direction(volatile uint8_t * reg, uint8_t pin, data_direction_t dir){
-	/* only accept DDRx registers */
-	if((reg != &DDRA) &&
+    /* only accept DDRx registers */
+    if((reg != &DDRA) &&
        (reg != &DDRB) &&
        (reg != &DDRC) &&
        (reg != &DDRD) &&
        (reg != &DDRE) &&
        (reg != &DDRF) &&
        (reg != &DDRG)) return false;
-	switch(dir){
-		case INPUT:
+    switch(dir){
+        case INPUT:
             return clearBit(reg, pin);
-		case OUTPUT:
+        case OUTPUT:
             return setBit(reg, pin);
         default: return false;
     }
 }
 
 bool gpio_init(void){
-	//Setup the GPIO pins to output and sets initial value
-
-	/* PORTA */
-
-	/* efuse enable pins */
+    //Setup the GPIO pins to output and sets initial value
+    
+    /* PORTA */
+    
+    /* efuse enable pins */
     uint8_t i;
     for(i = 0; i < 8; i++){
         if(!toggle_pin(&PORTA, i, ON)){
@@ -90,10 +90,10 @@ bool gpio_init(void){
             return false;
         }
     }
-
-	/* PORTC */
-
-	/* efuse fault indicator pins */
+    
+    /* PORTC */
+    
+    /* efuse fault indicator pins */
     for(i = 0; i < 8; i++){
         if(!toggle_pin(&PORTC, i, OFF)){
             return false;
@@ -104,9 +104,9 @@ bool gpio_init(void){
             return false;
         }
     }
-
-	/* PORTD */
-
+    
+    /* PORTD */
+    
     /* MUX address pins */
     for(i = 4; i < 7; i++){
         if(!toggle_pin(&PORTD, i, OFF)){
@@ -118,19 +118,19 @@ bool gpio_init(void){
             return false;
         }
     }
-
-	/* PORTF */
-
+    
+    /* PORTF */
+    
     /* MUX Output voltage */
     if(!toggle_pin(&PORTF, pin0, OFF)){
         return false;
     }
-	if(!set_io_direction(&DDRF, pin0, INPUT)){
+    if(!set_io_direction(&DDRF, pin0, INPUT)){
         return false;
     }
-
+    
     /* PORTG */
-
+    
     /* nuclear option pins */
     for(i = 0; i < 3; i++){
         if(!toggle_pin(&PORTG, i, OFF)){
