@@ -33,5 +33,6 @@ typedef struct {
 bool usart_init(usart_config_t * cfg);
 bool get_char(unsigned char * ch);
 bool put_char(unsigned char ch);
+bool println(char * string);
 
 #endif /* USART_H_ */

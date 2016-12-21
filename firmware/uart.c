@@ -110,3 +110,12 @@ bool get_char(unsigned char * ch){
     }
     return false;
 }
+
+bool println(char * string){
+    while(*string != '\0'){
+        if(!put_char(*string++)){
+            return false;
+        }
+    }
+    return true;
+}
