@@ -87,6 +87,9 @@ int main (void){
 #if DEBUG_UART_TX
     testTxUART();
 #endif
+#if DEBUG_ADC
+    testADC();
+#endif
 #if DEBUG_MAIN
     unsigned char data = 'G';
 #endif
