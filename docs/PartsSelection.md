@@ -145,7 +145,7 @@ Rad-hard Analogue: N/A
 Description: 40-Pinout Header     
 Vendor: Digi-Key  
 Vendor Part No.: 952-1381-5-ND  	  
-[Datasheet](https://cdn.harwin.com/pdfs/60page104.pdf)  
+[Datasheet](https://cdn.harwin.com/pdfs/M50-320.pdf)  
 Reasons: This is a design requirement for communication from the Cubesat and allows for a link between the LGR and System Controller.			
 Rad-hard Analogue: N/A	
 
